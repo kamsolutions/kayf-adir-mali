@@ -773,7 +773,8 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
 
                     <!-- PayPal Button -->
                     <div style="flex:1;min-width:140px;">
-                        <form action="https://www.paypal.com/ncp/payment/V7TL9CRUHBC5S" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.4rem;width:100%;">
+                        <form action="https://www.paypal.com/ncp/payment/V7TL9CRUHBC5S" method="post" target="_top" style="display:inline-grid;justify-items:center;align-content:start;gap:0.4rem;width:100%;">
+                            <input type="hidden" name="return" value="https://kamsolutions.github.io/kayf-adir-mali/investingbeginnerguide.html?paypal=success" />
                             <input type="submit" value="PayPal احصل عليه" style="
                                 width:100%;
                                 padding:0.75rem 1.2rem;
@@ -2462,9 +2463,26 @@ updatePortCalc();
         const licenseInput = document.getElementById('license-key-input');
         const messageDiv = document.getElementById('gate-message');
 
-        // Check for license key in URL params on load
+        // Check for license key or PayPal return in URL params on load
         function checkUrlParams() {
             const params = new URLSearchParams(window.location.search);
+
+            // Check for PayPal return (auto-unlock)
+            const paypalStatus = params.get('paypal');
+            if (paypalStatus === 'success') {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                    key: 'paypal_verified',
+                    method: 'paypal',
+                    timestamp: Date.now()
+                }));
+                showMessage('تم الدفع بنجاح عبر PayPal! جاري فتح الكتاب...', 'success');
+                setTimeout(() => { unlockEbook(); }, 800);
+                // Clean up URL
+                window.history.replaceState({}, '', window.location.pathname);
+                return true;
+            }
+
+            // Check for Gumroad license key
             const licenseKey = params.get('license_key');
             if (licenseKey) {
                 licenseInput.value = licenseKey;
