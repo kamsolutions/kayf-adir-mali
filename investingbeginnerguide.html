@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0224)file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html -->
-<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>كيف أدير مالي — الدليل الشامل للمستثمر العربي المبتدئ</title>
-<link href="./investingbeginnerguide_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 <style>
 /* ══════════════════════════════════════════
    PALETTE — Soft Pastel (Warm Sand · Sky Blue · Sage · Blush)
@@ -563,7 +563,7 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
 }
 @media(max-width:1024px){.fi{opacity:1!important;transform:none!important;transition:none!important}}</style>
 </head>
-<body style="overflow: hidden;">
+<body>
     <!-- License Gate Overlay -->
     <div id="license-gate" style="
         position: fixed;
@@ -574,7 +574,7 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
         justify-content: center;
         z-index: 9999;
         direction: rtl;
-        font-family: &#39;Cairo&#39;, &#39;Tajawal&#39;, sans-serif;
+        font-family: 'Cairo', 'Tajawal', sans-serif;
     ">
         <!-- Decorative blobs -->
         <div style="
@@ -642,7 +642,7 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
             <!-- Title -->
             <div style="text-align: center; margin-bottom: 2rem;">
                 <h1 style="
-                    font-family: &#39;Cairo&#39;, sans-serif;
+                    font-family: 'Cairo', sans-serif;
                     font-size: 2rem;
                     font-weight: 900;
                     color: #2A1F0E;
@@ -675,24 +675,31 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
 
             <!-- License Key Input -->
             <div style="margin-bottom: 1.8rem;">
-                <input type="text" id="license-key-input" placeholder="أدخل مفتاح الترخيص" style="
+                <input
+                    type="text"
+                    id="license-key-input"
+                    placeholder="أدخل مفتاح الترخيص"
+                    style="
                         width: 100%;
                         padding: 0.9rem 1.2rem;
                         border: 2px solid rgba(196, 136, 48, 0.25);
                         border-radius: 12px;
                         font-size: 1rem;
-                        font-family: &#39;Tajawal&#39;, monospace;
+                        font-family: 'Tajawal', monospace;
                         background: rgba(255, 255, 255, 0.6);
                         color: #2A1F0E;
                         direction: ltr;
                         text-align: right;
                         transition: all 0.2s;
                         outline: none;
-                    ">
+                    "
+                />
             </div>
 
             <!-- Verify Button -->
-            <button id="verify-btn" style="
+            <button
+                id="verify-btn"
+                style="
                     width: 100%;
                     padding: 0.95rem;
                     background: linear-gradient(135deg, rgba(196, 136, 48, 0.9), rgba(196, 136, 48, 0.7));
@@ -701,12 +708,15 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
                     border-radius: 12px;
                     font-size: 1rem;
                     font-weight: 800;
-                    font-family: &#39;Cairo&#39;, sans-serif;
+                    font-family: 'Cairo', sans-serif;
                     cursor: pointer;
                     transition: all 0.3s;
                     margin-bottom: 1.5rem;
                     box-shadow: 0 4px 15px rgba(196, 136, 48, 0.3);
-                " onmouseover="this.style.background=&#39;linear-gradient(135deg, rgba(196, 136, 48, 1), rgba(196, 136, 48, 0.85))&#39;; this.style.transform=&#39;translateY(-2px)&#39;; this.style.boxShadow=&#39;0 6px 20px rgba(196, 136, 48, 0.4)&#39;;" onmouseout="this.style.background=&#39;linear-gradient(135deg, rgba(196, 136, 48, 0.9), rgba(196, 136, 48, 0.7))&#39;; this.style.transform=&#39;translateY(0)&#39;; this.style.boxShadow=&#39;0 4px 15px rgba(196, 136, 48, 0.3)&#39;;">تحقق وافتح</button>
+                "
+                onmouseover="this.style.background='linear-gradient(135deg, rgba(196, 136, 48, 1), rgba(196, 136, 48, 0.85))'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(196, 136, 48, 0.4)';"
+                onmouseout="this.style.background='linear-gradient(135deg, rgba(196, 136, 48, 0.9), rgba(196, 136, 48, 0.7))'; this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(196, 136, 48, 0.3)';"
+            >تحقق وافتح</button>
 
             <!-- Error/Success Message -->
             <div id="gate-message" style="
@@ -737,7 +747,11 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
 
                 <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center;">
                     <!-- Gumroad Button -->
-                    <a href="https://kamfinance.gumroad.com/l/investingbeginnerguidearabic" target="_blank" rel="noopener noreferrer" style="
+                    <a
+                        href="https://kamfinance.gumroad.com/l/investingbeginnerguidearabic"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style="
                             flex: 1;
                             min-width: 140px;
                             padding: 0.75rem 1.2rem;
@@ -748,11 +762,14 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
                             text-decoration: none;
                             font-size: 0.85rem;
                             font-weight: 700;
-                            font-family: &#39;Cairo&#39;, sans-serif;
+                            font-family: 'Cairo', sans-serif;
                             cursor: pointer;
                             transition: all 0.3s;
                             text-align: center;
-                        " onmouseover="this.style.background=&#39;rgba(184, 216, 234, 0.5)&#39;; this.style.transform=&#39;translateY(-2px)&#39;;" onmouseout="this.style.background=&#39;rgba(184, 216, 234, 0.3)&#39;; this.style.transform=&#39;translateY(0)&#39;;">من Gumroad</a>
+                        "
+                        onmouseover="this.style.background='rgba(184, 216, 234, 0.5)'; this.style.transform='translateY(-2px)';"
+                        onmouseout="this.style.background='rgba(184, 216, 234, 0.3)'; this.style.transform='translateY(0)';"
+                    >من Gumroad</a>
 
                     <!-- PayPal Button -->
                     <div style="flex:1;min-width:140px;">
@@ -766,12 +783,12 @@ body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);d
                                 border-radius:10px;
                                 font-size:0.85rem;
                                 font-weight:700;
-                                font-family:&#39;Cairo&#39;,sans-serif;
+                                font-family:'Cairo',sans-serif;
                                 cursor:pointer;
                                 transition:all 0.3s;
                                 text-align:center;
-                            ">
-                            <img src="./investingbeginnerguide_files/Debit_Credit_APM.svg" alt="cards" style="height:1.2rem;">
+                            " />
+                            <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" style="height:1.2rem;" />
                         </form>
                     </div>
                 </div>
@@ -798,24 +815,24 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
     <div class="nav-name"><b>كيف</b> أدير مالي</div>
   </div>
   <ul class="nav-links">
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s0">قبل البداية</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s1">لماذا نستثمر؟</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s2">السوق</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s3">كيف تربح؟</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s4">المؤشرات</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s5">الحلال</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s6">الفيدرالي</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s7">الأسواق</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s8">تقييم الشركة</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s9">أخطاء المبتدئ</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s10">النفسية</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s11">حسب سنّك</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s12">حسب دخلك</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s13">الوسيط</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s14">ابدأ الآن</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s15">المصطلحات</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s16">بعد البداية</a></li>
-    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#faq">أسئلة شائعة</a></li>
+    <li><a href="#s0">قبل البداية</a></li>
+    <li><a href="#s1">لماذا نستثمر؟</a></li>
+    <li><a href="#s2">السوق</a></li>
+    <li><a href="#s3">كيف تربح؟</a></li>
+    <li><a href="#s4">المؤشرات</a></li>
+    <li><a href="#s5">الحلال</a></li>
+    <li><a href="#s6">الفيدرالي</a></li>
+    <li><a href="#s7">الأسواق</a></li>
+    <li><a href="#s8">تقييم الشركة</a></li>
+    <li><a href="#s9">أخطاء المبتدئ</a></li>
+    <li><a href="#s10">النفسية</a></li>
+    <li><a href="#s11">حسب سنّك</a></li>
+    <li><a href="#s12">حسب دخلك</a></li>
+    <li><a href="#s13">الوسيط</a></li>
+    <li><a href="#s14">ابدأ الآن</a></li>
+    <li><a href="#s15">المصطلحات</a></li>
+    <li><a href="#s16">بعد البداية</a></li>
+    <li><a href="#faq">أسئلة شائعة</a></li>
   </ul>
 </nav>
 
@@ -856,13 +873,13 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
     <!-- Journey preview — RTL correct arrows -->
     <div class="cover-journey">
       <div class="cj-step"><span class="cj-icon">🤔</span><span class="cj-label">لا أعرف شيئاً</span></div>
-      <span class="cj-arrow">←</span>
+      <span class="cj-arrow">&#8592;</span>
       <div class="cj-step"><span class="cj-icon">📖</span><span class="cj-label">أفهم الأساسيات</span></div>
-      <span class="cj-arrow">←</span>
+      <span class="cj-arrow">&#8592;</span>
       <div class="cj-step"><span class="cj-icon">🔎</span><span class="cj-label">أختار وسيطي</span></div>
-      <span class="cj-arrow">←</span>
+      <span class="cj-arrow">&#8592;</span>
       <div class="cj-step"><span class="cj-icon">🚀</span><span class="cj-label">أفتح حسابي</span></div>
-      <span class="cj-arrow">←</span>
+      <span class="cj-arrow">&#8592;</span>
       <div class="cj-step"><span class="cj-icon">💼</span><span class="cj-label">أستثمر بثقة</span></div>
     </div>
 
@@ -879,43 +896,43 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 
 <!-- TOC -->
 <section class="sec sec-cream">
-  <div class="inner fi vis">
+  <div class="inner fi">
     <div class="sec-lbl">رحلتك خطوة بخطوة</div>
     <h2 class="sec-title">من الزحف 🐣 إلى المشي 🚶 إلى الجري 🏃 — ستة عشر فصلاً تأخذك من الصفر إلى مستثمر واثق</h2>
     <div class="toc-grid">
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s1" class="toc-item"><div class="toc-num">١</div><div class="toc-text"><h4>لماذا أموالك تخسر قيمتها الآن؟</h4><p>التضخم + الفائدة المركبة + آلة حاسبة</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s2" class="toc-item"><div class="toc-num">٢</div><div class="toc-text"><h4>ما هو سوق الأسهم أصلاً؟</h4><p>الأسهم، البورصات، IPO — بأمثلة يومية</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s3" class="toc-item"><div class="toc-num">٣</div><div class="toc-text"><h4>كيف تجني المال من الأسهم؟</h4><p>أنواع الأسهم + ETF + الصكوك</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s4" class="toc-item"><div class="toc-num">٤</div><div class="toc-text"><h4>ماذا يعني "السوق ارتفع اليوم"؟</h4><p>المؤشرات الست + شرح الـ Ticker</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s5" class="toc-item"><div class="toc-num">٥</div><div class="toc-text"><h4>هل الاستثمار في الأسهم حلال؟</h4><p>الفرز الشرعي + الصكوك + التطهير</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s6" class="toc-item"><div class="toc-num">٦</div><div class="toc-text"><h4>من هو الاحتياطي الفيدرالي؟</h4><p>ولماذا يؤثر على أسعارنا في الخليج؟</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s7" class="toc-item"><div class="toc-num">٧</div><div class="toc-text"><h4>ما الذي يرفع الأسواق ويخفضها؟</h4><p>النفط، الفائدة، التضخم، الجيوسياسة</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s8" class="toc-item"><div class="toc-num">٨</div><div class="toc-text"><h4>كيف تعرف إن شركة تستاهل فلوسك؟</h4><p>٣ أسئلة بسيطة + قصة أحمد</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s9" class="toc-item"><div class="toc-num">٩</div><div class="toc-text"><h4>عشرة أخطاء يقع فيها كل مبتدئ</h4><p>تعلّمها الآن ووفّر على نفسك الكثير</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s10" class="toc-item"><div class="toc-num">١٠</div><div class="toc-text"><h4>نفسية المستثمر — عدوّك الأول</h4><p>الخوف، الطمع، FOMO، ومتى تبيع</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s11" class="toc-item"><div class="toc-num">١١</div><div class="toc-text"><h4>ما الخطة المناسبة لعمري؟</h4><p>٢٠ — ٣٠ — ٤٠ — ٥٠ سنة</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s12" class="toc-item"><div class="toc-num">١٢</div><div class="toc-text"><h4>كم أستثمر براتبي؟</h4><p>خطة عملية لكل شريحة دخل</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s13" class="toc-item"><div class="toc-num">١٣</div><div class="toc-text"><h4>كيف أختار وسيطي؟</h4><p>ابحث عن نفسك واختر + آلة توزيع المحفظة</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s14" class="toc-item"><div class="toc-num">١٤</div><div class="toc-text"><h4>كيف أفتح حسابي وأشتري أول سهم؟</h4><p>زر بزر — من التسجيل لأول عملية شراء</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s15" class="toc-item"><div class="toc-num">١٥</div><div class="toc-text"><h4>المصطلحات + خطة ٣٠ يوماً</h4><p>٢٤ مصطلحاً وقائمة مهام تفاعلية</p></div></a>
-      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/investingbeginnerguide.html#s16" class="toc-item"><div class="toc-num">١٦</div><div class="toc-text"><h4>بعد الثلاثين يوماً — عادات المستثمر</h4><p>الروتين الشهري والربع سنوي والسنوي</p></div></a>
+      <a href="#s1"  class="toc-item"><div class="toc-num">١</div><div class="toc-text"><h4>لماذا أموالك تخسر قيمتها الآن؟</h4><p>التضخم + الفائدة المركبة + آلة حاسبة</p></div></a>
+      <a href="#s2"  class="toc-item"><div class="toc-num">٢</div><div class="toc-text"><h4>ما هو سوق الأسهم أصلاً؟</h4><p>الأسهم، البورصات، IPO — بأمثلة يومية</p></div></a>
+      <a href="#s3"  class="toc-item"><div class="toc-num">٣</div><div class="toc-text"><h4>كيف تجني المال من الأسهم؟</h4><p>أنواع الأسهم + ETF + الصكوك</p></div></a>
+      <a href="#s4"  class="toc-item"><div class="toc-num">٤</div><div class="toc-text"><h4>ماذا يعني "السوق ارتفع اليوم"؟</h4><p>المؤشرات الست + شرح الـ Ticker</p></div></a>
+      <a href="#s5"  class="toc-item"><div class="toc-num">٥</div><div class="toc-text"><h4>هل الاستثمار في الأسهم حلال؟</h4><p>الفرز الشرعي + الصكوك + التطهير</p></div></a>
+      <a href="#s6"  class="toc-item"><div class="toc-num">٦</div><div class="toc-text"><h4>من هو الاحتياطي الفيدرالي؟</h4><p>ولماذا يؤثر على أسعارنا في الخليج؟</p></div></a>
+      <a href="#s7"  class="toc-item"><div class="toc-num">٧</div><div class="toc-text"><h4>ما الذي يرفع الأسواق ويخفضها؟</h4><p>النفط، الفائدة، التضخم، الجيوسياسة</p></div></a>
+      <a href="#s8"  class="toc-item"><div class="toc-num">٨</div><div class="toc-text"><h4>كيف تعرف إن شركة تستاهل فلوسك؟</h4><p>٣ أسئلة بسيطة + قصة أحمد</p></div></a>
+      <a href="#s9"  class="toc-item"><div class="toc-num">٩</div><div class="toc-text"><h4>عشرة أخطاء يقع فيها كل مبتدئ</h4><p>تعلّمها الآن ووفّر على نفسك الكثير</p></div></a>
+      <a href="#s10" class="toc-item"><div class="toc-num">١٠</div><div class="toc-text"><h4>نفسية المستثمر — عدوّك الأول</h4><p>الخوف، الطمع، FOMO، ومتى تبيع</p></div></a>
+      <a href="#s11" class="toc-item"><div class="toc-num">١١</div><div class="toc-text"><h4>ما الخطة المناسبة لعمري؟</h4><p>٢٠ — ٣٠ — ٤٠ — ٥٠ سنة</p></div></a>
+      <a href="#s12" class="toc-item"><div class="toc-num">١٢</div><div class="toc-text"><h4>كم أستثمر براتبي؟</h4><p>خطة عملية لكل شريحة دخل</p></div></a>
+      <a href="#s13" class="toc-item"><div class="toc-num">١٣</div><div class="toc-text"><h4>كيف أختار وسيطي؟</h4><p>ابحث عن نفسك واختر + آلة توزيع المحفظة</p></div></a>
+      <a href="#s14" class="toc-item"><div class="toc-num">١٤</div><div class="toc-text"><h4>كيف أفتح حسابي وأشتري أول سهم؟</h4><p>زر بزر — من التسجيل لأول عملية شراء</p></div></a>
+      <a href="#s15" class="toc-item"><div class="toc-num">١٥</div><div class="toc-text"><h4>المصطلحات + خطة ٣٠ يوماً</h4><p>٢٤ مصطلحاً وقائمة مهام تفاعلية</p></div></a>
+      <a href="#s16" class="toc-item"><div class="toc-num">١٦</div><div class="toc-text"><h4>بعد الثلاثين يوماً — عادات المستثمر</h4><p>الروتين الشهري والربع سنوي والسنوي</p></div></a>
     </div>
   </div>
 </section>
 
 <!-- ══ WELCOME LETTER ══ -->
 <section class="sec sec-white" style="padding:4rem 0">
-  <div class="inner fi vis">
+  <div class="inner fi">
     <div style="max-width:700px;margin:0 auto;text-align:center">
       <div style="font-size:2.5rem;margin-bottom:1rem">💌</div>
-      <h2 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:clamp(1.4rem,3vw,2rem);color:var(--ink);margin-bottom:1.2rem;line-height:1.3">رسالة قبل أن نبدأ</h2>
+      <h2 style="font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(1.4rem,3vw,2rem);color:var(--ink);margin-bottom:1.2rem;line-height:1.3">رسالة قبل أن نبدأ</h2>
       <div class="body" style="text-align:right;max-width:640px;margin:0 auto">
         <p>أهلاً بك — وأعني ذلك من القلب.</p>
         <p>إذا وصلت إلى هنا، فأنت بالفعل مختلف. أغلب الناس يتحدثون عن الاستثمار ولا يبدأون أبداً. أنت قررت أن تتعلم — وهذا أول وأهم قرار مالي في حياتك.</p>
         <p>هذا الدليل لم يُكتب ليُبهرك بمصطلحات معقدة أو ليجعلك تشعر أن عالم المال ليس لك. <strong>بالعكس تماماً — كُتب ليمسك بيدك، خطوة بخطوة، من "لا أعرف شيئاً" إلى "أعرف بالضبط ماذا أفعل."</strong></p>
         <p>لا يهم إذا كان راتبك ثلاثة آلاف أو ثلاثين ألفاً. لا يهم إذا كنت في العشرينيات أو الخمسينيات. لا يهم إذا كنت في السعودية أو الإمارات أو أي مكان آخر. <strong>هذا الدليل صُنع لك.</strong></p>
         <p>الشيء الوحيد الذي أطلبه منك: <strong>اقرأه كاملاً قبل أن تستثمر ريالاً واحداً.</strong> ليس لأنه معقد — بل لأن كل فصل يبني على الذي قبله، وعندما تنتهي ستشعر بثقة حقيقية وليست مزيفة.</p>
-        <p style="margin-top:1.5rem;font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--amber);font-size:1.05rem">يلا نبدأ رحلتنا — أعدك أنها تستحق وقتك. 🚀</p>
+        <p style="margin-top:1.5rem;font-family:'Cairo',sans-serif;font-weight:800;color:var(--amber);font-size:1.05rem">يلا نبدأ رحلتنا — أعدك أنها تستحق وقتك. 🚀</p>
       </div>
     </div>
   </div>
@@ -924,7 +941,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CHAPTER 0: BEFORE ANYTHING ══ -->
 <section class="sec sec-sand" id="s0">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-amb">☕</div>
       <div>
         <div class="ch-num">قبل أي شيء — تعال نحكي</div>
@@ -933,11 +950,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="body fi vis">
+    <div class="body fi">
       <p>قبل ما نبدأ بالفصول الكبيرة، خلنا نتفق على خمس كلمات بسيطة. هذي الكلمات بتتكرر كثير في الدليل — ولما تفهمها، كل شيء بعدها بيكون سهل إن شاء الله.</p>
     </div>
 
-    <div class="cards fi vis" style="grid-template-columns:1fr">
+    <div class="cards fi" style="grid-template-columns:1fr">
       <div class="card" style="border-right:5px solid var(--amber);padding:1.8rem">
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem">
           <span style="font-size:2rem">💰</span>
@@ -1009,19 +1026,19 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="ex fi vis">
+    <div class="ex fi">
       <h4>☕ لو صديقك سألك "وش يعني تستثمر في الأسهم؟"</h4>
       <p>قوله: "أنا فتحت <strong style="color:var(--amber-light)">تطبيق وسيط</strong> على جوالي، واشتريت <strong style="color:var(--amber-light)">سهم</strong> واحد من أرامكو من <strong style="color:var(--amber-light)">سوق تداول.</strong> يعني صرت أملك جزء صغير من الشركة. هذا السهم دخل <strong style="color:var(--amber-light)">محفظتي</strong> اللي فيها كمان أسهم ثانية. وهذا كله اسمه <strong style="color:var(--amber-light)">استثمار.</strong>"</p>
       <p style="margin-top:.6rem;font-size:.82rem;color:rgba(255,255,255,.5)">خمس كلمات. كذا بسيطة. كل شيء بعد هذا تفاصيل — والدليل بيشرحها لك وحدة وحدة.</p>
     </div>
 
-    <div class="box box-sage fi vis">
+    <div class="box box-sage fi">
       <div class="box-title">🤝 اتفاقنا لبقية الدليل</div>
       <p>كل ما نذكر كلمة جديدة، بنشرحها <strong>وقت ما تظهر أول مرة</strong> — ما راح نفترض إنك تعرفها. وإذا أي وقت حسيت إنك ضعت — ارجع لهذا الفصل. هذي قاعدتك الآمنة. 💛</p>
     </div>
 
-    <div class="body fi vis">
-      <p style="text-align:center;font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--amber);font-size:1rem;margin-top:1rem">جاهز؟ يلا نبدأ الفصل الأول — ولا تخاف، بنمشي مع بعض خطوة خطوة. 🚶‍♂️</p>
+    <div class="body fi">
+      <p style="text-align:center;font-family:'Cairo',sans-serif;font-weight:800;color:var(--amber);font-size:1rem;margin-top:1rem">جاهز؟ يلا نبدأ الفصل الأول — ولا تخاف، بنمشي مع بعض خطوة خطوة. 🚶‍♂️</p>
     </div>
   </div>
 </section>
@@ -1029,7 +1046,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH1: INFLATION ══ -->
 <section class="sec sec-white" id="s1">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sand">📉</div>
       <div>
         <div class="ch-num">الفصل الأول — نقطة البداية</div>
@@ -1037,20 +1054,20 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">سؤال يتجاهله الجميع — والإجابة تغيّر طريقة تفكيرك في المال للأبد</p>
       </div>
     </div>
-    <div class="body fi vis">
+    <div class="body fi">
       <p>خلني أكون صريح معك من البداية: <strong>إبقاء أموالك في حساب توفير قرار يخسّرك مالاً</strong> — ببطء، بصمت، كل عام. لا تشعر به لأنه لا يُحسم من حسابك. لكنه يحدث. اسمه <strong>التضخم</strong>.</p>
       <p>التضخم يعني أن الأشياء تصبح أغلى مع الوقت. كوب القهوة الذي كان بعشرة ريال قبل ثلاث سنوات أصبح بثلاثة عشر. الإيجار الذي كان أربعين ألفاً أصبح خمسة وخمسين. أموالك لم تنقص على الورق — لكن ما تستطيع شراؤه بها تقلّص.</p>
     </div>
-    <div class="box box-blush fi vis">
+    <div class="box box-blush fi">
       <div class="box-title">⚠️ هذا ما يحدث فعلاً لمدخراتك</div>
       <p>لديك مئة ألف ريال. بنكك يمنحك واحداً بالمئة سنوياً. بعد سنة تصبح مئة وألف ريال. بدا جيداً؟ لكن إذا كان التضخم ثلاثة بالمئة — فمالك الجديد لا يشتري إلا ما كانت تشتريه <strong>ثمانية وتسعون ألفاً وثمانية وخمسون ريالاً</strong> قبل عام. اكتسبت مالاً على الورق وخسرت قوة شرائية في الواقع.</p>
     </div>
-    <div class="body fi vis"><p>الحل واضح: <strong>اجعل مالك ينمو بمعدل أعلى من التضخم.</strong> وهذا بالضبط ما يسميه الناس الاستثمار.</p></div>
+    <div class="body fi"><p>الحل واضح: <strong>اجعل مالك ينمو بمعدل أعلى من التضخم.</strong> وهذا بالضبط ما يسميه الناس الاستثمار.</p></div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2rem 0 .8rem" class="fi vis">✨ الفائدة المركبة — الأعجوبة الثامنة</h3>
-    <div class="body fi vis"><p>وصفها أينشتاين بأنها "الأعجوبة الثامنة في العالم." المعنى ببساطة: <strong>أموالك تكسب مالاً، ثم ذلك المال يكسب مالاً هو الآخر.</strong> مثل كرة ثلج تتدحرج — كلما كبرت، جمعت ثلجاً أسرع وأسرع.</p></div>
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2rem 0 .8rem" class="fi">✨ الفائدة المركبة — الأعجوبة الثامنة</h3>
+    <div class="body fi"><p>وصفها أينشتاين بأنها "الأعجوبة الثامنة في العالم." المعنى ببساطة: <strong>أموالك تكسب مالاً، ثم ذلك المال يكسب مالاً هو الآخر.</strong> مثل كرة ثلج تتدحرج — كلما كبرت، جمعت ثلجاً أسرع وأسرع.</p></div>
 
-    <div class="calc fi vis">
+    <div class="calc fi">
       <div class="calc-title">🧮 احسب مستقبل أموالك بنفسك</div>
       <div class="calc-row">
         <div class="calc-field"><label>المبلغ الأولي (ريال / درهم)</label><input type="number" id="cp" value="10000"></div>
@@ -1059,19 +1076,19 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <div class="calc-field"><label>إضافة شهرية (اختياري)</label><input type="number" id="cm" value="500" min="0"></div>
       </div>
       <div class="calc-res">
-        <div class="calc-res-lbl">قيمة استثمارك بعد <span id="cy-lbl">20</span> سنة</div>
-        <div class="calc-res-num" id="c-num">٣٤٣٬٧٧٨ ريال</div>
-        <div class="calc-res-sub" id="c-sub">ربحت ٢١٣٬٧٧٨ ريال فوق ما استثمرت</div>
+        <div class="calc-res-lbl">قيمة استثمارك بعد <span id="cy-lbl">٢٠</span> سنة</div>
+        <div class="calc-res-num" id="c-num">—</div>
+        <div class="calc-res-sub" id="c-sub">—</div>
       </div>
     </div>
-    <div class="box box-sage fi vis"><div class="box-title">💡 الدرس الأهم</div><p>ابدأ مبكراً. المبلغ أقل أهمية من <strong>وقت البدء.</strong> خمسمئة ريال شهرياً بنمو ثمانية بالمئة تصبح أكثر من ثلاثمئة ألف ريال بعد عشرين سنة — دون أن تضيف ريالاً واحداً بشكل مفاجئ.</p></div>
+    <div class="box box-sage fi"><div class="box-title">💡 الدرس الأهم</div><p>ابدأ مبكراً. المبلغ أقل أهمية من <strong>وقت البدء.</strong> خمسمئة ريال شهرياً بنمو ثمانية بالمئة تصبح أكثر من ثلاثمئة ألف ريال بعد عشرين سنة — دون أن تضيف ريالاً واحداً بشكل مفاجئ.</p></div>
   </div>
 </section>
 
 <!-- ══ CH2: WHAT IS THE STOCK MARKET ══ -->
 <section class="sec sec-sand" id="s2">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sky">🏛️</div>
       <div>
         <div class="ch-num">الفصل الثاني — الأساس</div>
@@ -1079,20 +1096,20 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">وما علاقتي أنا به؟</p>
       </div>
     </div>
-    <div class="body fi vis"><p>سوق الأسهم ليس للأثرياء فقط، وليس مقامرة، وليس لغزاً يفهمه المختصون دون غيرهم. هو ببساطة: <strong>مكان تُباع وتُشترى فيه حصص الملكية في الشركات.</strong></p></div>
-    <div class="ex fi vis">
+    <div class="body fi"><p>سوق الأسهم ليس للأثرياء فقط، وليس مقامرة، وليس لغزاً يفهمه المختصون دون غيرهم. هو ببساطة: <strong>مكان تُباع وتُشترى فيه حصص الملكية في الشركات.</strong></p></div>
+    <div class="ex fi">
       <h4>🍽️ قصة المطعم — أفضل شرح للأسهم في دقيقتين</h4>
       <p>صديقك يريد فتح مطعم ويحتاج مئة ألف ريال. يقول: "سأبيع عشر حصص بعشرة آلاف ريال للحصة." اشتريت حصة واحدة. أنت الآن تملك عشرة بالمئة من المطعم.</p>
       <ul>
-        <li>📈 نجح المطعم وأصبح يساوي مئتي ألف ريال <i class="arr">←</i> حصتك أصبحت عشرين ألفاً (ضاعف مالك)</li>
-        <li>💸 المطعم يوزع أرباحه كل ثلاثة أشهر <i class="arr">←</i> تتلقى عشرة بالمئة من الأرباح مباشرة في حسابك</li>
-        <li>📉 المطعم خسر وأصبح يساوي سبعين ألفاً <i class="arr">←</i> حصتك أصبحت سبعة آلاف ريال</li>
+        <li>📈 نجح المطعم وأصبح يساوي مئتي ألف ريال <i class="arr">&larr;</i> حصتك أصبحت عشرين ألفاً (ضاعف مالك)</li>
+        <li>💸 المطعم يوزع أرباحه كل ثلاثة أشهر <i class="arr">&larr;</i> تتلقى عشرة بالمئة من الأرباح مباشرة في حسابك</li>
+        <li>📉 المطعم خسر وأصبح يساوي سبعين ألفاً <i class="arr">&larr;</i> حصتك أصبحت سبعة آلاف ريال</li>
       </ul>
       <p style="margin-top:.8rem"><strong style="color:var(--amber-light)">هكذا تعمل الأسهم تماماً — في شركات أكبر بملايين المرات، وبشكل أكثر تنظيماً وسيولة.</strong></p>
     </div>
-    <div class="mkt-grid fi vis">
-      <div class="mkt mkt-us"><span style="font-size:1.7rem">🇺🇸</span><h3>الولايات المتحدة</h3><p>NYSE &amp; Nasdaq — أكبر سوق في العالم</p><span class="mkt-tag">أبل</span><span class="mkt-tag">مايكروسوفت</span><span class="mkt-tag">أمازون</span><span class="mkt-tag">جوجل</span><span class="mkt-tag">مفتوح خمسة أيام</span></div>
-      <div class="mkt mkt-uae"><span style="font-size:1.7rem">🇦🇪</span><h3>الإمارات</h3><p>DFM &amp; ADX — متوافق مئة بالمئة مع الشريعة</p><span class="mkt-tag">إعمار</span><span class="mkt-tag">DIB</span><span class="mkt-tag">FAB</span><span class="mkt-tag">أدنوك</span><span class="mkt-tag">أحد إلى خميس</span></div>
+    <div class="mkt-grid fi">
+      <div class="mkt mkt-us"><span style="font-size:1.7rem">🇺🇸</span><h3>الولايات المتحدة</h3><p>NYSE & Nasdaq — أكبر سوق في العالم</p><span class="mkt-tag">أبل</span><span class="mkt-tag">مايكروسوفت</span><span class="mkt-tag">أمازون</span><span class="mkt-tag">جوجل</span><span class="mkt-tag">مفتوح خمسة أيام</span></div>
+      <div class="mkt mkt-uae"><span style="font-size:1.7rem">🇦🇪</span><h3>الإمارات</h3><p>DFM & ADX — متوافق مئة بالمئة مع الشريعة</p><span class="mkt-tag">إعمار</span><span class="mkt-tag">DIB</span><span class="mkt-tag">FAB</span><span class="mkt-tag">أدنوك</span><span class="mkt-tag">أحد إلى خميس</span></div>
       <div class="mkt mkt-sa"><span style="font-size:1.7rem">🇸🇦</span><h3>السعودية</h3><p>تداول — أكبر سوق في الخليج</p><span class="mkt-tag">أرامكو</span><span class="mkt-tag">الراجحي</span><span class="mkt-tag">سابك</span><span class="mkt-tag">رؤية ٢٠٣٠</span></div>
     </div>
   </div>
@@ -1101,7 +1118,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH3: HOW TO PROFIT ══ -->
 <section class="sec sec-white" id="s3">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-amb">💸</div>
       <div>
         <div class="ch-num">الفصل الثالث — الجوهر</div>
@@ -1109,7 +1126,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">ليس كل أسهم متشابهة — واختيار النوع الصح يغيّر كل شيء</p>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.8rem 0" class="fi vis">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.8rem 0" class="fi">
       <div class="card" style="border:2px solid rgba(196,136,48,.25)">
         <span class="card-em">📈</span>
         <div class="card-title">أرباح رأس المال</div>
@@ -1122,19 +1139,19 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2rem 0 .9rem" class="fi vis">أنواع الأسهم — كل نوع له هدف مختلف</h3>
-    <div class="stypes fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2rem 0 .9rem" class="fi">أنواع الأسهم — كل نوع له هدف مختلف</h3>
+    <div class="stypes fi">
       <div class="stype st-g"><span class="stype-em">🚀</span><div class="stype-name">أسهم النمو</div><div class="stype-desc">تعيد استثمار أرباحها للتوسع. راهن على المستقبل. أبل، مايكروسوفت، شركات التقنية السعودية الناشئة.</div></div>
       <div class="stype st-d"><span class="stype-em">💵</span><div class="stype-name">أسهم التوزيعات</div><div class="stype-desc">تدفع جزءاً من أرباحها مباشرة كل ربع سنة. أرامكو، إعمار، بنك أبوظبي الأول.</div></div>
       <div class="stype st-b"><span class="stype-em">👑</span><div class="stype-name">الأسهم الممتازة</div><div class="stype-desc">عمالقة راسخون بعقود من النجاح. مستقرة وموثوقة. أرامكو، الراجحي، كوكا كولا.</div></div>
       <div class="stype st-v"><span class="stype-em">🔍</span><div class="stype-name">أسهم القيمة</div><div class="stype-desc">مقيّمة بأقل من قيمتها الحقيقية. مثل إيجاد ساعة فاخرة في تخفيضات أربعين بالمئة.</div></div>
     </div>
 
-    <div class="box box-sky fi vis">
+    <div class="box box-sky fi">
       <div class="box-title">💡 صناديق ETF — أذكى طريقة للمبتدئ</div>
       <p>بدلاً من اختيار سهم واحد قد تخطئ فيه، تشتري <strong>سلة من مئات الأسهم دفعة واحدة بسعر سهم واحد.</strong> مثل صندوق S&amp;P500 الذي يمنحك حصة في أكبر خمسمئة شركة أمريكية. تنويع فوري، تكلفة منخفضة، وكثير منها متوافق مع الشريعة.</p>
     </div>
-    <div class="box box-amb fi vis">
+    <div class="box box-amb fi">
       <div class="box-title">🕌 الصكوك — البديل الإسلامي للسندات</div>
       <p>الصك يمثل ملكية في أصل حقيقي أو مشروع — لا قرض بفائدة. العائد يأتي من ربح المشروع وليس من معدل فائدة ثابت. الإمارات والسعودية من أكبر أسواق الصكوك في العالم.</p>
     </div>
@@ -1144,7 +1161,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH4: INDICES + TICKER ══ -->
 <section class="sec sec-sky" id="s4">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sage">📊</div>
       <div>
         <div class="ch-num">الفصل الرابع — فهم الأخبار</div>
@@ -1152,14 +1169,14 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">وما هو الـ Ticker الذي تراه في كل مكان؟</p>
       </div>
     </div>
-    <div class="body fi vis"><p>يمكن سمعت في الأخبار "ارتفع السوق بنسبة واحد ونصف بالمئة اليوم" وتساءلت: أي سوق؟ وكيف يرتفع "سوق" كامل؟ الجواب بسيط: يتحدثون عن <strong>مؤشر</strong> — فكّر فيه مثل "ميزان حرارة" يقيس صحة السوق.</p></div>
+    <div class="body fi"><p>يمكن سمعت في الأخبار "ارتفع السوق بنسبة واحد ونصف بالمئة اليوم" وتساءلت: أي سوق؟ وكيف يرتفع "سوق" كامل؟ الجواب بسيط: يتحدثون عن <strong>مؤشر</strong> — فكّر فيه مثل "ميزان حرارة" يقيس صحة السوق.</p></div>
 
-    <div class="box box-amb fi vis">
+    <div class="box box-amb fi">
       <div class="box-title">🔤 ما هو الـ Ticker؟ — أول شيء تحتاج معرفته</div>
       <p>الـ Ticker هو <strong>الرمز المختصر للسهم أو المؤشر</strong> في تطبيقات الاستثمار. مثل لوحة ترخيص السيارة — كل شركة لها رمز فريد. عندما تفتح أي تطبيق مالي وتبحث، تكتب هذا الرمز مباشرة.<br><br>أمثلة: أبل = <span class="tk">AAPL</span> &nbsp; أرامكو = <span class="tk">2222</span> &nbsp; إعمار = <span class="tk">EMAAR</span> &nbsp; S&amp;P500 ETF = <span class="tk">SPY</span></p>
     </div>
 
-    <div class="idx-grid fi vis">
+    <div class="idx-grid fi">
       <div class="idx-card">
         <div class="idx-ticker">S&amp;P 500</div>
         <div class="idx-remark">Ticker: <span style="color:var(--amber)">$SPX</span></div>
@@ -1208,7 +1225,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="box box-sage fi vis">
+    <div class="box box-sage fi">
       <div class="box-title">📱 كيف تجد الـ Ticker في التطبيق؟</div>
       <p>افتح أي تطبيق استثمار أو موقع مالي (مثل Yahoo Finance أو Investing.com أو تطبيق وسيطك). في خانة البحث اكتب اسم الشركة بالإنجليزي. ستظهر النتائج مع رمز الـ Ticker بجانب كل شركة. اضغط عليها وستجد كل شيء: السعر، الرسم البياني، الأرباح، والتوزيعات.</p>
     </div>
@@ -1218,7 +1235,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH5: HALAL ══ -->
 <section class="sec sec-white" id="s5">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-blush">☪️</div>
       <div>
         <div class="ch-num">الفصل الخامس — السؤال الأهم</div>
@@ -1226,16 +1243,16 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">سؤال يتردد في ذهن كل مسلم — وهنا الإجابة الكاملة والشاملة</p>
       </div>
     </div>
-    <div class="box box-sage fi vis"><div class="box-title">✅ الجواب المختصر</div><p><strong>نعم — يمكنك الاستثمار في سوق الأسهم وتبقى ملتزماً تماماً بمبادئ الشريعة الإسلامية.</strong> السوق ليس حراماً بطبيعته. يحتاج فقط وعياً وفرزاً بسيطاً — وهذا الفصل يعلمك إياه.</p></div>
-    <div class="halal-grid fi vis">
+    <div class="box box-sage fi"><div class="box-title">✅ الجواب المختصر</div><p><strong>نعم — يمكنك الاستثمار في سوق الأسهم وتبقى ملتزماً تماماً بمبادئ الشريعة الإسلامية.</strong> السوق ليس حراماً بطبيعته. يحتاج فقط وعياً وفرزاً بسيطاً — وهذا الفصل يعلمك إياه.</p></div>
+    <div class="halal-grid fi">
       <div class="h-card"><span class="h-em">🚫</span><div class="h-ar">لا ربا</div><div class="h-name">تحريم الفائدة</div><div class="h-desc">أي منتج مالي قائم على الفائدة محرّم. يشمل السندات التقليدية وبعض المنتجات المصرفية.</div></div>
       <div class="h-card"><span class="h-em">🎯</span><div class="h-ar">لا غرر</div><div class="h-name">تجنب الغموض الزائد</div><div class="h-desc">المضاربة المفرطة غير مقبولة. الاستثمار يجب أن يستند لنشاط اقتصادي حقيقي.</div></div>
       <div class="h-card"><span class="h-em">🎰</span><div class="h-ar">لا ميسر</div><div class="h-name">تحريم القمار</div><div class="h-desc">الاستثمار مختلف جوهرياً — ملكية في شركة حقيقية تصنع قيمة للمجتمع.</div></div>
       <div class="h-card"><span class="h-em">🚷</span><div class="h-ar">قطاعات محرمة</div><div class="h-name">الفرز القطاعي</div><div class="h-desc">الكحول، التبغ، الكازينو، المحتوى الإباحي، أسلحة العدوان.</div></div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin:1.8rem 0" class="fi vis">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin:1.8rem 0" class="fi">
       <div>
-        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--success);font-size:.88rem;margin-bottom:.75rem">✅ يمكنك الاستثمار في</h4>
+        <h4 style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--success);font-size:.88rem;margin-bottom:.75rem">✅ يمكنك الاستثمار في</h4>
         <ul class="cklist">
           <li><span class="ck ck-y">✓</span>معظم شركات التكنولوجيا (بعد الفرز)</li>
           <li><span class="ck ck-y">✓</span>صناديق ETF حلال (SPUS، HLAL)</li>
@@ -1246,7 +1263,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </ul>
       </div>
       <div>
-        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--danger);font-size:.88rem;margin-bottom:.75rem">❌ تجنب أو افرز</h4>
+        <h4 style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--danger);font-size:.88rem;margin-bottom:.75rem">❌ تجنب أو افرز</h4>
         <ul class="cklist">
           <li><span class="ck ck-n">✗</span>المصارف التقليدية ذات الدخل الربوي الكبير</li>
           <li><span class="ck ck-n">✗</span>شركات الكحول والتبغ</li>
@@ -1256,14 +1273,14 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </ul>
       </div>
     </div>
-    <div class="box box-amb fi vis"><div class="box-title">🌙 تطهير الأرباح</div><p>إذا كانت نسبة صغيرة من أرباح شركة ما تأتي من مصادر غير مباحة (أقل من الحد الشرعي) — يمكنك الاحتفاظ بالسهم وتبرّع بتلك النسبة من أرباحك للجمعيات الخيرية. ممارسة معتمدة من كبار العلماء المسلمين.</p></div>
+    <div class="box box-amb fi"><div class="box-title">🌙 تطهير الأرباح</div><p>إذا كانت نسبة صغيرة من أرباح شركة ما تأتي من مصادر غير مباحة (أقل من الحد الشرعي) — يمكنك الاحتفاظ بالسهم وتبرّع بتلك النسبة من أرباحك للجمعيات الخيرية. ممارسة معتمدة من كبار العلماء المسلمين.</p></div>
   </div>
 </section>
 
 <!-- ══ CH6: THE FED ══ -->
 <section class="sec sec-sage" id="s6">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sand">🏦</div>
       <div>
         <div class="ch-num">الفصل السادس — فهم العالم</div>
@@ -1271,31 +1288,31 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">ولماذا يؤثر بنك أمريكي على أسعار الرياض ودبي؟</p>
       </div>
     </div>
-    <div class="body fi vis"><p>أكيد سمعت هالجملة قبل كذا: <strong>"الاحتياطي الفيدرالي رفع الفائدة فانخفضت الأسواق."</strong> وقلت في نفسك: يعني وش دخلني ببنك أمريكي؟ أنا في الرياض أو دبي! السؤال منطقي — والجواب مهم جداً.</p></div>
-    <div class="ex fi vis">
+    <div class="body fi"><p>أكيد سمعت هالجملة قبل كذا: <strong>"الاحتياطي الفيدرالي رفع الفائدة فانخفضت الأسواق."</strong> وقلت في نفسك: يعني وش دخلني ببنك أمريكي؟ أنا في الرياض أو دبي! السؤال منطقي — والجواب مهم جداً.</p></div>
+    <div class="ex fi">
       <h4>🔍 الاحتياطي الفيدرالي — أبسط تعريف ممكن</h4>
       <p>الاحتياطي الفيدرالي أو "الفيد" هو <strong>البنك المركزي للولايات المتحدة الأمريكية</strong> — يقوم بنفس دور مؤسسة النقد العربي السعودي (ساما) في السعودية أو المصرف المركزي الإماراتي في الإمارات. مهمته ضبط الاقتصاد الأمريكي عبر أداة واحدة قوية جداً: <strong style="color:var(--amber-light)">أسعار الفائدة.</strong></p>
     </div>
-    <div class="cards fi vis">
+    <div class="cards fi">
       <div class="card"><span class="card-em">🔗</span><div class="card-title">ربط العملة بالدولار</div><div class="card-txt">الريال السعودي والدرهم الإماراتي مرتبطان بالدولار بسعر ثابت. هذا يجعل مصارفهما المركزية تتبع قرارات الفيد تقريباً تلقائياً.</div></div>
       <div class="card"><span class="card-em">🛢️</span><div class="card-title">النفط يُسعَّر بالدولار</div><div class="card-txt">كل نفط العالم يُباع بالدولار. الدولار يرتفع بسبب الفيد، فالطلب على النفط ينخفض، فأسعاره تنخفض، فأسواق الخليج تتأثر مباشرة.</div></div>
       <div class="card"><span class="card-em">💹</span><div class="card-title">حركة رؤوس الأموال</div><div class="card-txt">عندما ترتفع الفائدة الأمريكية، يسحب المستثمرون أموالهم من الأسواق الناشئة — بما فيها الخليج — نحو السندات الأمريكية الأعلى عائداً.</div></div>
     </div>
-    <div class="ex fi vis">
+    <div class="ex fi">
       <h4>📘 اقرأ قرارات الفيد في سطرين</h4>
-      <p><strong style="color:var(--amber-light)">الفيد يرفع الفائدة ←</strong> الاقتراض يصبح أغلى ← الشركات تربح أقل ← الأسهم تنخفض عادة</p>
-      <p style="margin-top:.5rem"><strong style="color:rgba(168,210,168,1)">الفيد يخفض الفائدة ←</strong> الاقتراض يصبح أرخص ← الشركات تربح أكثر ← الأسهم ترتفع عادة</p>
+      <p><strong style="color:var(--amber-light)">الفيد يرفع الفائدة &#8592;</strong> الاقتراض يصبح أغلى &#8592; الشركات تربح أقل &#8592; الأسهم تنخفض عادة</p>
+      <p style="margin-top:.5rem"><strong style="color:rgba(168,210,168,1)">الفيد يخفض الفائدة &#8592;</strong> الاقتراض يصبح أرخص &#8592; الشركات تربح أكثر &#8592; الأسهم ترتفع عادة</p>
       <p style="margin-top:.8rem">الفيد يجتمع <strong style="color:var(--amber-light)">ثماني مرات سنوياً.</strong> كل اجتماع يمكن أن يهزّ الأسواق العالمية.</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2rem 0 .9rem" class="fi vis">عوامل أخرى تحرّك الأسواق</h3>
-    <div class="inf-grid fi vis">
-      <div class="inf-card"><span class="inf-em">🛢️</span><div class="inf-name">أسعار النفط</div><div class="inf-desc">عامل حاسم للخليج. أرامكو وحدها تمثل نسبة ضخمة من مؤشر تداول. النفط يرتفع ← السوق السعودي يرتفع غالباً.</div><span class="inf-tag">حاسم للخليج</span></div>
-      <div class="inf-card"><span class="inf-em">📋</span><div class="inf-name">أرباح الشركات</div><div class="inf-desc">كل ربع سنة "بطاقة تقدير" الشركة. نتائج أفضل من التوقعات ← السهم يرتفع. أسوأ ← ينخفض.</div><span class="inf-tag">ربع سنوي</span></div>
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2rem 0 .9rem" class="fi">عوامل أخرى تحرّك الأسواق</h3>
+    <div class="inf-grid fi">
+      <div class="inf-card"><span class="inf-em">🛢️</span><div class="inf-name">أسعار النفط</div><div class="inf-desc">عامل حاسم للخليج. أرامكو وحدها تمثل نسبة ضخمة من مؤشر تداول. النفط يرتفع &#8592; السوق السعودي يرتفع غالباً.</div><span class="inf-tag">حاسم للخليج</span></div>
+      <div class="inf-card"><span class="inf-em">📋</span><div class="inf-name">أرباح الشركات</div><div class="inf-desc">كل ربع سنة "بطاقة تقدير" الشركة. نتائج أفضل من التوقعات &#8592; السهم يرتفع. أسوأ &#8592; ينخفض.</div><span class="inf-tag">ربع سنوي</span></div>
       <div class="inf-card"><span class="inf-em">📈</span><div class="inf-name">التضخم (CPI)</div><div class="inf-desc">يصدر شهرياً. رقم أعلى من التوقعات يعني احتمال رفع الفائدة وقلق في الأسواق.</div><span class="inf-tag">شهرياً</span></div>
       <div class="inf-card"><span class="inf-em">🌐</span><div class="inf-name">الجيوسياسة</div><div class="inf-desc">الحروب والتوترات تخلق غموضاً. الغموض يقلق المستثمرين فتنخفض الأسواق.</div><span class="inf-tag">مؤثر إقليمياً</span></div>
       <div class="inf-card"><span class="inf-em">⚡</span><div class="inf-name">قرارات أوبك+</div><div class="inf-desc">خفض أو رفع إنتاج النفط يؤثر مباشرة على عائدات دول الخليج وأسواقها المالية.</div><span class="inf-tag">مهم للخليج</span></div>
-      <div class="inf-card"><span class="inf-em">🛒</span><div class="inf-name">ثقة المستهلك</div><div class="inf-desc">الناس يشعرون بالأمان ← ينفقون ← الشركات تربح ← الأسهم ترتفع. والعكس صحيح تماماً.</div></div>
+      <div class="inf-card"><span class="inf-em">🛒</span><div class="inf-name">ثقة المستهلك</div><div class="inf-desc">الناس يشعرون بالأمان &#8592; ينفقون &#8592; الشركات تربح &#8592; الأسهم ترتفع. والعكس صحيح تماماً.</div></div>
     </div>
   </div>
 </section>
@@ -1303,7 +1320,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH7: LOCAL MARKETS ══ -->
 <section class="sec sec-cream" id="s7">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sky">🏙️</div>
       <div>
         <div class="ch-num">الفصل السابع — أسواقنا</div>
@@ -1311,11 +1328,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">فرصتك المحلية التي تفهمها وتعيشها يومياً</p>
       </div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:0 0 1.5rem" class="fi vis">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:0 0 1.5rem" class="fi">
       <div class="card"><div class="card-title">🇦🇪 سوق دبي المالي (DFM)</div><ul class="cklist" style="margin:.5rem 0"><li><span class="ck ck-y">✓</span>أول سوق إسلامي مئة بالمئة عالمياً</li><li><span class="ck ck-y">✓</span>إعمار، DIB، العربية للطيران</li><li><span class="ck ck-y">✓</span>توزيعات أرباح سخية ومنتظمة</li><li><span class="ck ck-y">✓</span>أحد إلى خميس ١٠ص — ٣م</li></ul></div>
       <div class="card"><div class="card-title">🇦🇪 سوق أبوظبي (ADX)</div><ul class="cklist" style="margin:.5rem 0"><li><span class="ck ck-y">✓</span>بنك أبوظبي الأول (FAB) — الأكبر إقليمياً</li><li><span class="ck ck-y">✓</span>أدنوك للتوزيع — توزيعات قوية</li><li><span class="ck ck-y">✓</span>الدار العقارية، IHC</li><li><span class="ck ck-y">✓</span>أحد إلى خميس ١٠ص — ٢م</li></ul></div>
     </div>
-    <div class="cards fi vis">
+    <div class="cards fi">
       <div class="card"><span class="card-em">⛽</span><div class="card-title">أرامكو السعودية <span class="tk" style="font-size:.62rem;vertical-align:middle">2222</span></div><div class="card-txt">أكثر شركة ربحية عالمياً. توزيعات ضخمة ومنتظمة.</div></div>
       <div class="card"><span class="card-em">🏦</span><div class="card-title">مصرف الراجحي <span class="tk" style="font-size:.62rem;vertical-align:middle">1120</span></div><div class="card-txt">أكبر مصرف إسلامي في العالم من حيث الأصول.</div></div>
       <div class="card"><span class="card-em">📱</span><div class="card-title">الاتصالات STC <span class="tk" style="font-size:.62rem;vertical-align:middle">7010</span></div><div class="card-txt">رائد الاتصالات في المملكة. خدمات رقمية متنامية.</div></div>
@@ -1327,12 +1344,12 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH8: COMPANY ASSESSMENT (BEGINNER-FRIENDLY) ══ -->
 <section class="sec sec-white" id="s8">
   <div class="inner">
-    <div class="box box-amb fi vis" style="margin-bottom:2.5rem">
+    <div class="box box-amb fi" style="margin-bottom:2.5rem">
       <div class="box-title">🤗 لحظة طمأنة</div>
       <p>وصلت هنا يعني فهمت الأساسيات — ما هو السوق، كيف تربح، وش يحرّك الأسعار. <strong>أنت الحين أفضل من أغلب الناس اللي "يستثمرون" بدون ما يفهمون شيء.</strong> الحين بنتعلم سوا كيف نختار شركة بذكاء — بدون ما نحتاج شهادة في المحاسبة.</p>
     </div>
 
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-amb">🔬</div>
       <div>
         <div class="ch-num">الفصل الثامن — اختيار الشركة</div>
@@ -1341,31 +1358,31 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="body fi vis">
+    <div class="body fi">
       <p>أكثر غلطة يسويها المبتدئ: <strong>يشتري سهم لأن أحد قال له في الواتساب "اشترِ هذا!"</strong> ما يعرف وش تسوي الشركة، ولا كم تربح، ولا هل سعرها غالي أو رخيص. هذا مو استثمار — هذا تخمين.</p>
       <p>الخبر الحلو؟ <strong>ما تحتاج تكون خبير عشان تختار صح.</strong> تحتاج بس تسأل ثلاثة أسئلة. بنشرحها بقصة حقيقية.</p>
     </div>
 
-    <div class="ex fi vis">
+    <div class="ex fi">
       <h4>☕ قصة أحمد وقهوة المساء</h4>
       <p>أحمد سمع في المجلس إن سهم مصرف الراجحي <span class="tk">1120</span> "ممتاز." بدل ما يشتري على طول، قرر يسأل ثلاثة أسئلة بسيطة — وهذا بالضبط اللي بنسويه مع بعض الحين.</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi vis">السؤال الأول: "وش تسوي هالشركة أصلاً؟" 🤔</h3>
-    <div class="body fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi">السؤال الأول: "وش تسوي هالشركة أصلاً؟" 🤔</h3>
+    <div class="body fi">
       <p>القاعدة الذهبية: <strong>لو ما تقدر تشرح وش تسوي الشركة لأمك في عشر ثواني — لا تستثمر فيها.</strong></p>
       <p>كيف تعرف؟ ادخل موقع الشركة أو ابحث في جوجل عن اسمها. اقرأ أول سطرين. خلاص.</p>
     </div>
-    <div class="box box-sky fi vis">
+    <div class="box box-sky fi">
       <div class="box-title">📘 أحمد طبّق السؤال الأول</div>
       <p>بحث في جوجل: "مصرف الراجحي ماذا يفعل" — الجواب: <strong>أكبر بنك إسلامي في العالم. يقدم خدمات بنكية حلال — حسابات، تمويل، بطاقات.</strong> واضح ومفهوم. ممتاز! ✅</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi vis">السؤال الثاني: "هل الشركة تربح ولا تخسر؟" 💰</h3>
-    <div class="body fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi">السؤال الثاني: "هل الشركة تربح ولا تخسر؟" 💰</h3>
+    <div class="body fi">
       <p>ادخل موقع <strong>أرقام (Argaam)</strong> للسعودية أو <strong>مباشر (Mubasher)</strong> للإمارات أو <strong>Yahoo Finance</strong> للأمريكي. اكتب اسم الشركة. شوف رقمين بس:</p>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.2rem 0" class="fi vis">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.2rem 0" class="fi">
       <div class="card" style="border:2px solid rgba(58,122,74,.3)">
         <span class="card-em">📊</span>
         <div class="card-title">ربحية السهم (EPS)</div>
@@ -1377,16 +1394,16 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <div class="card-txt"><strong>هل سعر السهم غالي أو رخيص مقارنة بأرباحه.</strong> فكّر فيه مثل ثمن كيلو التفاح — لو نفس التفاح عند محل ثاني بنص السعر، تشتري من هناك. أقل من ١٥ = رخيص نسبياً. أكثر من ٣٠ = غالي.</div>
       </div>
     </div>
-    <div class="box box-sky fi vis">
+    <div class="box box-sky fi">
       <div class="box-title">📘 أحمد طبّق السؤال الثاني</div>
       <p>فتح أرقام وكتب "الراجحي." لقى: <strong>EPS حوالي ٨ ريال (يربح ✅)، والأرباح تنمو من خمس سنوات (ممتاز ✅)، P/E حوالي ١٣ (سعر معقول ✅).</strong> شركة مربحة وسعرها مو مبالغ فيه.</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi vis">السؤال الثالث: "هل هي حلال؟" ☪️</h3>
-    <div class="body fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi">السؤال الثالث: "هل هي حلال؟" ☪️</h3>
+    <div class="body fi">
       <p>هذي أسهل خطوة. حمّل تطبيق <strong>Zoya</strong> (مجاني) أو ادخل موقع <strong>Musaffa.com.</strong> اكتب اسم الشركة أو رمزها. التطبيق يقولك فوراً:</p>
     </div>
-    <div class="cards fi vis" style="grid-template-columns:repeat(3,1fr)">
+    <div class="cards fi" style="grid-template-columns:repeat(3,1fr)">
       <div class="card" style="text-align:center;border:2px solid rgba(58,122,74,.4)">
         <span style="font-size:2rem;display:block;margin-bottom:.5rem">✅</span>
         <div class="card-title" style="color:var(--sage-deep)">حلال</div>
@@ -1403,12 +1420,12 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <div class="card-txt">لا تقربها</div>
       </div>
     </div>
-    <div class="box box-sky fi vis">
+    <div class="box box-sky fi">
       <div class="box-title">📘 أحمد طبّق السؤال الثالث</div>
       <p>فتح Zoya وكتب "Al Rajhi" — النتيجة: <strong>حلال ١٠٠٪ ✅.</strong> بنك إسلامي بالكامل. ما يحتاج حتى تطهير.</p>
     </div>
 
-    <div class="ex fi vis">
+    <div class="ex fi">
       <h4>🎉 نتيجة أحمد في ثلاث دقائق</h4>
       <p><strong style="color:var(--amber-light)">السؤال ١:</strong> وش تسوي؟ بنك إسلامي — مفهوم ✅</p>
       <p><strong style="color:var(--amber-light)">السؤال ٢:</strong> تربح؟ نعم ونمو مستمر — ممتاز ✅</p>
@@ -1416,7 +1433,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       <p style="margin-top:.8rem">ثلاث دقائق. ثلاثة أسئلة. <strong style="color:var(--amber-light)">أحمد الحين يعرف ليش يشتري — مو بس وش يشتري.</strong> وهذا الفرق بين المستثمر والمقامر.</p>
     </div>
 
-    <div class="box box-amb fi vis">
+    <div class="box box-amb fi">
       <div class="box-title">🔎 تبي تتعمق أكثر؟ خطوات إضافية (اختيارية)</div>
       <p>الثلاثة أسئلة فوق كافية للمبتدئ. بس لما تصير أكثر ثقة، ممكن تضيف:</p>
       <p style="margin-top:.5rem">• <strong>الديون:</strong> ابحث عن "نسبة الدين" — أقل من واحد = صحي. أكثر من اثنين = خطر.</p>
@@ -1424,7 +1441,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       <p>• <strong>الأخبار:</strong> ابحث باسم الشركة — هل فيه مشاكل كبيرة أو أخبار مقلقة؟</p>
     </div>
 
-    <div class="box box-sage fi vis">
+    <div class="box box-sage fi">
       <div class="box-title">📱 الأدوات اللي تحتاجها (كلها مجانية)</div>
       <p><strong>أرقام Argaam</strong> — للسوق السعودي بالعربي. <strong>مباشر Mubasher</strong> — للأسواق الخليجية. <strong>Yahoo Finance</strong> — للأسواق العالمية. <strong>Zoya أو Musaffa</strong> — للفرز الشرعي. حمّلها على جوالك الحين.</p>
     </div>
@@ -1434,7 +1451,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH9: COMMON MISTAKES (NEW) ══ -->
 <section class="sec sec-sand" id="s9">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-blush">⚠️</div>
       <div>
         <div class="ch-num">الفصل التاسع — تعلّم من أخطاء غيرك</div>
@@ -1442,9 +1459,9 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">تعلّمها الآن ووفّر على نفسك آلاف الريالات وسنوات من الندم</p>
       </div>
     </div>
-    <div class="body fi vis"><p>كل مستثمر ناجح مرّ بأخطاء. الفرق أن الذكي يتعلم من أخطاء غيره <strong>قبل أن يدفع الثمن من جيبه.</strong> هذه العشرة أخطاء رأيناها تتكرر مراراً — اقرأها جيداً.</p></div>
+    <div class="body fi"><p>كل مستثمر ناجح مرّ بأخطاء. الفرق أن الذكي يتعلم من أخطاء غيره <strong>قبل أن يدفع الثمن من جيبه.</strong> هذه العشرة أخطاء رأيناها تتكرر مراراً — اقرأها جيداً.</p></div>
 
-    <div class="cards fi vis" style="grid-template-columns:1fr 1fr">
+    <div class="cards fi" style="grid-template-columns:1fr 1fr">
       <div class="card" style="border-right:4px solid var(--danger)">
         <span class="card-em">❌</span>
         <div class="card-title" style="color:var(--danger)">١. الاستثمار بمال تحتاجه</div>
@@ -1468,7 +1485,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       <div class="card" style="border-right:4px solid var(--danger)">
         <span class="card-em">❌</span>
         <div class="card-title" style="color:var(--danger)">٥. البيع عند أول انخفاض</div>
-        <div class="card-txt">السوق ينخفض خمسة بالمئة فتبيع بخسارة. بعد أسبوع يرتفع عشرة بالمئة. <strong>القاعدة:</strong> الانخفاضات المؤقتة طبيعية تماماً. صندوق S&amp;P500 انخفض أكثر من عشر مرات ثلاثين بالمئة — ثم عاد أعلى في كل مرة.</div>
+        <div class="card-txt">السوق ينخفض خمسة بالمئة فتبيع بخسارة. بعد أسبوع يرتفع عشرة بالمئة. <strong>القاعدة:</strong> الانخفاضات المؤقتة طبيعية تماماً. صندوق S&P500 انخفض أكثر من عشر مرات ثلاثين بالمئة — ثم عاد أعلى في كل مرة.</div>
       </div>
       <div class="card" style="border-right:4px solid var(--danger)">
         <span class="card-em">❌</span>
@@ -1497,7 +1514,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="box box-sage fi vis">
+    <div class="box box-sage fi">
       <div class="box-title">💚 الخبر السعيد</div>
       <p>كل هذه الأخطاء <strong>يمكن تجنبها بالكامل</strong> إذا التزمت بقاعدة واحدة: <strong>افهم قبل أن تفعل.</strong> وأنت الآن تفعل ذلك بالضبط بقراءة هذا الدليل.</p>
     </div>
@@ -1507,7 +1524,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH10: INVESTOR PSYCHOLOGY (NEW) ══ -->
 <section class="sec sec-white" id="s10">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sky">🧠</div>
       <div>
         <div class="ch-num">الفصل العاشر — أهم فصل في الدليل</div>
@@ -1515,11 +1532,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">لأن أكبر خسائر الاستثمار لا يسببها السوق — يسببها الخوف والطمع</p>
       </div>
     </div>
-    <div class="body fi vis">
+    <div class="body fi">
       <p>تستطيع أن تفهم كل شيء عن الأسهم والمؤشرات والفرز الشرعي — ومع ذلك تخسر مالاً. لماذا؟ لأن <strong>عقلك مبرمج ضد الاستثمار الناجح.</strong> ملايين السنوات من التطور جعلتنا نخاف الخسارة أكثر مما نفرح بالربح. وهذا بالضبط ما يستغله السوق.</p>
     </div>
 
-    <div class="cards fi vis">
+    <div class="cards fi">
       <div class="card" style="border-top:4px solid var(--sky-deep)">
         <span class="card-em">😰</span>
         <div class="card-title">النفور من الخسارة</div>
@@ -1542,23 +1559,23 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="ex fi vis">
+    <div class="ex fi">
       <h4>🧪 اختبار سريع — هل ستنجح كمستثمر؟</h4>
       <p>تخيّل: اشتريت صندوق ETF بعشرة آلاف ريال. بعد شهرين أصبح يساوي ثمانية آلاف وخمسمئة ريال. ماذا تفعل؟</p>
       <ul>
-        <li><strong style="color:var(--blush-dark)">أ) أبيع فوراً قبل أن أخسر أكثر</strong> <i class="arr">←</i> رد فعل عاطفي. حوّلت خسارة مؤقتة إلى دائمة.</li>
-        <li><strong style="color:var(--amber-light)">ب) أنتظر حتى يعود لعشرة آلاف ثم أبيع</strong> <i class="arr">←</i> أفضل، لكنك تفوّت فرصة النمو.</li>
-        <li><strong style="color:rgba(168,210,168,1)">ج) أشتري المزيد — الخصم خمسة عشر بالمئة!</strong> <i class="arr">←</i> هذا تفكير المستثمر الناجح. الانخفاض = تخفيضات.</li>
+        <li><strong style="color:var(--blush-dark)">أ) أبيع فوراً قبل أن أخسر أكثر</strong> <i class="arr">&larr;</i> رد فعل عاطفي. حوّلت خسارة مؤقتة إلى دائمة.</li>
+        <li><strong style="color:var(--amber-light)">ب) أنتظر حتى يعود لعشرة آلاف ثم أبيع</strong> <i class="arr">&larr;</i> أفضل، لكنك تفوّت فرصة النمو.</li>
+        <li><strong style="color:rgba(168,210,168,1)">ج) أشتري المزيد — الخصم خمسة عشر بالمئة!</strong> <i class="arr">&larr;</i> هذا تفكير المستثمر الناجح. الانخفاض = تخفيضات.</li>
       </ul>
       <p style="margin-top:.8rem">الإجابة الصحيحة <strong style="color:var(--amber-light)">ج</strong> — لكن عقلك سيصرخ ويقول "أ!" لذلك تحتاج خطة مكتوبة مسبقاً تلتزم بها عندما تختلط المشاعر.</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">متى تبيع؟ — السؤال الأصعب في الاستثمار</h3>
-    <div class="body fi vis"><p>معظم الناس يعرفون متى يشترون لكن لا يعرفون متى يبيعون. إليك القواعد:</p></div>
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi">متى تبيع؟ — السؤال الأصعب في الاستثمار</h3>
+    <div class="body fi"><p>معظم الناس يعرفون متى يشترون لكن لا يعرفون متى يبيعون. إليك القواعد:</p></div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0" class="fi vis">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0" class="fi">
       <div>
-        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--success);font-size:.88rem;margin-bottom:.75rem">✅ أسباب جيدة للبيع</h4>
+        <h4 style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--success);font-size:.88rem;margin-bottom:.75rem">✅ أسباب جيدة للبيع</h4>
         <ul class="cklist">
           <li><span class="ck ck-y">✓</span>أساسيات الشركة تغيّرت (خسائر متكررة، فساد إداري)</li>
           <li><span class="ck ck-y">✓</span>وصلت لهدفك الاستثماري (مثلاً: مبلغ الشقة)</li>
@@ -1568,7 +1585,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </ul>
       </div>
       <div>
-        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--danger);font-size:.88rem;margin-bottom:.75rem">❌ أسباب سيئة للبيع</h4>
+        <h4 style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--danger);font-size:.88rem;margin-bottom:.75rem">❌ أسباب سيئة للبيع</h4>
         <ul class="cklist">
           <li><span class="ck ck-n">✗</span>السعر انخفض مؤقتاً (بدون تغيّر في الأساسيات)</li>
           <li><span class="ck ck-n">✗</span>الأخبار مخيفة (الأخبار دائماً مخيفة)</li>
@@ -1579,12 +1596,12 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="box box-amb fi vis">
+    <div class="box box-amb fi">
       <div class="box-title">🔑 القاعدة الذهبية لنفسية المستثمر</div>
       <p><strong>اكتب خطتك وأنت هادئ — والتزم بها وأنت خائف.</strong> قرارات الاستثمار المتخذة تحت ضغط عاطفي تكون خاطئة في أغلب الأحيان. لذلك الخطة المكتوبة مسبقاً هي أقوى أداة يملكها المستثمر — أقوى من أي تحليل مالي.</p>
     </div>
 
-    <div class="box box-sky fi vis" style="margin-bottom:0">
+    <div class="box box-sky fi" style="margin-bottom:0">
       <div class="box-title">🤗 تذكّر</div>
       <p>الشعور بالخوف عند انخفاض السوق <strong>طبيعي تماماً.</strong> لا يوجد مستثمر على وجه الأرض لا يشعر بذلك. الفرق بين الناجح وغيره ليس غياب الخوف — بل وجود خطة تمنعه من التصرف بناءً على الخوف.</p>
     </div>
@@ -1593,9 +1610,9 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 
 <!-- ══ REASSURANCE BOX BETWEEN THEORY AND PRACTICE ══ -->
 <section class="sec sec-sand" style="padding:3rem 0">
-  <div class="inner fi vis" style="text-align:center;max-width:660px">
+  <div class="inner fi" style="text-align:center;max-width:660px">
     <div style="font-size:2rem;margin-bottom:.8rem">🎉</div>
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:1.2rem;color:var(--ink);margin-bottom:.8rem">أحسنت — أنت الآن تفهم الأساسيات كاملة!</h3>
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:900;font-size:1.2rem;color:var(--ink);margin-bottom:.8rem">أحسنت — أنت الآن تفهم الأساسيات كاملة!</h3>
     <p style="font-size:.95rem;color:var(--ink-mid);line-height:1.8">تعرف ما هو السوق، كيف تربح، ما يحرّكه، كيف تقيّم شركة، ما الأخطاء التي تتجنبها، وكيف تتحكم في مشاعرك. <strong>الآن ننتقل للجزء العملي — خطتك الشخصية.</strong></p>
   </div>
 </section>
@@ -1603,7 +1620,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH11: AGE ══ -->
 <section class="sec sec-white" id="s11">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-amb">🎂</div>
       <div>
         <div class="ch-num">الفصل الحادي عشر — خطتك الشخصية</div>
@@ -1611,7 +1628,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">لأن استثمار شخص في العشرينيات يختلف كلياً عن شخص في الخمسينيات</p>
       </div>
     </div>
-    <div class="age-tabs fi vis" id="age-tabs">
+    <div class="age-tabs fi" id="age-tabs">
       <div class="age-tab active" data-age="20">🌱 ١٨ – ٢٩ سنة</div>
       <div class="age-tab" data-age="30">🌿 ٣٠ – ٣٩ سنة</div>
       <div class="age-tab" data-age="40">🌳 ٤٠ – ٤٩ سنة</div>
@@ -1619,7 +1636,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
     </div>
 
     <div class="age-panel active" id="age-20">
-      <div class="age-profile fi vis">
+      <div class="age-profile fi">
         <div class="age-head"><div class="age-em">🌱</div><div class="age-info"><h3>المستثمر الشاب — ١٨ إلى ٢٩ سنة</h3><p>أعظم ما تملكه ليس مالاً — بل الوقت.</p></div></div>
         <div class="age-body">
           <h4>🎯 وضعك الآن</h4><p>ربما بدأت توظّف لتوّك أو مازلت طالباً. لكن لديك أقوى ورقة في الاستثمار: <strong>ثلاثون إلى خمس وأربعون سنة من التراكم أمامك.</strong> انخفاض السوق بالنسبة لك فرصة شراء لا سبب للذعر.</p>
@@ -1635,7 +1652,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
     <div class="age-panel" id="age-30">
-      <div class="age-profile fi vis">
+      <div class="age-profile fi">
         <div class="age-head"><div class="age-em">🌿</div><div class="age-info"><h3>مرحلة البناء — ٣٠ إلى ٣٩ سنة</h3><p>أعلى منحنى الدخل. لكن المسؤوليات أعلى أيضاً.</p></div></div>
         <div class="age-body">
           <h4>🎯 وضعك الآن</h4><p>دخلك أعلى لكن نفقاتك أيضاً أكبر. زواج، أطفال، منزل. <strong>يجب ترتيب الأولويات بوضوح.</strong></p>
@@ -1652,7 +1669,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
     <div class="age-panel" id="age-40">
-      <div class="age-profile fi vis">
+      <div class="age-profile fi">
         <div class="age-head"><div class="age-em">🌳</div><div class="age-info"><h3>مرحلة التسريع — ٤٠ إلى ٤٩ سنة</h3><p>الذروة المهنية. التقاعد في الأفق.</p></div></div>
         <div class="age-body">
           <h4>🎯 وضعك الآن</h4><p>إذا لم تبدأ بعد — الآن وقت لا يُعوَّض. إذا بدأت — حان وقت التسريع. <strong>كل ريال تستثمره اليوم لديه عشرون سنة للتراكم.</strong></p>
@@ -1669,7 +1686,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
     <div class="age-panel" id="age-50">
-      <div class="age-profile fi vis">
+      <div class="age-profile fi">
         <div class="age-head"><div class="age-em">🏔️</div><div class="age-info"><h3>مرحلة الحفاظ والدخل — ٥٠ فما فوق</h3><p>الأولوية: حماية ما بنيته وتوليد دخل منتظم.</p></div></div>
         <div class="age-body">
           <h4>🎯 وضعك الآن</h4><p>الأولوية الآن ليست التضخيم بل <strong>الحفاظ على رأس المال وتوليد دخل شهري منتظم يكفيك.</strong></p>
@@ -1690,7 +1707,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH9: INCOME ══ -->
 <section class="sec sec-sand" id="s12">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sage">💼</div>
       <div>
         <div class="ch-num">الفصل الثاني عشر — الأرقام الحقيقية</div>
@@ -1698,7 +1715,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">السؤال الأكثر عملية — وإليك إجابة واقعية لكل شريحة دخل</p>
       </div>
     </div>
-    <div class="inc-grid fi vis">
+    <div class="inc-grid fi">
       <div class="inc inc-low">
         <span class="inc-em">🌱</span>
         <div class="inc-range">٣٠٠٠ – ٨٠٠٠ ريال / درهم</div>
@@ -1730,14 +1747,14 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </div>
       </div>
     </div>
-    <div class="box box-amb fi vis"><div class="box-title">📌 القاعدة الذهبية في كل مستوى دخل</div><p>قبل أي استثمار، احتفظ بـ<strong>نفقات ثلاثة إلى ستة أشهر في حساب سائل كطوارئ.</strong> هذا المبلغ لا تلمسه ولا تستثمره — وجوده يمنعك من بيع استثماراتك في أسوأ وقت.</p></div>
+    <div class="box box-amb fi"><div class="box-title">📌 القاعدة الذهبية في كل مستوى دخل</div><p>قبل أي استثمار، احتفظ بـ<strong>نفقات ثلاثة إلى ستة أشهر في حساب سائل كطوارئ.</strong> هذا المبلغ لا تلمسه ولا تستثمره — وجوده يمنعك من بيع استثماراتك في أسوأ وقت.</p></div>
   </div>
 </section>
 
 <!-- ══ CH10: BROKER + PORTFOLIO CALC ══ -->
 <section class="sec sec-white" id="s13">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sand">🔎</div>
       <div>
         <div class="ch-num">الفصل الثالث عشر — الأداة العملية</div>
@@ -1746,11 +1763,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="body fi vis">
+    <div class="body fi">
       <p>بدل ما نعطيك جدول فيه اثني عشر خيار وتضيع — <strong>قلنا: خلنا نسهّلها عليك.</strong> ابحث عن نفسك في الثلاثة خيارات تحت، واختر الوسيط اللي يناسبك. خلاص. لا تعقّدها أكثر من كذا.</p>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem;margin:1.5rem 0" class="fi vis">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem;margin:1.5rem 0" class="fi">
       <div class="persona" style="border-color:rgba(58,122,74,.4);background:rgba(208,232,208,.15)">
         <div class="persona-you" style="color:var(--sage-deep)">🇸🇦 أنا في السعودية وأبي حلال ١٠٠٪</div>
         <h3 style="color:var(--sage-deep)">ابدأ بواحد من هذولا:</h3>
@@ -1791,12 +1808,12 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="box box-amb fi vis">
+    <div class="box box-amb fi">
       <div class="box-title">☝️ نصيحة مهمة</div>
       <p><strong>اختر وسيط واحد فقط وابدأ.</strong> لا تفتح ثلاثة حسابات. لا تقارن لأسبوعين. اختر اللي يناسب وضعك من فوق، سجّل اليوم، وبعد ستة أشهر لما تتعلم أكثر ممكن تضيف منصة ثانية.</p>
     </div>
 
-    <button class="collapsible-toggle fi vis" onclick="this.classList.toggle(&#39;open&#39;);this.nextElementSibling.classList.toggle(&#39;open&#39;)">
+    <button class="collapsible-toggle fi" onclick="this.classList.toggle('open');this.nextElementSibling.classList.toggle('open')">
       <span>📋 تبي تشوف كل الوسطاء الاثني عشر؟ (للفضوليين)</span>
       <span class="arrow">▼</span>
     </button>
@@ -1823,55 +1840,55 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
     </div>
 
     <!-- ══ PORTFOLIO ALLOCATION CALCULATOR ══ -->
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:3rem 0 .5rem" class="fi vis">🎯 آلة توزيع المحفظة — اعرف بالأرقام كيف تبدو محفظتك</h3>
-    <div class="port-calc fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:3rem 0 .5rem" class="fi">🎯 آلة توزيع المحفظة — اعرف بالأرقام كيف تبدو محفظتك</h3>
+    <div class="port-calc fi">
       <div class="pc-title">📐 احسب توزيع محفظتك بنفسك</div>
       <p class="pc-sub">أدخل مبلغ استثمارك، اختر ملفك الشخصي أو عدّل النسب يدوياً، وسترى كيف يُوزَّع مالك بالأرقام الحقيقية.</p>
 
       <div class="pc-input-row">
         <label>مبلغ الاستثمار</label>
-        <input type="number" class="pc-amount" id="pc-total" value="10000" min="100" oninput="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+        <input type="number" class="pc-amount" id="pc-total" value="10000" min="100" oninput="this.form.dispatchEvent(new Event('change', {bubbles:true}))">
         <span style="font-size:.8rem;color:var(--ink-light)">ريال / درهم</span>
       </div>
 
       <div style="font-size:.78rem;font-weight:700;color:var(--ink-mid);margin-bottom:.6rem">اختر ملفك الشخصي:</div>
       <div class="pc-profile-btns">
-        <button class="pc-btn active" onclick="applyProfile(&#39;growth&#39;)">🌱 نمو (شاب)</button>
-        <button class="pc-btn" onclick="applyProfile(&#39;balanced&#39;)">⚖️ متوازن</button>
-        <button class="pc-btn" onclick="applyProfile(&#39;income&#39;)">🏔️ دخل (متحفظ)</button>
-        <button class="pc-btn" onclick="applyProfile(&#39;custom&#39;)">✏️ مخصص</button>
+        <button class="pc-btn active" onclick="applyProfile('growth')">🌱 نمو (شاب)</button>
+        <button class="pc-btn" onclick="applyProfile('balanced')">⚖️ متوازن</button>
+        <button class="pc-btn" onclick="applyProfile('income')">🏔️ دخل (متحفظ)</button>
+        <button class="pc-btn" onclick="applyProfile('custom')">✏️ مخصص</button>
       </div>
 
       <div class="pc-sliders">
         <div class="pc-slider-row">
           <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#6E9E7A"></div>صناديق ETF حلال</div>
-          <input type="range" class="pc-slider" id="sl-etf" min="0" max="100" value="60" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <input type="range" class="pc-slider" id="sl-etf" min="0" max="100" value="60" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event('change', {bubbles:true}))">
           <div class="pc-pct" id="pct-etf">٦٠٪</div>
-          <div class="pc-val" id="val-etf">٦٬٠٠٠ ريال</div>
+          <div class="pc-val" id="val-etf">—</div>
         </div>
         <div class="pc-slider-row">
           <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#C48830"></div>أسهم خليجية</div>
-          <input type="range" class="pc-slider" id="sl-gulf" min="0" max="100" value="25" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <input type="range" class="pc-slider" id="sl-gulf" min="0" max="100" value="25" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event('change', {bubbles:true}))">
           <div class="pc-pct" id="pct-gulf">٢٥٪</div>
-          <div class="pc-val" id="val-gulf">٢٬٥٠٠ ريال</div>
+          <div class="pc-val" id="val-gulf">—</div>
         </div>
         <div class="pc-slider-row">
           <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#7BAFC8"></div>صكوك</div>
-          <input type="range" class="pc-slider" id="sl-sukuk" min="0" max="100" value="5" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <input type="range" class="pc-slider" id="sl-sukuk" min="0" max="100" value="5" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event('change', {bubbles:true}))">
           <div class="pc-pct" id="pct-sukuk">٥٪</div>
-          <div class="pc-val" id="val-sukuk">٥٠٠ ريال</div>
+          <div class="pc-val" id="val-sukuk">—</div>
         </div>
         <div class="pc-slider-row">
           <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#B87878"></div>ذهب / تحوط</div>
-          <input type="range" class="pc-slider" id="sl-gold" min="0" max="100" value="0" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <input type="range" class="pc-slider" id="sl-gold" min="0" max="100" value="0" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event('change', {bubbles:true}))">
           <div class="pc-pct" id="pct-gold">٠٪</div>
-          <div class="pc-val" id="val-gold">٠ ريال</div>
+          <div class="pc-val" id="val-gold">—</div>
         </div>
         <div class="pc-slider-row">
           <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#B0A494"></div>احتياطي نقدي</div>
-          <input type="range" class="pc-slider" id="sl-cash" min="0" max="100" value="10" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <input type="range" class="pc-slider" id="sl-cash" min="0" max="100" value="10" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event('change', {bubbles:true}))">
           <div class="pc-pct" id="pct-cash">١٠٪</div>
-          <div class="pc-val" id="val-cash">١٬٠٠٠ ريال</div>
+          <div class="pc-val" id="val-cash">—</div>
         </div>
       </div>
 
@@ -1881,28 +1898,28 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <div class="pc-donut-wrap">
           <canvas id="donut-canvas" width="160" height="160"></canvas>
           <div class="pc-donut-center">
-            <div class="pc-donut-total" id="donut-total">١٠٬٠٠٠ ريال</div>
+            <div class="pc-donut-total" id="donut-total">—</div>
             <div class="pc-donut-lbl">إجمالي</div>
           </div>
         </div>
         <div class="pc-legend">
-          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#6E9E7A"></div><span class="pc-leg-name">ETF حلال</span><span class="pc-leg-pct" id="lg-etf">٦٠٪</span><span class="pc-leg-val" id="lv-etf">٦٬٠٠٠ ريال</span></div>
-          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#C48830"></div><span class="pc-leg-name">أسهم خليجية</span><span class="pc-leg-pct" id="lg-gulf">٢٥٪</span><span class="pc-leg-val" id="lv-gulf">٢٬٥٠٠ ريال</span></div>
-          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#7BAFC8"></div><span class="pc-leg-name">صكوك</span><span class="pc-leg-pct" id="lg-sukuk">٥٪</span><span class="pc-leg-val" id="lv-sukuk">٥٠٠ ريال</span></div>
-          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#B87878"></div><span class="pc-leg-name">ذهب / تحوط</span><span class="pc-leg-pct" id="lg-gold">٠٪</span><span class="pc-leg-val" id="lv-gold">٠ ريال</span></div>
-          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#B0A494"></div><span class="pc-leg-name">احتياطي نقدي</span><span class="pc-leg-pct" id="lg-cash">١٠٪</span><span class="pc-leg-val" id="lv-cash">١٬٠٠٠ ريال</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#6E9E7A"></div><span class="pc-leg-name">ETF حلال</span><span class="pc-leg-pct" id="lg-etf">٦٠٪</span><span class="pc-leg-val" id="lv-etf">—</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#C48830"></div><span class="pc-leg-name">أسهم خليجية</span><span class="pc-leg-pct" id="lg-gulf">٢٥٪</span><span class="pc-leg-val" id="lv-gulf">—</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#7BAFC8"></div><span class="pc-leg-name">صكوك</span><span class="pc-leg-pct" id="lg-sukuk">٥٪</span><span class="pc-leg-val" id="lv-sukuk">—</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#B87878"></div><span class="pc-leg-name">ذهب / تحوط</span><span class="pc-leg-pct" id="lg-gold">٠٪</span><span class="pc-leg-val" id="lv-gold">—</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#B0A494"></div><span class="pc-leg-name">احتياطي نقدي</span><span class="pc-leg-pct" id="lg-cash">١٠٪</span><span class="pc-leg-val" id="lv-cash">—</span></div>
         </div>
       </div>
     </div>
 
-    <div class="box box-sage fi vis"><div class="box-title">💡 توصيتنا للمبتدئ العربي</div><p>ابدأ بوسيط واحد بسيط. <strong>لا تفتح ثلاثة حسابات في نفس الوقت.</strong> في السعودية: مباشر أو الراجحي كابيتال. في الإمارات: Wahed Invest أو Sarwa. بعد ستة أشهر وتعلّم الأساسيات، أضف منصة دولية.</p></div>
+    <div class="box box-sage fi"><div class="box-title">💡 توصيتنا للمبتدئ العربي</div><p>ابدأ بوسيط واحد بسيط. <strong>لا تفتح ثلاثة حسابات في نفس الوقت.</strong> في السعودية: مباشر أو الراجحي كابيتال. في الإمارات: Wahed Invest أو Sarwa. بعد ستة أشهر وتعلّم الأساسيات، أضف منصة دولية.</p></div>
   </div>
 </section>
 
 <!-- ══ CH11: HOW TO OPEN ══ -->
 <section class="sec sec-sky" id="s14">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-ink" style="color:var(--amber-light)">🚀</div>
       <div>
         <div class="ch-num">الفصل الرابع عشر — الخطوة الأخيرة</div>
@@ -1911,8 +1928,8 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:0 0 .9rem" class="fi vis">🇦🇪 الاستثمار في أسواق الإمارات</h3>
-    <div class="steps fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:0 0 .9rem" class="fi">🇦🇪 الاستثمار في أسواق الإمارات</h3>
+    <div class="steps fi">
       <div class="step"><div class="step-n">١</div><div><h4>افتح حساباً مع وسيط مرخّص من SCA</h4><p>مباشر، Emirates NBD Securities، ADIB Securities، FAB Securities، Sarwa. معظمهم يقبلون الفتح الإلكتروني في أقل من عشرين دقيقة.</p></div></div>
       <div class="step"><div class="step-n">٢</div><div><h4>اجمع وثائقك</h4><p>الهوية الإماراتية (أمام وخلف) + جواز السفر + إثبات عنوان حديث (فاتورة أو كشف حساب آخر ثلاثة أشهر) + رقم IBAN.</p></div></div>
       <div class="step"><div class="step-n">٣</div><div><h4>احصل على رقم المستثمر الوطني (NIN)</h4><p>متطلب إلزامي لكل مستثمر في أسواق الإمارات. وسيطك يقدم الطلب نيابة عنك. يستغرق من يوم إلى ثلاثة أيام عمل.</p></div></div>
@@ -1920,32 +1937,32 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       <div class="step"><div class="step-n">٥</div><div><h4>ابحث بالـ Ticker واشترِ</h4><p>في التطبيق اكتب رمز الشركة — مثل <span class="tk">EMAAR</span> لإعمار. اضغط شراء، أدخل الكمية، راجع، أكّد. تمّ! 🎉</p></div></div>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">🇸🇦 الاستثمار في السوق السعودي</h3>
-    <div class="steps fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi">🇸🇦 الاستثمار في السوق السعودي</h3>
+    <div class="steps fi">
       <div class="step"><div class="step-n">١</div><div><h4>اختر وسيطاً مرخّصاً من هيئة السوق المالية (CMA)</h4><p>الراجحي كابيتال، استثمار أمانة، SNB Capital، Alinma Investment، الجزيرة كابيتال. كلها موثوقة — الفرق في الرسوم وجودة التطبيق.</p></div></div>
       <div class="step"><div class="step-n">٢</div><div><h4>الوثائق المطلوبة</h4><p>الهوية الوطنية السعودية أو الإقامة + حساب في مصرف سعودي + بيانات التواصل. معظم الفتح الآن عبر التطبيق في أقل من خمس عشرة دقيقة.</p></div></div>
       <div class="step"><div class="step-n">٣</div><div><h4>الموافقة والتفعيل</h4><p>عادة خلال يوم إلى يومين. ستتلقى رسالة نصية بتفاصيل الحساب.</p></div></div>
       <div class="step"><div class="step-n">٤</div><div><h4>ابدأ من سهم واحد</h4><p>يمكنك شراء سهم واحد من أرامكو برمز <span class="tk">2222</span> أو مصرف الراجحي برمز <span class="tk">1120</span>. لا حد أدنى في كثير من الوسطاء.</p></div></div>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">🇺🇸 الاستثمار في الأسواق الأمريكية</h3>
-    <div class="steps fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi">🇺🇸 الاستثمار في الأسواق الأمريكية</h3>
+    <div class="steps fi">
       <div class="step"><div class="step-n">١</div><div><h4>اختر منصة دولية متاحة لمقيمي الخليج</h4><p>Interactive Brokers (الأقل رسوماً) — Saxo Bank (متاح رسمياً في الإمارات) — eToro (الأسهل) — أو ذراع التداول الدولي في بنكك المحلي.</p></div></div>
       <div class="step"><div class="step-n">٢</div><div><h4>أكمل التحقق من الهوية (KYC)</h4><p>جواز سفر + إثبات عنوان + معلومات مالية أساسية. يستغرق من يوم إلى خمسة أيام عمل.</p></div></div>
       <div class="step"><div class="step-n">٣</div><div><h4>أكمل نموذج W-8BEN — خطوة مهمة جداً!</h4><p>يُعرّفك كمستثمر غير أمريكي. يخفّض ضريبة الاستقطاع على التوزيعات من ثلاثين إلى خمسة عشر بالمئة. ينتهي كل ثلاث سنوات ويجب تجديده.</p></div></div>
       <div class="step"><div class="step-n">٤</div><div><h4>ابدأ بصندوق ETF حلال</h4><p>ابحث في التطبيق عن <span class="tk">SPUS</span> أو <span class="tk">HLAL</span>. هذان صندوقان يمنحانك الأسهم الأمريكية الكبرى بعد الفرز الشرعي الكامل.</p></div></div>
     </div>
 
-    <div class="box box-dark fi vis">
+    <div class="box box-dark fi">
       <div class="box-title">🌟 أسهل بداية ممكنة — اليوم وليس غداً</div>
       <p>افتح حساب في <strong style="color:var(--amber-light)">Wahed Invest</strong>. أجب على سبع أسئلة بسيطة عن أهدافك. يبنون لك محفظة حلال متنوعة تلقائياً. حد أدنى منخفض جداً. لا قرارات معقدة. مثالي كنقطة بداية ويمكنك التطور لاحقاً.</p>
     </div>
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2.5rem 0 .5rem" class="fi vis">📲 أول عملية شراء في حياتك — حرفياً زر بزر</h3>
-    <div class="body fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2.5rem 0 .5rem" class="fi">📲 أول عملية شراء في حياتك — حرفياً زر بزر</h3>
+    <div class="body fi">
       <p>خلاص فتحت حسابك وحوّلت فلوس؟ ممتاز. الحين بنشتري أول استثمار. <strong>بنستخدم Wahed Invest كمثال لأنه الأسهل — بس الخطوات متشابهة في كل التطبيقات.</strong></p>
     </div>
 
-    <div class="steps fi vis">
+    <div class="steps fi">
       <div class="step">
         <div class="step-n">١</div>
         <div>
@@ -1983,13 +2000,13 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="box box-sage fi vis">
+    <div class="box box-sage fi">
       <div class="box-title">🤝 وبعدين؟ الخطوة اللي تفرق فعلاً</div>
       <p>روح تطبيق البنك حقك وسوّ <strong>تحويل تلقائي شهري</strong> لحسابك الاستثماري. نفس المبلغ. نفس اليوم من كل شهر. هذي الخطوة الوحيدة اللي تفصل بين "جرّبت الاستثمار مرة" و"أنا مستثمر فعلي." التحويل التلقائي يعني: ادخل تطبيق البنك ← تحويلات ← تحويل متكرر ← حدد المبلغ والتاريخ ← أكّد.</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 1rem" class="fi vis">🛡️ إدارة المخاطر — لا تنتهي من هذا الدليل بدونها</h3>
-    <div class="risk-row fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 1rem" class="fi">🛡️ إدارة المخاطر — لا تنتهي من هذا الدليل بدونها</h3>
+    <div class="risk-row fi">
       <div class="risk r-low"><span class="risk-em">🐢</span><div class="risk-name">محافظ</div><div class="risk-desc">تفضل الأمان. صكوك + أسهم توزيعات مستقرة.</div></div>
       <div class="risk r-mid"><span class="risk-em">⚖️</span><div class="risk-name">معتدل</div><div class="risk-desc">مزيج من النمو والدخل. تتحمل انخفاضات مؤقتة.</div></div>
       <div class="risk r-hi"><span class="risk-em">🦅</span><div class="risk-name">جريء</div><div class="risk-desc">أسهم نمو وETF. أفق زمني طويل. مرتاح للتذبذب.</div></div>
@@ -2000,11 +2017,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ MODELS ══ -->
 <section class="sec sec-cream">
   <div class="inner">
-    <div class="sec-lbl fi vis">نماذج المحافظ</div>
-    <h2 class="sec-title fi vis">كيف تبدو المحفظة المناسبة لكل مرحلة؟</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(278px,1fr));gap:1.2rem;margin:1.5rem 0" class="fi vis">
+    <div class="sec-lbl fi">نماذج المحافظ</div>
+    <h2 class="sec-title fi">كيف تبدو المحفظة المناسبة لكل مرحلة؟</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(278px,1fr));gap:1.2rem;margin:1.5rem 0" class="fi">
       <div class="port-box" style="flex-direction:column;align-items:flex-start">
-        <div style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🌱 محفظة المبتدئ (٢٠-٣٠ سنة)</div>
+        <div style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🌱 محفظة المبتدئ (٢٠-٣٠ سنة)</div>
         <div style="display:flex;gap:1.4rem;align-items:center;width:100%;flex-wrap:wrap">
           <div class="pie-ring" style="background:conic-gradient(#6E9E7A 0deg 216deg,#C48830 216deg 306deg,#7BAFC8 306deg 342deg,#B0A494 342deg 360deg)"><div class="pie-center">نمو</div></div>
           <div class="pie-legend">
@@ -2016,7 +2033,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </div>
       </div>
       <div class="port-box" style="flex-direction:column;align-items:flex-start">
-        <div style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🌿 المحفظة المتوازنة (٣٠-٤٠ سنة)</div>
+        <div style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🌿 المحفظة المتوازنة (٣٠-٤٠ سنة)</div>
         <div style="display:flex;gap:1.4rem;align-items:center;width:100%;flex-wrap:wrap">
           <div class="pie-ring" style="background:conic-gradient(#6E9E7A 0deg 162deg,#C48830 162deg 270deg,#7BAFC8 270deg 306deg,#4A8C5C 306deg 342deg,#B0A494 342deg 360deg)"><div class="pie-center">توازن</div></div>
           <div class="pie-legend">
@@ -2029,7 +2046,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </div>
       </div>
       <div class="port-box" style="flex-direction:column;align-items:flex-start">
-        <div style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🏔️ محفظة الدخل (٥٠+ سنة)</div>
+        <div style="font-family:'Cairo',sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🏔️ محفظة الدخل (٥٠+ سنة)</div>
         <div style="display:flex;gap:1.4rem;align-items:center;width:100%;flex-wrap:wrap">
           <div class="pie-ring" style="background:conic-gradient(#C48830 0deg 180deg,#7BAFC8 180deg 270deg,#A84848 270deg 324deg,#B0A494 324deg 360deg)"><div class="pie-center">دخل</div></div>
           <div class="pie-legend">
@@ -2041,14 +2058,14 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         </div>
       </div>
     </div>
-    <div class="box box-blush fi vis"><div class="box-title">⚠️ تنبيه مهم</div><p>هذه النماذج لأغراض تعليمية فقط وليست نصيحة مالية شخصية. استشر مستشاراً مالياً مؤهلاً وعالماً شرعياً قبل التطبيق.</p></div>
+    <div class="box box-blush fi"><div class="box-title">⚠️ تنبيه مهم</div><p>هذه النماذج لأغراض تعليمية فقط وليست نصيحة مالية شخصية. استشر مستشاراً مالياً مؤهلاً وعالماً شرعياً قبل التطبيق.</p></div>
   </div>
 </section>
 
 <!-- ══ GLOSSARY ══ -->
 <section class="sec sec-white" id="s15">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sky">📚</div>
       <div>
         <div class="ch-num">الفصل الخامس عشر — مرجعك الدائم</div>
@@ -2056,7 +2073,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">لأن لغة المال ليست سراً — فقط لم يشرحها لك أحد من قبل</p>
       </div>
     </div>
-    <div class="gloss-grid fi vis">
+    <div class="gloss-grid fi">
       <div class="g-item"><div class="g-term">السهم</div><div class="g-en">Stock / Share</div><div class="g-def">وحدة ملكية في شركة مدرجة. تمتلكه = أنت شريك في الشركة.</div></div>
       <div class="g-item"><div class="g-term">الـ Ticker</div><div class="g-en">Ticker Symbol</div><div class="g-def">الرمز المختصر للسهم أو المؤشر. مثل AAPL لأبل و2222 لأرامكو. تستخدمه في التطبيق للبحث.</div></div>
       <div class="g-item"><div class="g-term">توزيعات الأرباح</div><div class="g-en">Dividends</div><div class="g-def">جزء من أرباح الشركة يُدفع للمساهمين ربع سنوياً. دخل منتظم بدون بيع.</div></div>
@@ -2091,42 +2108,42 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- 30 DAYS -->
 <section class="sec sec-cream">
   <div class="inner">
-    <div class="sec-lbl fi vis">خطة عمل</div>
-    <h2 class="sec-title fi vis">ثلاثون يوماً لتتحول من قارئ إلى مستثمر</h2>
-    <div class="aw fi vis">
+    <div class="sec-lbl fi">خطة عمل</div>
+    <h2 class="sec-title fi">ثلاثون يوماً لتتحول من قارئ إلى مستثمر</h2>
+    <div class="aw fi">
       <div class="aw-head"><span class="wk-badge">الأسبوع الأول</span><span class="wk-title">📚 اعرف نفسك قبل أن تستثمر ريالاً</span></div>
       <ul class="ai-list">
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>حدّد هدفك الاستثماري بالضبط — اكتبه على ورقة</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>احسب كم يمكنك استثماره شهرياً — استخدم الآلة الحاسبة أعلاه</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>جرّب آلة توزيع المحفظة وسجّل التوزيع الذي يناسبك</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>حمّل تطبيق Wahed Invest أو مباشر وتصفّح الواجهة</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>حدّد هدفك الاستثماري بالضبط — اكتبه على ورقة</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>احسب كم يمكنك استثماره شهرياً — استخدم الآلة الحاسبة أعلاه</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>جرّب آلة توزيع المحفظة وسجّل التوزيع الذي يناسبك</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>حمّل تطبيق Wahed Invest أو مباشر وتصفّح الواجهة</li>
       </ul>
     </div>
-    <div class="aw fi vis">
+    <div class="aw fi">
       <div class="aw-head"><span class="wk-badge">الأسبوع الثاني</span><span class="wk-title">🔎 قارن واختر وسيطك بثقة</span></div>
       <ul class="ai-list">
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>راجع جدول الوسطاء وضيّق قائمتك لخيارين فقط</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>تواصل مع خدمة عملاء كل خيار وقيّم سرعة الرد</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>اجمع وثائقك (هوية + جواز + إثبات عنوان + IBAN)</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>راجع جدول الوسطاء وضيّق قائمتك لخيارين فقط</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>تواصل مع خدمة عملاء كل خيار وقيّم سرعة الرد</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>اجمع وثائقك (هوية + جواز + إثبات عنوان + IBAN)</li>
       </ul>
     </div>
-    <div class="aw fi vis">
+    <div class="aw fi">
       <div class="aw-head"><span class="wk-badge">الأسبوع الثالث</span><span class="wk-title">📝 افتح حسابك — لا تؤجل أكثر</span></div>
       <ul class="ai-list">
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>ابدأ طلب فتح الحساب مع الوسيط المختار</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>أكمل نموذج W-8BEN إذا كنت تستثمر في الأسواق الأمريكية</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>احصل على NIN إذا كنت في الإمارات</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>تعرف على المنصة جيداً قبل وضع أي مال</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>ابدأ طلب فتح الحساب مع الوسيط المختار</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>أكمل نموذج W-8BEN إذا كنت تستثمر في الأسواق الأمريكية</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>احصل على NIN إذا كنت في الإمارات</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>تعرف على المنصة جيداً قبل وضع أي مال</li>
       </ul>
     </div>
-    <div class="aw fi vis">
+    <div class="aw fi">
       <div class="aw-head"><span class="wk-badge">الأسبوع الرابع</span><span class="wk-title">🎉 أول استثمار في حياتك</span></div>
       <ul class="ai-list">
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>موّل حسابك — لا يهم صغر المبلغ</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>ابحث عن Ticker صندوق ETF حلال واشترِ</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>أنشئ تحويلاً شهرياً تلقائياً بمبلغ ثابت</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>اكتب خطتك: الهدف + الأفق الزمني + التوزيع + المبلغ الشهري</li>
-        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>احتفل 🎉 — أنت الآن مستثمر رسمياً</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>موّل حسابك — لا يهم صغر المبلغ</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>ابحث عن Ticker صندوق ETF حلال واشترِ</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>أنشئ تحويلاً شهرياً تلقائياً بمبلغ ثابت</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>اكتب خطتك: الهدف + الأفق الزمني + التوزيع + المبلغ الشهري</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle('done');this.textContent=this.classList.contains('done')?'✓':''"></div>احتفل 🎉 — أنت الآن مستثمر رسمياً</li>
       </ul>
     </div>
   </div>
@@ -2134,7 +2151,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 
 <!-- QUOTE -->
 <section class="quote-sec">
-  <div class="q-wrap fi vis">
+  <div class="q-wrap fi">
     <span class="q-marks">"</span>
     <p class="q-text">أفضل وقت لبدء الاستثمار كان بالأمس. ثاني أفضل وقت هو اليوم.</p>
     <div class="q-author">— حكمة استثمارية خالدة</div>
@@ -2145,7 +2162,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ CH16: AFTER 30 DAYS (NEW) ══ -->
 <section class="sec sec-white" id="s16">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sage">🔄</div>
       <div>
         <div class="ch-num">الفصل السادس عشر — ما بعد البداية</div>
@@ -2153,12 +2170,12 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
         <p class="ch-hook">البداية كانت الأصعب. الآن نحوّلها إلى نظام حياة</p>
       </div>
     </div>
-    <div class="body fi vis">
+    <div class="body fi">
       <p>أنت الآن مستثمر. فتحت حسابك، اشتريت أول أصل، وأنشأت تحويلاً شهرياً تلقائياً. <strong>هذا إنجاز حقيقي — لا تقلل منه.</strong> لكن الاستثمار ليس حدثاً لمرة واحدة. هو نظام مستمر. وهذه هي العادات التي ستحميك وتنمّي ثروتك.</p>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2rem 0 .9rem" class="fi vis">📅 الروتين الشهري — عشر دقائق تكفي</h3>
-    <div class="steps fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2rem 0 .9rem" class="fi">📅 الروتين الشهري — عشر دقائق تكفي</h3>
+    <div class="steps fi">
       <div class="step">
         <div class="step-n">١</div>
         <div>
@@ -2182,8 +2199,8 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">📊 المراجعة الربع سنوية — كل ثلاثة أشهر</h3>
-    <div class="cards fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi">📊 المراجعة الربع سنوية — كل ثلاثة أشهر</h3>
+    <div class="cards fi">
       <div class="card">
         <span class="card-em">📋</span>
         <div class="card-title">راجع توزيع الأصول</div>
@@ -2201,11 +2218,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">🔄 المراجعة السنوية — أهم ساعة في سنتك المالية</h3>
-    <div class="body fi vis">
+    <h3 style="font-family:'Cairo',sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi">🔄 المراجعة السنوية — أهم ساعة في سنتك المالية</h3>
+    <div class="body fi">
       <p>مرة واحدة في السنة، اجلس ساعة كاملة وراجع كل شيء:</p>
     </div>
-    <ul class="cklist fi vis">
+    <ul class="cklist fi">
       <li><span class="ck ck-y">✓</span><strong>أعد التوازن:</strong> بِع ما ارتفع أكثر من اللازم واشترِ ما انخفض لتعود لتوزيعك الأصلي.</li>
       <li><span class="ck ck-y">✓</span><strong>زِد المبلغ الشهري:</strong> إذا زاد راتبك، زِد استثمارك بنفس النسبة على الأقل.</li>
       <li><span class="ck ck-y">✓</span><strong>راجع أهدافك:</strong> هل تغيّرت ظروفك؟ زواج؟ أطفال؟ عدّل الخطة وفقاً لذلك.</li>
@@ -2213,7 +2230,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       <li><span class="ck ck-y">✓</span><strong>طهّر أرباحك:</strong> احسب مبلغ التطهير السنوي وتبرّع به.</li>
     </ul>
 
-    <div class="ex fi vis">
+    <div class="ex fi">
       <h4>📘 مثال: سنة أولى لمستثمر مبتدئ</h4>
       <p>أحمد، عمره ستة وعشرون سنة، بدأ بألف ريال شهرياً في صندوق <span class="tk">SPUS</span> + خمسمئة ريال في الراجحي <span class="tk">1120</span>.</p>
       <ul>
@@ -2224,7 +2241,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </ul>
     </div>
 
-    <div class="box box-amb fi vis">
+    <div class="box box-amb fi">
       <div class="box-title">🏆 الاستثمار لعبة طويلة</div>
       <p>أنت لن ترى نتائج مذهلة في الشهر الأول أو حتى السنة الأولى. <strong>لكن بعد خمس سنوات ستشكر نفسك. وبعد عشر سنوات سيسألك الناس "كيف فعلتها؟"</strong> والجواب بسيط: بدأت مبكراً، استثمرت بانتظام، ولم أتوقف. هذا كل شيء.</p>
     </div>
@@ -2235,7 +2252,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- ══ FAQ ══ -->
 <section class="sec sec-sand" id="faq">
   <div class="inner">
-    <div class="ch fi vis">
+    <div class="ch fi">
       <div class="ch-icon ci-sky">❓</div>
       <div>
         <div class="ch-num">أسئلة المبتدئين</div>
@@ -2244,7 +2261,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
       </div>
     </div>
 
-    <div class="cards fi vis" style="grid-template-columns:1fr">
+    <div class="cards fi" style="grid-template-columns:1fr">
       <div class="card" style="padding:1.6rem">
         <div class="card-title" style="color:var(--amber);font-size:.95rem">💸 "وش أقل مبلغ أقدر أبدأ فيه؟"</div>
         <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">في Wahed Invest تقدر تبدأ بعشرة دولارات (حوالي سبعة وثلاثين ريال). في الراجحي كابيتال ما فيه حد أدنى — تقدر تشتري سهم واحد من أرامكو بحوالي ثلاثين ريال. <strong>المبلغ ما يهم. البداية هي اللي تهم.</strong></div>
@@ -2252,7 +2269,7 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 
       <div class="card" style="padding:1.6rem">
         <div class="card-title" style="color:var(--amber);font-size:.95rem">📉 "خسرت عشرة بالمئة في أول شهرين — هل أنا غلطان؟"</div>
-        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">لا. هذا طبيعي جداً. السوق يتحرك صعوداً وهبوطاً كل يوم. <strong>خسارة عشرة بالمئة على الورق مو خسارة حقيقية — تصير حقيقية فقط لو بعت.</strong> صندوق S&amp;P500 انخفض أكثر من ثلاثين بالمئة عدة مرات في التاريخ — وكل مرة رجع أعلى. الصبر هو اللعبة.</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">لا. هذا طبيعي جداً. السوق يتحرك صعوداً وهبوطاً كل يوم. <strong>خسارة عشرة بالمئة على الورق مو خسارة حقيقية — تصير حقيقية فقط لو بعت.</strong> صندوق S&P500 انخفض أكثر من ثلاثين بالمئة عدة مرات في التاريخ — وكل مرة رجع أعلى. الصبر هو اللعبة.</div>
       </div>
 
       <div class="card" style="padding:1.6rem">
@@ -2291,11 +2308,11 @@ setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.c
 <!-- CTA -->
 <section style="background:linear-gradient(160deg,var(--ink) 0%,#1C1408 100%);padding:6rem 2rem;text-align:center;position:relative;overflow:hidden">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 65% 55% at 50% 50%,rgba(196,136,48,.08),transparent)"></div>
-  <div style="position:relative;max-width:600px;margin:0 auto" class="fi vis">
+  <div style="position:relative;max-width:600px;margin:0 auto" class="fi">
     <div style="font-size:2.8rem;margin-bottom:1rem">🏆</div>
-    <h2 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:clamp(1.7rem,4vw,2.7rem);color:#fff;margin-bottom:.9rem;line-height:1.2">أنت الآن تملك المعرفة.<br><span style="color:var(--amber-light)">ما تبقّى هو القرار.</span></h2>
+    <h2 style="font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(1.7rem,4vw,2.7rem);color:#fff;margin-bottom:.9rem;line-height:1.2">أنت الآن تملك المعرفة.<br><span style="color:var(--amber-light)">ما تبقّى هو القرار.</span></h2>
     <p style="color:rgba(255,255,255,.55);font-size:1rem;line-height:1.8;margin-bottom:1.8rem">الأسواق ستصعد وستهبط. ستكون هناك أخبار مخيفة. لكن المستثمر الذي يفهم — يصبر، يتنوع، ويستمر. وهذا المستثمر كوفئ دائماً عبر التاريخ.</p>
-    <p style="color:var(--amber-light);font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:1.3rem;margin-bottom:1.5rem">يلا نستثمر 🚀</p>
+    <p style="color:var(--amber-light);font-family:'Cairo',sans-serif;font-weight:900;font-size:1.3rem;margin-bottom:1.5rem">يلا نستثمر 🚀</p>
   </div>
 </section>
 
@@ -2588,5 +2605,5 @@ updatePortCalc();
         });
     })();
     </script>
-
-</body></html>
+</body>
+</html>
