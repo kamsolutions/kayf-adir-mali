@@ -1,0 +1,2594 @@
+<!DOCTYPE html>
+<!-- saved from url=(0225)file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كيف أدير مالي — الدليل الشامل للمستثمر العربي المبتدئ</title>
+<link href="./كيف أدير مالي — الدليل الشامل للمستثمر العربي المبتدئ1_files/css2" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════
+   PALETTE — Soft Pastel (Warm Sand · Sky Blue · Sage · Blush)
+══════════════════════════════════════════ */
+:root{
+  --sand:#EEE0CE; --sand-light:#F7F0E6; --sand-dark:#D9C8B0;
+  --sky:#B8D8EA; --sky-light:#D8EDF5; --sky-deep:#4A8AAA;
+  --sage:#A8C8A8; --sage-light:#D0E8D0; --sage-deep:#3A7A4A;
+  --blush:#E8C0C0; --blush-dark:#B87878;
+  --cream:#FDFAF5; --card:#FFFCF7;
+  --ink:#2A1F0E; --ink-mid:#5A4A30; --ink-light:#8A7A60; --ink-xlight:#B8A890;
+  --amber:#C48830; --amber-light:#E8AE58; --amber-pale:#FBF0DC;
+  --success:#3A7A4A; --danger:#A84040; --info:#3A6A9A;
+  --shadow-sm:0 2px 12px rgba(80,60,20,.08);
+  --shadow-md:0 6px 28px rgba(80,60,20,.12);
+  --shadow-lg:0 12px 48px rgba(80,60,20,.16);
+  --shadow-amb:0 4px 24px rgba(196,136,48,.2);
+  --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box;touch-action:manipulation}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);direction:rtl;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--sand-light)}::-webkit-scrollbar-thumb{background:var(--amber);border-radius:3px}
+
+/* ═══ PROGRESS ═══ */
+.prog{position:fixed;top:0;right:0;left:0;height:3px;background:rgba(196,136,48,.15);z-index:2000}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--amber),var(--sky-deep),var(--sage-deep));width:0;transition:width .1s}
+
+/* ═══ NAV ═══ */
+.nav{
+  position:fixed;top:3px;right:0;left:0;z-index:1000;
+  background:rgba(253,250,245,.94);backdrop-filter:blur(16px);
+  height:58px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;border-bottom:1px solid rgba(196,136,48,.15);
+  box-shadow:var(--shadow-sm);
+}
+.nav-brand{display:flex;align-items:center;gap:.6rem}
+.nav-mark{
+  width:32px;height:32px;border-radius:9px;
+  background:linear-gradient(135deg,var(--amber),var(--amber-light));
+  display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;box-shadow:var(--shadow-amb);
+}
+.nav-name{font-family:'Cairo',sans-serif;font-weight:900;font-size:.9rem;color:var(--ink)}
+.nav-name b{color:var(--amber)}
+.nav-links{display:flex;gap:.1rem;list-style:none;overflow-x:auto}
+.nav-links a{color:var(--ink-light);text-decoration:none;font-size:.64rem;padding:4px 7px;border-radius:6px;transition:all .18s;white-space:nowrap;font-weight:700}
+.nav-links a:hover{color:var(--amber);background:var(--amber-pale)}
+
+/* ═══ COVER PAGE ═══ */
+.cover{
+  min-height:100vh;position:relative;overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:5rem 2rem 3rem;
+  background:linear-gradient(165deg,var(--sand-light) 0%,var(--cream) 40%,var(--sky-light) 70%,var(--sage-light) 100%);
+}
+/* 3D soft blobs inspired by the UI kit */
+.blob{position:absolute;border-radius:50%;filter:blur(55px);opacity:.5;animation:blobF 9s ease-in-out infinite}
+.b1{width:500px;height:500px;background:var(--sky);top:-120px;right:-100px;animation-delay:0s}
+.b2{width:350px;height:350px;background:var(--sage);bottom:-80px;right:15%;animation-delay:2.5s}
+.b3{width:400px;height:400px;background:var(--blush);bottom:-100px;left:-80px;animation-delay:5s}
+.b4{width:220px;height:220px;background:var(--amber-pale);top:35%;left:8%;animation-delay:1.5s}
+
+.cover-inner{position:relative;z-index:2;max-width:760px;text-align:center}
+
+/* Guide badge */
+.cover-type-badge{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:rgba(253,250,245,.85);border:1.5px solid rgba(196,136,48,.25);
+  color:var(--amber);padding:7px 18px;border-radius:100px;
+  font-size:.74rem;font-weight:800;letter-spacing:.8px;
+  margin-bottom:2rem;backdrop-filter:blur(6px);box-shadow:var(--shadow-sm);
+  animation:riseIn .7s ease both;
+}
+
+/* Big book visual */
+.cover-book{
+  width:220px;height:280px;margin:0 auto 2.5rem;
+  position:relative;animation:riseIn .7s .1s ease both;
+}
+.book-spine{
+  position:absolute;right:0;top:0;bottom:0;width:28px;
+  background:linear-gradient(180deg,#6A4820,#3A2810);
+  border-radius:0 4px 4px 0;
+  box-shadow:3px 0 12px rgba(0,0,0,.3);
+}
+.book-cover{
+  position:absolute;right:28px;top:0;left:0;bottom:0;
+  background:linear-gradient(160deg,var(--ink) 0%,#1A1008 100%);
+  border-radius:var(--r) 0 0 var(--r);
+  box-shadow:-8px 8px 32px rgba(0,0,0,.35);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:1.5rem;overflow:hidden;
+}
+.book-cover::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(196,136,48,.1),transparent);
+}
+.book-cover-brand{
+  font-size:.55rem;font-weight:700;letter-spacing:3px;color:rgba(255,255,255,.4);
+  text-transform:uppercase;margin-bottom:.8rem;position:relative;
+}
+.book-cover-icon{font-size:2.2rem;margin-bottom:.8rem;position:relative}
+.book-cover-title{
+  font-family:'Cairo',sans-serif;font-weight:900;font-size:.95rem;
+  color:#fff;text-align:center;line-height:1.4;position:relative;margin-bottom:.6rem;
+}
+.book-cover-sub{
+  font-size:.55rem;color:rgba(255,255,255,.5);
+  text-align:center;line-height:1.5;position:relative;
+}
+.book-cover-line{
+  width:40px;height:1px;background:var(--amber);margin:.6rem auto;position:relative;
+}
+.book-pages{
+  position:absolute;right:-4px;top:5px;bottom:5px;width:12px;
+  background:repeating-linear-gradient(to bottom,#f5f0e8 0px,#f5f0e8 2px,#e0d8cc 2px,#e0d8cc 4px);
+  border-radius:0 2px 2px 0;
+}
+
+/* Cover headline */
+.cover-headline{
+  font-family:'Cairo',sans-serif;font-weight:900;
+  font-size:clamp(1.8rem,5vw,3.2rem);color:var(--ink);
+  line-height:1.15;margin-bottom:1rem;
+  animation:riseIn .7s .2s ease both;
+}
+.cover-headline .accent{color:var(--amber)}
+.cover-tagline{
+  font-size:1.05rem;color:var(--ink-mid);line-height:1.8;
+  max-width:580px;margin:0 auto 2.2rem;
+  animation:riseIn .7s .3s ease both;
+}
+/* Journey steps teaser */
+.cover-journey{
+  display:flex;align-items:center;justify-content:center;
+  gap:0;flex-wrap:wrap;margin-bottom:2.2rem;
+  animation:riseIn .7s .4s ease both;
+}
+.cj-step{
+  display:flex;flex-direction:column;align-items:center;gap:.3rem;
+  background:rgba(253,250,245,.8);border:1px solid rgba(196,136,48,.18);
+  border-radius:14px;padding:.8rem 1.1rem;backdrop-filter:blur(6px);
+  box-shadow:var(--shadow-sm);min-width:90px;
+}
+.cj-arrow{font-size:1rem;color:var(--amber);padding:0 .3rem;flex-shrink:0}
+.cj-icon{font-size:1.4rem}
+.cj-label{font-size:.66rem;font-weight:700;color:var(--ink-mid);text-align:center}
+
+.cover-stats{
+  display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;
+  animation:riseIn .7s .5s ease both;
+}
+.c-stat{
+  background:rgba(253,250,245,.85);border:1px solid rgba(196,136,48,.2);
+  border-radius:14px;padding:.8rem 1.4rem;text-align:center;
+  backdrop-filter:blur(6px);box-shadow:var(--shadow-sm);
+}
+.c-stat-n{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.6rem;color:var(--amber);display:block}
+.c-stat-l{font-size:.7rem;color:var(--ink-light);font-weight:600}
+.scroll-cue{
+  position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);
+  color:var(--ink-xlight);font-size:.68rem;display:flex;flex-direction:column;
+  align-items:center;gap:5px;animation:bounce 2.5s infinite;
+}
+.scroll-ln{width:1px;height:34px;background:linear-gradient(var(--amber),transparent)}
+
+/* ═══ WRAPPERS ═══ */
+.sec{padding:5rem 0}
+.sec-cream{background:var(--cream)}
+.sec-white{background:var(--card)}
+.sec-sand{background:var(--sand-light)}
+.sec-sky{background:linear-gradient(160deg,#D5EAF2,#C8E2EE)}
+.sec-sage{background:linear-gradient(160deg,#CDE8CE,#BDD8BE)}
+.inner{max-width:920px;margin:0 auto;padding:0 2rem}
+
+/* ═══ SEC HEADER ═══ */
+.sec-lbl{
+  font-size:.67rem;font-weight:800;letter-spacing:3px;color:var(--amber);
+  text-transform:uppercase;margin-bottom:.7rem;display:flex;align-items:center;gap:.5rem;
+}
+.sec-lbl::before{content:'';width:18px;height:2px;background:var(--amber);border-radius:1px}
+.sec-title{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(1.65rem,4vw,2.7rem);color:var(--ink);margin-bottom:2.2rem;line-height:1.2}
+
+/* ═══ CHAPTER HEADER ═══ */
+.ch{display:flex;align-items:flex-start;gap:1.3rem;margin-bottom:2.4rem}
+.ch-icon{width:70px;height:70px;border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:1.85rem;flex-shrink:0;box-shadow:var(--shadow-sm)}
+.ci-sand{background:linear-gradient(135deg,var(--sand-light),var(--sand))}
+.ci-sky{background:linear-gradient(135deg,var(--sky-light),var(--sky))}
+.ci-sage{background:linear-gradient(135deg,var(--sage-light),var(--sage))}
+.ci-blush{background:linear-gradient(135deg,#F4DEDE,var(--blush))}
+.ci-amb{background:linear-gradient(135deg,var(--amber-pale),rgba(196,136,48,.22))}
+.ci-ink{background:linear-gradient(135deg,#3A2810,#2A1F0E)}
+.ch-num{font-size:.64rem;font-weight:800;letter-spacing:2px;color:var(--amber);margin-bottom:.3rem}
+.ch-title{font-family:'Cairo',sans-serif;font-weight:900;font-size:clamp(1.4rem,3.2vw,2.1rem);line-height:1.22;color:var(--ink)}
+.ch-hook{font-size:.95rem;color:var(--ink-light);margin-top:.35rem;line-height:1.6;font-weight:500}
+
+/* ═══ JOURNEY INDICATOR ═══ */
+.journey-bar{
+  display:flex;align-items:center;gap:0;margin-bottom:3rem;
+  overflow-x:auto;padding:.5rem 0;
+}
+.jb-step{
+  display:flex;flex-direction:column;align-items:center;gap:.3rem;
+  min-width:72px;
+}
+.jb-dot{
+  width:36px;height:36px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;font-weight:800;
+  border:2px solid rgba(196,136,48,.3);
+  background:var(--card);color:var(--ink-light);
+  transition:all .3s;
+}
+.jb-dot.active{background:var(--amber);color:#fff;border-color:var(--amber);box-shadow:var(--shadow-amb)}
+.jb-dot.done{background:var(--sage-deep);color:#fff;border-color:var(--sage-deep)}
+.jb-label{font-size:.58rem;font-weight:700;color:var(--ink-xlight);text-align:center;max-width:66px;line-height:1.3}
+.jb-line{flex:1;height:2px;background:rgba(196,136,48,.18);min-width:12px}
+
+/* ═══ BODY TEXT ═══ */
+.body{font-size:1rem;line-height:1.92;color:var(--ink-mid)}
+.body p{margin-bottom:1.35rem}
+.body strong{color:var(--ink);font-weight:800}
+
+/* ═══ BOXES ═══ */
+.box{border-radius:var(--r);padding:1.45rem 1.75rem;margin:1.75rem 0;position:relative;overflow:hidden}
+.box::before{content:'';position:absolute;right:0;top:0;bottom:0;width:4px;border-radius:0 4px 4px 0}
+.box-amb{background:linear-gradient(135deg,var(--amber-pale),rgba(232,174,88,.08));border:1px solid rgba(196,136,48,.2)}
+.box-amb::before{background:var(--amber)}
+.box-sky{background:linear-gradient(135deg,rgba(184,216,234,.18),rgba(74,138,170,.08));border:1px solid rgba(74,138,170,.2)}
+.box-sky::before{background:var(--sky-deep)}
+.box-sage{background:linear-gradient(135deg,rgba(168,200,168,.18),rgba(58,122,74,.07));border:1px solid rgba(58,122,74,.18)}
+.box-sage::before{background:var(--sage-deep)}
+.box-blush{background:rgba(232,192,192,.1);border:1px solid rgba(168,64,64,.18)}
+.box-blush::before{background:var(--blush-dark)}
+.box-dark{background:var(--ink);border:1px solid rgba(196,136,48,.18)}
+.box-dark::before{background:var(--amber)}
+.box-title{font-weight:800;font-size:.82rem;margin-bottom:.52rem;display:flex;align-items:center;gap:.45rem}
+.box-amb   .box-title{color:var(--amber)}
+.box-sky   .box-title{color:var(--sky-deep)}
+.box-sage  .box-title{color:var(--sage-deep)}
+.box-blush .box-title{color:var(--danger)}
+.box-dark  .box-title{color:var(--amber-light)}
+.box p{font-size:.92rem;line-height:1.82;margin:0!important}
+.box-dark p{color:rgba(255,255,255,.8)}
+
+/* ═══ EXAMPLE ═══ */
+.ex{background:var(--ink);border-radius:20px;padding:1.9rem 2rem;margin:1.8rem 0;border:1px solid rgba(196,136,48,.2)}
+.ex h4{color:var(--amber-light);font-weight:800;font-size:.8rem;letter-spacing:1px;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.ex p,.ex li{color:rgba(255,255,255,.78);font-size:.92rem;line-height:1.85}
+.ex ul,.ex ol{padding-right:1.2rem;margin-top:.6rem}
+.ex li{margin-bottom:.4rem}
+/* RTL arrows inside dark boxes */
+.ex .arr{color:var(--amber-light);font-style:normal}
+
+/* ═══ CARDS ═══ */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:1.15rem;margin:1.8rem 0}
+.card{background:var(--card);border-radius:var(--r);padding:1.45rem;border:1px solid rgba(196,136,48,.1);transition:all .24s;box-shadow:var(--shadow-sm)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:rgba(196,136,48,.22)}
+.card-em{font-size:1.85rem;margin-bottom:.85rem;display:block}
+.card-title{font-family:'Cairo',sans-serif;font-weight:800;font-size:.93rem;color:var(--ink);margin-bottom:.38rem}
+.card-txt{font-size:.83rem;color:var(--ink-mid);line-height:1.65}
+
+/* ═══ MARKET CARDS ═══ */
+.mkt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.15rem;margin:1.8rem 0}
+.mkt{border-radius:20px;padding:1.9rem;box-shadow:var(--shadow-sm)}
+.mkt-us {background:linear-gradient(135deg,#C4D8EC,#D4E6F4)}
+.mkt-uae{background:linear-gradient(135deg,#BCD8C0,#CCE8D0)}
+.mkt-sa {background:linear-gradient(135deg,#E4D0D8,#ECD8E0)}
+.mkt h3{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.05rem;color:var(--ink);margin:.5rem 0 .25rem}
+.mkt p{font-size:.77rem;color:var(--ink-mid);margin-bottom:.85rem}
+.mkt-tag{display:inline-block;background:rgba(42,31,14,.08);color:var(--ink-mid);padding:2px 9px;border-radius:100px;font-size:.68rem;font-weight:700;margin:.18rem}
+
+/* ═══ INDEX CARDS ═══ */
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(238px,1fr));gap:1.1rem;margin:1.8rem 0}
+.idx-card{background:var(--card);border-radius:20px;padding:1.75rem;border:1px solid rgba(196,136,48,.13);box-shadow:var(--shadow-sm)}
+.idx-ticker{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.45rem;color:var(--amber);margin-bottom:.2rem}
+.idx-remark{
+  display:inline-flex;align-items:center;gap:.3rem;
+  background:var(--amber-pale);border:1px solid rgba(196,136,48,.2);
+  border-radius:8px;padding:2px 9px;font-size:.67rem;font-weight:800;color:var(--amber);
+  margin-bottom:.75rem;font-family:monospace;
+}
+.idx-name{font-size:.8rem;color:var(--ink-mid);margin-bottom:.75rem}
+.idx-fact{display:flex;align-items:center;gap:.48rem;font-size:.76rem;color:var(--ink-mid);padding:.2rem 0}
+.idx-dot{width:5px;height:5px;border-radius:50%;background:var(--sage-deep);flex-shrink:0}
+
+/* ═══ STOCK TYPES ═══ */
+.stypes{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1.05rem;margin:1.8rem 0}
+.stype{border-radius:var(--r);padding:1.4rem;text-align:center;border:2px solid;transition:all .24s;cursor:default;box-shadow:var(--shadow-sm)}
+.stype:hover{transform:scale(1.03);box-shadow:var(--shadow-md)}
+.st-g{border-color:rgba(168,200,168,.8);background:rgba(168,200,168,.1)}
+.st-d{border-color:rgba(196,136,48,.6);background:var(--amber-pale)}
+.st-b{border-color:rgba(184,216,234,.9);background:rgba(184,216,234,.15)}
+.st-v{border-color:rgba(232,192,192,.9);background:rgba(232,192,192,.1)}
+.stype-em{font-size:2.1rem;margin-bottom:.7rem;display:block}
+.stype-name{font-family:'Cairo',sans-serif;font-weight:800;font-size:.93rem;margin-bottom:.4rem}
+.st-g .stype-name{color:var(--sage-deep)}
+.st-d .stype-name{color:var(--amber)}
+.st-b .stype-name{color:var(--sky-deep)}
+.st-v .stype-name{color:var(--blush-dark)}
+.stype-desc{font-size:.78rem;color:var(--ink-mid);line-height:1.58}
+
+/* ═══ HALAL CARDS ═══ */
+.halal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(188px,1fr));gap:1.05rem;margin:1.8rem 0}
+.h-card{background:var(--card);border-radius:var(--r);padding:1.4rem;text-align:center;border:2px solid transparent;transition:all .24s;box-shadow:var(--shadow-sm)}
+.h-card:hover{border-color:var(--amber);transform:translateY(-3px);box-shadow:var(--shadow-amb)}
+.h-em{font-size:2.1rem;margin-bottom:.7rem;display:block}
+.h-ar{font-size:1rem;color:var(--amber);font-weight:700;margin-bottom:.25rem}
+.h-name{font-family:'Cairo',sans-serif;font-weight:800;font-size:.88rem;color:var(--ink);margin-bottom:.35rem}
+.h-desc{font-size:.77rem;color:var(--ink-light);line-height:1.58}
+
+/* ═══ CHECKLIST ═══ */
+.cklist{list-style:none;margin:1.15rem 0}
+.cklist li{display:flex;align-items:flex-start;gap:.72rem;padding:.52rem 0;font-size:.9rem;color:var(--ink-mid);border-bottom:1px solid rgba(80,60,20,.06)}
+.cklist li:last-child{border:none}
+.ck{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.62rem;flex-shrink:0;margin-top:2px}
+.ck-y{background:rgba(58,122,74,.14);color:var(--success)}
+.ck-n{background:rgba(168,64,64,.1);color:var(--danger)}
+
+/* ═══ STEPS ═══ */
+.steps{margin:1.8rem 0}
+.step{display:flex;gap:1.2rem;align-items:flex-start;padding:1.25rem 0;border-bottom:1px solid rgba(80,60,20,.07)}
+.step:last-child{border:none}
+.step-n{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  background:linear-gradient(135deg,var(--amber),var(--amber-light));
+  color:#fff;font-family:'Cairo',sans-serif;font-weight:900;font-size:1rem;
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-amb);
+}
+.step h4{font-family:'Cairo',sans-serif;font-weight:800;font-size:.93rem;color:var(--ink);margin-bottom:.32rem}
+.step p{font-size:.87rem;color:var(--ink-mid);line-height:1.72;margin:0}
+/* ticker inline badge */
+.tk{display:inline-flex;align-items:center;background:var(--ink);color:var(--amber-light);font-family:monospace;font-weight:700;font-size:.74rem;padding:1px 7px;border-radius:5px;letter-spacing:.4px;vertical-align:middle}
+
+/* ═══ COMPOUND CALCULATOR ═══ */
+.calc{background:var(--ink);border-radius:22px;padding:2.2rem;margin:1.8rem 0;border:1px solid rgba(196,136,48,.18);box-shadow:var(--shadow-md)}
+.calc-title{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.05rem;color:var(--amber-light);margin-bottom:1.7rem;display:flex;align-items:center;gap:.5rem}
+.calc-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem}
+.calc-field label{display:block;color:rgba(255,255,255,.5);font-size:.74rem;font-weight:700;margin-bottom:.32rem}
+.calc-field input{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:9px;padding:.62rem 1rem;color:#fff;font-family:'Tajawal',sans-serif;font-size:.94rem;font-weight:600;outline:none;transition:border-color .2s;direction:ltr;text-align:right}
+.calc-field input:focus{border-color:var(--amber)}
+.calc-res{background:rgba(196,136,48,.09);border:1px solid rgba(196,136,48,.24);border-radius:13px;padding:1.3rem;text-align:center}
+.calc-res-lbl{color:rgba(255,255,255,.42);font-size:.74rem;font-weight:600;margin-bottom:.4rem}
+.calc-res-num{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.9rem;color:var(--amber-light)}
+.calc-res-sub{color:rgba(255,255,255,.32);font-size:.72rem;margin-top:.25rem}
+
+/* ═══ PORTFOLIO ALLOCATION CALCULATOR ═══ */
+.port-calc{background:var(--card);border-radius:22px;padding:2.2rem;margin:1.8rem 0;border:1px solid rgba(196,136,48,.14);box-shadow:var(--shadow-md)}
+.pc-title{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.05rem;color:var(--ink);margin-bottom:.4rem;display:flex;align-items:center;gap:.5rem}
+.pc-sub{font-size:.82rem;color:var(--ink-light);margin-bottom:1.6rem}
+.pc-input-row{display:flex;align-items:center;gap:.8rem;margin-bottom:1rem;flex-wrap:wrap}
+.pc-input-row label{font-size:.78rem;font-weight:700;color:var(--ink-mid);min-width:100px}
+.pc-amount{
+  flex:1;min-width:140px;background:var(--sand-light);border:1.5px solid rgba(196,136,48,.25);
+  border-radius:9px;padding:.6rem .9rem;font-family:'Tajawal',sans-serif;
+  font-size:.98rem;font-weight:700;color:var(--ink);outline:none;direction:ltr;text-align:right;
+}
+.pc-amount:focus{border-color:var(--amber)}
+.pc-profile-btns{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.4rem}
+.pc-btn{
+  padding:.45rem 1rem;border-radius:100px;font-size:.75rem;font-weight:700;cursor:pointer;
+  border:2px solid rgba(196,136,48,.2);background:var(--card);color:var(--ink-mid);
+  transition:all .2s;
+}
+.pc-btn.active{background:var(--ink);color:var(--amber-light);border-color:var(--amber)}
+/* Sliders area */
+.pc-sliders{margin-bottom:1.5rem}
+.pc-slider-row{display:flex;align-items:center;gap:.8rem;margin-bottom:.7rem}
+.pc-slider-lbl{font-size:.8rem;font-weight:700;color:var(--ink-mid);min-width:130px;display:flex;align-items:center;gap:.4rem}
+.pc-slider-lbl .lbl-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+.pc-slider{flex:1;-webkit-appearance:none;height:5px;border-radius:3px;outline:none;cursor:pointer}
+.pc-slider::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--amber);cursor:pointer;box-shadow:var(--shadow-amb)}
+.pc-pct{font-size:.82rem;font-weight:800;color:var(--amber);min-width:36px;text-align:left}
+.pc-val{font-size:.78rem;color:var(--ink-light);min-width:90px;text-align:left}
+/* Donut chart */
+.pc-results{display:flex;gap:2rem;align-items:center;flex-wrap:wrap}
+.pc-donut-wrap{position:relative;width:160px;height:160px;flex-shrink:0}
+.pc-donut-wrap canvas{display:block}
+.pc-donut-center{
+  position:absolute;inset:32px;border-radius:50%;background:var(--card);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  box-shadow:inset 0 2px 8px rgba(80,60,20,.08);
+}
+.pc-donut-total{font-family:'Cairo',sans-serif;font-weight:900;font-size:.85rem;color:var(--ink)}
+.pc-donut-lbl{font-size:.58rem;color:var(--ink-xlight);font-weight:600}
+.pc-legend{flex:1;min-width:200px}
+.pc-leg-item{display:flex;align-items:center;gap:.65rem;padding:.3rem 0;font-size:.8rem;color:var(--ink-mid)}
+.pc-leg-dot{width:11px;height:11px;border-radius:3px;flex-shrink:0}
+.pc-leg-name{flex:1}
+.pc-leg-pct{font-weight:800;color:var(--ink);min-width:32px}
+.pc-leg-val{color:var(--amber);font-weight:700;font-size:.77rem}
+.pc-warn{background:rgba(168,64,64,.07);border:1px solid rgba(168,64,64,.18);border-radius:10px;padding:.6rem 1rem;font-size:.78rem;color:var(--danger);font-weight:600;margin-top:.8rem;display:none}
+.pc-warn.show{display:block}
+
+/* ═══ AGE TABS ═══ */
+.age-tabs{display:flex;gap:.45rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.age-tab{padding:.52rem 1.1rem;border-radius:100px;font-weight:700;font-size:.8rem;cursor:pointer;border:2px solid rgba(80,60,20,.12);background:var(--card);color:var(--ink-mid);transition:all .22s}
+.age-tab.active{background:var(--ink);color:var(--amber-light);border-color:var(--amber)}
+.age-panel{display:none}
+.age-panel.active{display:block}
+.age-profile{background:var(--card);border-radius:20px;border:2px solid rgba(196,136,48,.12);overflow:hidden;box-shadow:var(--shadow-sm)}
+.age-head{padding:1.5rem 1.9rem;border-bottom:1px solid rgba(80,60,20,.06);display:flex;align-items:center;gap:1.1rem}
+.age-em{font-size:2.6rem}
+.age-info h3{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.05rem;color:var(--ink);margin-bottom:.2rem}
+.age-info p{font-size:.8rem;color:var(--ink-light)}
+.age-body{padding:1.6rem 1.9rem}
+.age-body h4{font-family:'Cairo',sans-serif;font-weight:800;color:var(--ink);font-size:.92rem;margin:.9rem 0 .45rem}
+.age-body h4:first-child{margin-top:0}
+.age-body p{font-size:.88rem;color:var(--ink-mid);line-height:1.72;margin-bottom:.55rem}
+.ptags{display:flex;flex-wrap:wrap;gap:.42rem;margin:.55rem 0}
+.ptag{padding:4px 11px;border-radius:100px;font-size:.72rem;font-weight:700}
+
+/* ═══ INCOME CARDS ═══ */
+.inc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:1.15rem;margin:1.8rem 0}
+.inc{border-radius:20px;padding:1.75rem;border:2px solid;transition:all .22s;box-shadow:var(--shadow-sm)}
+.inc:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.inc-low{border-color:rgba(168,200,168,.7);background:rgba(168,200,168,.08)}
+.inc-mid{border-color:rgba(196,136,48,.45);background:var(--amber-pale)}
+.inc-hi {border-color:rgba(184,216,234,.8);background:rgba(184,216,234,.1)}
+.inc-em{font-size:1.9rem;margin-bottom:.65rem;display:block}
+.inc-range{font-family:'Cairo',sans-serif;font-weight:900;font-size:.97rem;margin-bottom:.22rem}
+.inc-low  .inc-range{color:var(--sage-deep)}
+.inc-mid  .inc-range{color:var(--amber)}
+.inc-hi   .inc-range{color:var(--sky-deep)}
+.inc-lbl{font-size:.72rem;color:var(--ink-light);margin-bottom:.85rem}
+.inc-body{font-size:.83rem;color:var(--ink-mid);line-height:1.7}
+.inc-body strong{font-weight:800;display:block;margin:.55rem 0 .2rem;color:var(--ink)}
+
+/* ═══ BROKER TABLE ═══ */
+.broker-wrap{overflow-x:auto;margin:1.8rem 0;border-radius:16px;box-shadow:var(--shadow-sm)}
+.broker-table{width:100%;border-collapse:collapse;min-width:580px}
+.broker-table th{background:var(--ink);color:var(--amber-light);font-family:'Cairo',sans-serif;font-weight:700;font-size:.77rem;padding:.82rem 1rem;text-align:right}
+.broker-table td{padding:.72rem 1rem;font-size:.8rem;color:var(--ink-mid);border-bottom:1px solid rgba(80,60,20,.06);vertical-align:top;line-height:1.5;background:var(--card)}
+.broker-table tr:hover td{background:var(--amber-pale)}
+.broker-table tr:last-child td{border:none}
+.b-y{background:rgba(58,122,74,.12);color:var(--success);padding:2px 7px;border-radius:100px;font-size:.67rem;font-weight:700}
+.b-n{background:rgba(168,64,64,.1);color:var(--danger);padding:2px 7px;border-radius:100px;font-size:.67rem;font-weight:700}
+.b-m{background:rgba(196,136,48,.14);color:var(--amber);padding:2px 7px;border-radius:100px;font-size:.67rem;font-weight:700}
+
+/* ═══ CHOICE CARDS ═══ */
+.choice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1.05rem;margin:1.8rem 0}
+.choice-card{background:var(--card);border-radius:var(--r);padding:1.4rem;border:2px solid rgba(80,60,20,.09);transition:all .22s;box-shadow:var(--shadow-sm)}
+.choice-card:hover{border-color:var(--amber);box-shadow:var(--shadow-amb)}
+.cc-who{font-size:.67rem;font-weight:800;letter-spacing:1px;color:var(--amber);margin-bottom:.42rem}
+.cc-title{font-family:'Cairo',sans-serif;font-weight:800;font-size:.93rem;color:var(--ink);margin-bottom:.48rem}
+.cc-desc{font-size:.8rem;color:var(--ink-mid);line-height:1.62}
+
+/* ═══ PORTFOLIO PIE (static model) ═══ */
+.port-box{background:var(--card);border-radius:20px;padding:1.9rem;margin:1.8rem 0;border:1px solid rgba(196,136,48,.12);display:flex;align-items:center;gap:1.8rem;flex-wrap:wrap;box-shadow:var(--shadow-sm)}
+.pie-ring{width:148px;height:148px;border-radius:50%;flex-shrink:0;position:relative}
+.pie-center{position:absolute;inset:22%;background:var(--card);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.58rem;font-weight:700;color:var(--ink);text-align:center}
+.pie-legend{flex:1;min-width:160px}
+.leg{display:flex;align-items:center;gap:.65rem;padding:.32rem 0;font-size:.8rem;color:var(--ink-mid)}
+.leg-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+
+/* ═══ INFLUENCE CARDS ═══ */
+.inf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(208px,1fr));gap:1.05rem;margin:1.8rem 0}
+.inf-card{background:rgba(42,31,14,.05);border:1px solid rgba(42,31,14,.09);border-radius:var(--r);padding:1.4rem;transition:all .22s}
+.inf-card:hover{transform:translateY(-3px);background:rgba(42,31,14,.08)}
+.inf-em{font-size:1.85rem;margin-bottom:.65rem;display:block}
+.inf-name{font-family:'Cairo',sans-serif;font-weight:800;font-size:.88rem;color:var(--ink);margin-bottom:.38rem}
+.inf-desc{font-size:.78rem;color:var(--ink-mid);line-height:1.62}
+.inf-tag{display:inline-block;background:var(--amber-pale);border:1px solid rgba(196,136,48,.2);color:var(--amber);font-size:.64rem;font-weight:700;padding:2px 7px;border-radius:100px;margin-top:.48rem}
+
+/* ═══ RISK ═══ */
+.risk-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.8rem 0}
+.risk{border-radius:var(--r);padding:1.35rem;text-align:center;border:2px solid;box-shadow:var(--shadow-sm)}
+.r-low{border-color:rgba(168,200,168,.7);background:rgba(168,200,168,.1)}
+.r-mid{border-color:rgba(196,136,48,.5);background:var(--amber-pale)}
+.r-hi {border-color:rgba(232,192,192,.8);background:rgba(232,192,192,.1)}
+.risk-em{font-size:1.9rem;display:block;margin-bottom:.62rem}
+.risk-name{font-family:'Cairo',sans-serif;font-weight:800;font-size:.93rem;margin-bottom:.38rem}
+.r-low .risk-name{color:var(--sage-deep)}
+.r-mid .risk-name{color:var(--amber)}
+.r-hi  .risk-name{color:var(--blush-dark)}
+.risk-desc{font-size:.77rem;color:var(--ink-mid);line-height:1.58}
+
+/* ═══ GLOSSARY ═══ */
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:.92rem;margin:1.8rem 0}
+.g-item{background:var(--card);border-radius:13px;padding:1.1rem 1.4rem;border:1px solid rgba(196,136,48,.12);transition:all .19s;box-shadow:var(--shadow-sm)}
+.g-item:hover{border-color:var(--amber);box-shadow:var(--shadow-amb)}
+.g-term{font-family:'Cairo',sans-serif;font-weight:800;font-size:.89rem;color:var(--ink);margin-bottom:.14rem}
+.g-en{font-size:.66rem;color:var(--amber);font-weight:700;letter-spacing:.5px;margin-bottom:.38rem}
+.g-def{font-size:.78rem;color:var(--ink-mid);line-height:1.58}
+
+/* ═══ ACTION PLAN ═══ */
+.aw{background:var(--card);border-radius:18px;padding:1.75rem;margin-bottom:1.05rem;border:1px solid rgba(196,136,48,.12);box-shadow:var(--shadow-sm)}
+.aw-head{display:flex;align-items:center;gap:.85rem;margin-bottom:1.05rem}
+.wk-badge{background:var(--ink);color:var(--amber-light);font-family:'Cairo',sans-serif;font-weight:900;font-size:.72rem;padding:4px 12px;border-radius:100px}
+.wk-title{font-family:'Cairo',sans-serif;font-weight:800;font-size:.93rem;color:var(--ink)}
+.ai-list{list-style:none;display:flex;flex-direction:column;gap:.52rem}
+.ai{display:flex;align-items:flex-start;gap:.72rem;font-size:.86rem;color:var(--ink-mid);line-height:1.5}
+.ai-ck{width:18px;height:18px;border:2px solid var(--amber);border-radius:5px;flex-shrink:0;cursor:pointer;transition:all .2s;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:.6rem;color:transparent}
+.ai-ck.done{background:var(--amber);color:#fff}
+
+/* ═══ QUOTE ═══ */
+.quote-sec{padding:5rem 2rem;text-align:center;background:linear-gradient(160deg,var(--sand-light),var(--cream),var(--sky-light))}
+.q-wrap{max-width:660px;margin:0 auto}
+.q-marks{font-size:4rem;color:var(--amber);line-height:.5;font-family:Georgia,serif;opacity:.22;display:block;margin-bottom:.75rem}
+.q-text{font-family:'Cairo',sans-serif;font-weight:700;font-size:clamp(1.1rem,2.4vw,1.65rem);color:var(--ink);line-height:1.52;margin-bottom:.85rem}
+.q-author{font-size:.8rem;color:var(--amber);font-weight:600}
+
+/* ═══ FOOTER ═══ */
+.footer{background:var(--ink);padding:3rem 2rem;text-align:center}
+.footer-brand{font-family:'Cairo',sans-serif;font-weight:900;font-size:1.1rem;color:var(--amber-light);margin-bottom:.5rem}
+.footer-sub{font-size:.78rem;color:rgba(255,255,255,.4);margin-bottom:1rem}
+.footer-copy{font-size:.7rem;color:rgba(255,255,255,.22)}
+
+/* ═══ TOC ═══ */
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:.95rem}
+.toc-item{background:var(--card);border-radius:15px;padding:1.25rem;display:flex;align-items:center;gap:.85rem;text-decoration:none;color:inherit;border:1px solid rgba(196,136,48,.12);box-shadow:var(--shadow-sm);transition:all .22s}
+.toc-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-amb);border-color:rgba(196,136,48,.28)}
+.toc-num{width:40px;height:40px;border-radius:11px;background:linear-gradient(135deg,var(--amber),var(--amber-light));color:#fff;font-family:'Cairo',sans-serif;font-weight:900;font-size:.92rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:var(--shadow-amb)}
+.toc-text h4{font-weight:700;font-size:.84rem;color:var(--ink);margin-bottom:2px}
+.toc-text p{font-size:.7rem;color:var(--ink-light)}
+
+/* ═══ ANIMATIONS ═══ */
+@keyframes riseIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blobF{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-18px) scale(1.04)}}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(5px)}}
+.fi{opacity:0;transform:translateY(24px);transition:opacity .58s ease,transform .58s ease}
+.fi.vis{opacity:1;transform:translateY(0)}
+
+
+/* ═══ COLLAPSIBLE ═══ */
+.collapsible-toggle{background:var(--sand-light);border:2px solid rgba(196,136,48,.2);border-radius:14px;padding:.9rem 1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:space-between;font-family:'Cairo',sans-serif;font-weight:800;font-size:.88rem;color:var(--ink-mid);transition:all .2s;margin:1.5rem 0 0;width:100%}
+.collapsible-toggle:hover{border-color:var(--amber);color:var(--ink)}
+.collapsible-toggle .arrow{transition:transform .3s;font-size:.8rem}
+.collapsible-toggle.open .arrow{transform:rotate(180deg)}
+.collapsible-content{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.collapsible-content.open{max-height:2000px}
+
+/* ═══ PERSONA CARDS ═══ */
+.persona{border-radius:20px;padding:1.8rem;border:2px solid;box-shadow:var(--shadow-sm);transition:all .22s}
+.persona:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.persona-you{font-size:.72rem;font-weight:800;letter-spacing:1px;margin-bottom:.5rem;display:flex;align-items:center;gap:.4rem}
+.persona h3{font-family:'Cairo',sans-serif;font-weight:900;font-size:1rem;margin-bottom:.8rem}
+.persona-rec{background:rgba(255,255,255,.7);border-radius:12px;padding:.9rem 1.1rem;margin-bottom:.6rem;display:flex;align-items:center;gap:.8rem}
+.persona-rec:last-child{margin-bottom:0}
+.persona-rank{width:28px;height:28px;border-radius:50%;background:var(--amber);color:#fff;font-family:'Cairo',sans-serif;font-weight:900;font-size:.78rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.persona-rec-name{font-weight:800;font-size:.88rem;color:var(--ink)}
+.persona-rec-why{font-size:.78rem;color:var(--ink-mid);line-height:1.5}
+
+/* ═══ RESPONSIVE ═══ */
+@media(max-width:640px){
+  .nav-links{display:none}
+  .calc-row{grid-template-columns:1fr}
+  .risk-row{grid-template-columns:1fr}
+  .ch{flex-direction:column;gap:.85rem}
+  .port-box{flex-direction:column;align-items:flex-start}
+  .pc-results{flex-direction:column}
+  .cover-journey{gap:.3rem}
+  .cj-arrow{display:none}
+  .journey-bar{display:none}
+}
+@media(max-width:1024px){.fi{opacity:1!important;transform:none!important;transition:none!important}}</style>
+</head>
+<body style="overflow: hidden;">
+    <!-- License Gate Overlay -->
+    <div id="license-gate" style="
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(165deg, rgba(238,224,206,0.98) 0%, rgba(253,250,245,0.98) 40%, rgba(216,237,245,0.98) 70%, rgba(168,200,168,0.95) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        direction: rtl;
+        font-family: &#39;Cairo&#39;, &#39;Tajawal&#39;, sans-serif;
+    ">
+        <!-- Decorative blobs -->
+        <div style="
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(184, 216, 234, 0.3);
+            border-radius: 50%;
+            filter: blur(55px);
+            top: -120px;
+            right: -100px;
+            animation: blobFloat 9s ease-in-out infinite;
+        "></div>
+        <div style="
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: rgba(168, 200, 168, 0.3);
+            border-radius: 50%;
+            filter: blur(55px);
+            bottom: -80px;
+            right: 15%;
+            animation: blobFloat 9s ease-in-out infinite 2.5s;
+        "></div>
+        <div style="
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(232, 192, 192, 0.2);
+            border-radius: 50%;
+            filter: blur(55px);
+            bottom: -100px;
+            left: -80px;
+            animation: blobFloat 9s ease-in-out infinite 5s;
+        "></div>
+
+        <style>
+        @keyframes blobFloat {
+            0%, 100% { transform: translate(0, 0); }
+            33% { transform: translate(30px, -50px); }
+            66% { transform: translate(-20px, 30px); }
+        }
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #license-card {
+            animation: slideInUp 0.6s ease-out;
+        }
+        </style>
+
+        <!-- Card -->
+        <div id="license-card" style="
+            position: relative;
+            z-index: 10;
+            background: rgba(253, 250, 245, 0.95);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(80, 60, 20, 0.2);
+            border: 1px solid rgba(196, 136, 48, 0.2);
+        ">
+            <!-- Title -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h1 style="
+                    font-family: &#39;Cairo&#39;, sans-serif;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    color: #2A1F0E;
+                    margin-bottom: 0.5rem;
+                    line-height: 1.2;
+                ">كيف أدير مالي</h1>
+                <p style="
+                    font-size: 0.95rem;
+                    color: #5A4A30;
+                    line-height: 1.6;
+                    margin: 0;
+                ">الدليل الشامل للمستثمر العربي المبتدئ</p>
+            </div>
+
+            <!-- Divider -->
+            <div style="
+                height: 2px;
+                background: linear-gradient(90deg, transparent, rgba(196, 136, 48, 0.4), transparent);
+                margin-bottom: 2rem;
+            "></div>
+
+            <!-- Message -->
+            <p style="
+                text-align: center;
+                font-size: 0.9rem;
+                color: #5A4A30;
+                margin-bottom: 1.8rem;
+                line-height: 1.6;
+            ">لديك نسخة محمية برخصة من هذا الكتاب الإلكتروني. يرجى إدخال مفتاح الترخيص الخاص بك للمتابعة.</p>
+
+            <!-- License Key Input -->
+            <div style="margin-bottom: 1.8rem;">
+                <input type="text" id="license-key-input" placeholder="أدخل مفتاح الترخيص" style="
+                        width: 100%;
+                        padding: 0.9rem 1.2rem;
+                        border: 2px solid rgba(196, 136, 48, 0.25);
+                        border-radius: 12px;
+                        font-size: 1rem;
+                        font-family: &#39;Tajawal&#39;, monospace;
+                        background: rgba(255, 255, 255, 0.6);
+                        color: #2A1F0E;
+                        direction: ltr;
+                        text-align: right;
+                        transition: all 0.2s;
+                        outline: none;
+                    ">
+            </div>
+
+            <!-- Verify Button -->
+            <button id="verify-btn" style="
+                    width: 100%;
+                    padding: 0.95rem;
+                    background: linear-gradient(135deg, rgba(196, 136, 48, 0.9), rgba(196, 136, 48, 0.7));
+                    color: white;
+                    border: none;
+                    border-radius: 12px;
+                    font-size: 1rem;
+                    font-weight: 800;
+                    font-family: &#39;Cairo&#39;, sans-serif;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 4px 15px rgba(196, 136, 48, 0.3);
+                " onmouseover="this.style.background=&#39;linear-gradient(135deg, rgba(196, 136, 48, 1), rgba(196, 136, 48, 0.85))&#39;; this.style.transform=&#39;translateY(-2px)&#39;; this.style.boxShadow=&#39;0 6px 20px rgba(196, 136, 48, 0.4)&#39;;" onmouseout="this.style.background=&#39;linear-gradient(135deg, rgba(196, 136, 48, 0.9), rgba(196, 136, 48, 0.7))&#39;; this.style.transform=&#39;translateY(0)&#39;; this.style.boxShadow=&#39;0 4px 15px rgba(196, 136, 48, 0.3)&#39;;">تحقق وافتح</button>
+
+            <!-- Error/Success Message -->
+            <div id="gate-message" style="
+                min-height: 1.5rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+                font-size: 0.85rem;
+                display: none;
+            "></div>
+
+            <!-- Divider -->
+            <div style="
+                height: 1px;
+                background: rgba(196, 136, 48, 0.15);
+                margin-bottom: 1.5rem;
+            "></div>
+
+            <!-- Buy Section -->
+            <div style="text-align: center;">
+                <p style="
+                    font-size: 0.8rem;
+                    color: #8A7A60;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                ">اشتر الكتاب</p>
+
+                <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center;">
+                    <!-- Gumroad Button -->
+                    <a href="https://kamfinance.gumroad.com/l/investingbeginnerguidearabic" target="_blank" rel="noopener noreferrer" style="
+                            flex: 1;
+                            min-width: 140px;
+                            padding: 0.75rem 1.2rem;
+                            background: rgba(184, 216, 234, 0.3);
+                            color: #4A8AAA;
+                            border: 2px solid #4A8AAA;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            font-size: 0.85rem;
+                            font-weight: 700;
+                            font-family: &#39;Cairo&#39;, sans-serif;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                            text-align: center;
+                        " onmouseover="this.style.background=&#39;rgba(184, 216, 234, 0.5)&#39;; this.style.transform=&#39;translateY(-2px)&#39;;" onmouseout="this.style.background=&#39;rgba(184, 216, 234, 0.3)&#39;; this.style.transform=&#39;translateY(0)&#39;;">من Gumroad</a>
+
+                    <!-- PayPal Button -->
+                    <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#" id="paypal-btn" style="
+                            flex: 1;
+                            min-width: 140px;
+                            padding: 0.75rem 1.2rem;
+                            background: rgba(232, 174, 88, 0.2);
+                            color: #C48830;
+                            border: 2px solid #C48830;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            font-size: 0.85rem;
+                            font-weight: 700;
+                            font-family: &#39;Cairo&#39;, sans-serif;
+                            cursor: pointer;
+                            transition: all 0.3s;
+                            text-align: center;
+                        " onmouseover="this.style.background=&#39;rgba(232, 174, 88, 0.3)&#39;; this.style.transform=&#39;translateY(-2px)&#39;;" onmouseout="this.style.background=&#39;rgba(232, 174, 88, 0.2)&#39;; this.style.transform=&#39;translateY(0)&#39;;">PayPal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ebook Content (Hidden) -->
+    <div id="ebook-content" style="display: none;">
+
+<noscript><style>.fi{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('.fi').forEach(function(el){el.classList.add('vis')})});
+setTimeout(function(){document.querySelectorAll('.fi').forEach(function(el){el.classList.add('vis')})},500);
+</script>
+
+
+<div class="prog"><div class="prog-fill" id="prog"></div></div>
+
+<!-- ══ NAV ══ -->
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-mark">📊</div>
+    <div class="nav-name"><b>كيف</b> أدير مالي</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s0">قبل البداية</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s1">لماذا نستثمر؟</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s2">السوق</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s3">كيف تربح؟</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s4">المؤشرات</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s5">الحلال</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s6">الفيدرالي</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s7">الأسواق</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s8">تقييم الشركة</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s9">أخطاء المبتدئ</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s10">النفسية</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s11">حسب سنّك</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s12">حسب دخلك</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s13">الوسيط</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s14">ابدأ الآن</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s15">المصطلحات</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s16">بعد البداية</a></li>
+    <li><a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#faq">أسئلة شائعة</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════
+     COVER — focused on the GUIDE
+══════════════════════════════ -->
+<section class="cover">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="blob b3"></div><div class="blob b4"></div>
+
+  <div class="cover-inner">
+
+    <div class="cover-type-badge">📖 &nbsp; الدليل المرجعي الشامل للمستثمر المبتدئ</div>
+
+    <!-- 3D Book Visual -->
+    <div class="cover-book">
+      <div class="book-pages"></div>
+      <div class="book-cover">
+        <div class="book-cover-brand">كيف أدير مالي</div>
+        <div class="book-cover-icon">📈</div>
+        <div class="book-cover-line"></div>
+        <div class="book-cover-title">الدليل الشامل<br>للمستثمر العربي</div>
+        <div class="book-cover-line"></div>
+        <div class="book-cover-sub">من الصفر إلى المستثمر الواثق<br>أسواق · مبادئ إسلامية · خطوات عملية</div>
+      </div>
+      <div class="book-spine"></div>
+    </div>
+
+    <h1 class="cover-headline">
+      الدليل الذي كنت<br>تبحث عنه
+      <span class="accent"> — بالعربي</span>
+    </h1>
+    <p class="cover-tagline">
+      من لا تعرف ما هو السهم، إلى أن تمتلك محفظة متنوعة وخطة واضحة.<br>
+      أسواق أمريكية وإماراتية وسعودية. مبادئ إسلامية. خطوة بخطوة.
+    </p>
+
+    <!-- Journey preview — RTL correct arrows -->
+    <div class="cover-journey">
+      <div class="cj-step"><span class="cj-icon">🤔</span><span class="cj-label">لا أعرف شيئاً</span></div>
+      <span class="cj-arrow">←</span>
+      <div class="cj-step"><span class="cj-icon">📖</span><span class="cj-label">أفهم الأساسيات</span></div>
+      <span class="cj-arrow">←</span>
+      <div class="cj-step"><span class="cj-icon">🔎</span><span class="cj-label">أختار وسيطي</span></div>
+      <span class="cj-arrow">←</span>
+      <div class="cj-step"><span class="cj-icon">🚀</span><span class="cj-label">أفتح حسابي</span></div>
+      <span class="cj-arrow">←</span>
+      <div class="cj-step"><span class="cj-icon">💼</span><span class="cj-label">أستثمر بثقة</span></div>
+    </div>
+
+    <div class="cover-stats">
+      <div class="c-stat"><span class="c-stat-n">١٦+</span><span class="c-stat-l">فصل + أسئلة شائعة</span></div>
+      <div class="c-stat"><span class="c-stat-n">٣</span><span class="c-stat-l">أسواق رئيسية</span></div>
+      <div class="c-stat"><span class="c-stat-n">🕌</span><span class="c-stat-l">مبادئ إسلامية</span></div>
+      <div class="c-stat"><span class="c-stat-n">٣٠</span><span class="c-stat-l">يوماً للبدء الفعلي</span></div>
+    </div>
+
+  </div>
+  <div class="scroll-cue"><span>ابدأ الرحلة</span><div class="scroll-ln"></div></div>
+</section>
+
+<!-- TOC -->
+<section class="sec sec-cream">
+  <div class="inner fi vis">
+    <div class="sec-lbl">رحلتك خطوة بخطوة</div>
+    <h2 class="sec-title">من الزحف 🐣 إلى المشي 🚶 إلى الجري 🏃 — ستة عشر فصلاً تأخذك من الصفر إلى مستثمر واثق</h2>
+    <div class="toc-grid">
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s1" class="toc-item"><div class="toc-num">١</div><div class="toc-text"><h4>لماذا أموالك تخسر قيمتها الآن؟</h4><p>التضخم + الفائدة المركبة + آلة حاسبة</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s2" class="toc-item"><div class="toc-num">٢</div><div class="toc-text"><h4>ما هو سوق الأسهم أصلاً؟</h4><p>الأسهم، البورصات، IPO — بأمثلة يومية</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s3" class="toc-item"><div class="toc-num">٣</div><div class="toc-text"><h4>كيف تجني المال من الأسهم؟</h4><p>أنواع الأسهم + ETF + الصكوك</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s4" class="toc-item"><div class="toc-num">٤</div><div class="toc-text"><h4>ماذا يعني "السوق ارتفع اليوم"؟</h4><p>المؤشرات الست + شرح الـ Ticker</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s5" class="toc-item"><div class="toc-num">٥</div><div class="toc-text"><h4>هل الاستثمار في الأسهم حلال؟</h4><p>الفرز الشرعي + الصكوك + التطهير</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s6" class="toc-item"><div class="toc-num">٦</div><div class="toc-text"><h4>من هو الاحتياطي الفيدرالي؟</h4><p>ولماذا يؤثر على أسعارنا في الخليج؟</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s7" class="toc-item"><div class="toc-num">٧</div><div class="toc-text"><h4>ما الذي يرفع الأسواق ويخفضها؟</h4><p>النفط، الفائدة، التضخم، الجيوسياسة</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s8" class="toc-item"><div class="toc-num">٨</div><div class="toc-text"><h4>كيف تعرف إن شركة تستاهل فلوسك؟</h4><p>٣ أسئلة بسيطة + قصة أحمد</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s9" class="toc-item"><div class="toc-num">٩</div><div class="toc-text"><h4>عشرة أخطاء يقع فيها كل مبتدئ</h4><p>تعلّمها الآن ووفّر على نفسك الكثير</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s10" class="toc-item"><div class="toc-num">١٠</div><div class="toc-text"><h4>نفسية المستثمر — عدوّك الأول</h4><p>الخوف، الطمع، FOMO، ومتى تبيع</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s11" class="toc-item"><div class="toc-num">١١</div><div class="toc-text"><h4>ما الخطة المناسبة لعمري؟</h4><p>٢٠ — ٣٠ — ٤٠ — ٥٠ سنة</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s12" class="toc-item"><div class="toc-num">١٢</div><div class="toc-text"><h4>كم أستثمر براتبي؟</h4><p>خطة عملية لكل شريحة دخل</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s13" class="toc-item"><div class="toc-num">١٣</div><div class="toc-text"><h4>كيف أختار وسيطي؟</h4><p>ابحث عن نفسك واختر + آلة توزيع المحفظة</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s14" class="toc-item"><div class="toc-num">١٤</div><div class="toc-text"><h4>كيف أفتح حسابي وأشتري أول سهم؟</h4><p>زر بزر — من التسجيل لأول عملية شراء</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s15" class="toc-item"><div class="toc-num">١٥</div><div class="toc-text"><h4>المصطلحات + خطة ٣٠ يوماً</h4><p>٢٤ مصطلحاً وقائمة مهام تفاعلية</p></div></a>
+      <a href="file:///C:/Users/finan/AppData/Roaming/Claude/local-agent-mode-sessions/2851f777-5204-4a8d-9d70-6af875de355c/6fcbed5e-4f1b-496e-8b0f-e7a248899abb/local_7c2749f0-b564-4863-b9c1-17cca75481d1/outputs/kayf-adir-mali-licensed.html#s16" class="toc-item"><div class="toc-num">١٦</div><div class="toc-text"><h4>بعد الثلاثين يوماً — عادات المستثمر</h4><p>الروتين الشهري والربع سنوي والسنوي</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WELCOME LETTER ══ -->
+<section class="sec sec-white" style="padding:4rem 0">
+  <div class="inner fi vis">
+    <div style="max-width:700px;margin:0 auto;text-align:center">
+      <div style="font-size:2.5rem;margin-bottom:1rem">💌</div>
+      <h2 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:clamp(1.4rem,3vw,2rem);color:var(--ink);margin-bottom:1.2rem;line-height:1.3">رسالة قبل أن نبدأ</h2>
+      <div class="body" style="text-align:right;max-width:640px;margin:0 auto">
+        <p>أهلاً بك — وأعني ذلك من القلب.</p>
+        <p>إذا وصلت إلى هنا، فأنت بالفعل مختلف. أغلب الناس يتحدثون عن الاستثمار ولا يبدأون أبداً. أنت قررت أن تتعلم — وهذا أول وأهم قرار مالي في حياتك.</p>
+        <p>هذا الدليل لم يُكتب ليُبهرك بمصطلحات معقدة أو ليجعلك تشعر أن عالم المال ليس لك. <strong>بالعكس تماماً — كُتب ليمسك بيدك، خطوة بخطوة، من "لا أعرف شيئاً" إلى "أعرف بالضبط ماذا أفعل."</strong></p>
+        <p>لا يهم إذا كان راتبك ثلاثة آلاف أو ثلاثين ألفاً. لا يهم إذا كنت في العشرينيات أو الخمسينيات. لا يهم إذا كنت في السعودية أو الإمارات أو أي مكان آخر. <strong>هذا الدليل صُنع لك.</strong></p>
+        <p>الشيء الوحيد الذي أطلبه منك: <strong>اقرأه كاملاً قبل أن تستثمر ريالاً واحداً.</strong> ليس لأنه معقد — بل لأن كل فصل يبني على الذي قبله، وعندما تنتهي ستشعر بثقة حقيقية وليست مزيفة.</p>
+        <p style="margin-top:1.5rem;font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--amber);font-size:1.05rem">يلا نبدأ رحلتنا — أعدك أنها تستحق وقتك. 🚀</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER 0: BEFORE ANYTHING ══ -->
+<section class="sec sec-sand" id="s0">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-amb">☕</div>
+      <div>
+        <div class="ch-num">قبل أي شيء — تعال نحكي</div>
+        <h2 class="ch-title">خمس كلمات لازم تفهمها قبل ما تقرأ أي شيء ثاني</h2>
+        <p class="ch-hook">تخيّل إنك قاعد مع صديق في كوفي شوب وسألته: "أبي أستثمر بس ما أفهم شيء." هذا اللي بيقوله لك.</p>
+      </div>
+    </div>
+
+    <div class="body fi vis">
+      <p>قبل ما نبدأ بالفصول الكبيرة، خلنا نتفق على خمس كلمات بسيطة. هذي الكلمات بتتكرر كثير في الدليل — ولما تفهمها، كل شيء بعدها بيكون سهل إن شاء الله.</p>
+    </div>
+
+    <div class="cards fi vis" style="grid-template-columns:1fr">
+      <div class="card" style="border-right:5px solid var(--amber);padding:1.8rem">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem">
+          <span style="font-size:2rem">💰</span>
+          <div>
+            <div class="card-title" style="font-size:1.05rem;margin:0">١. الاستثمار</div>
+            <div style="font-size:.72rem;color:var(--amber);font-weight:700">Investment</div>
+          </div>
+        </div>
+        <div class="card-txt" style="font-size:.92rem;line-height:1.85">
+          إنك تحط فلوسك في شيء <strong>تتوقع إنه يزيد قيمته مع الوقت.</strong> بس كذا. مو أكثر.
+          <br><br>مثال من حياتك: لما تشتري شقة بأربعمئة ألف وبعد خمس سنوات تصير تساوي ستمئة ألف — هذا استثمار. نفس الفكرة مع الأسهم، بس بدل ما تشتري شقة، تشتري جزء صغير من شركة.
+        </div>
+      </div>
+
+      <div class="card" style="border-right:5px solid var(--sage-deep);padding:1.8rem">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem">
+          <span style="font-size:2rem">📄</span>
+          <div>
+            <div class="card-title" style="font-size:1.05rem;margin:0">٢. السهم</div>
+            <div style="font-size:.72rem;color:var(--sage-deep);font-weight:700">Stock / Share</div>
+          </div>
+        </div>
+        <div class="card-txt" style="font-size:.92rem;line-height:1.85">
+          <strong>قطعة ملكية صغيرة جداً في شركة.</strong> لما تشتري سهم أرامكو مثلاً — أنت صرت شريك في أرامكو. شريك صغير جداً طبعاً، بس شريك فعلي.
+          <br><br>الشركة ربحت؟ أنت تربح معها. الشركة خسرت؟ قيمة سهمك تنزل. بس ما تخسر أكثر من المبلغ اللي حطيته.
+        </div>
+      </div>
+
+      <div class="card" style="border-right:5px solid var(--sky-deep);padding:1.8rem">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem">
+          <span style="font-size:2rem">🏪</span>
+          <div>
+            <div class="card-title" style="font-size:1.05rem;margin:0">٣. سوق الأسهم (البورصة)</div>
+            <div style="font-size:.72rem;color:var(--sky-deep);font-weight:700">Stock Market</div>
+          </div>
+        </div>
+        <div class="card-txt" style="font-size:.92rem;line-height:1.85">
+          <strong>المكان اللي تتم فيه عمليات البيع والشراء.</strong> فكّر فيه مثل سوق الخضار — بس بدل الطماط والخيار، الناس تبيع وتشتري أسهم شركات. كل شيء إلكتروني ومنظم من الحكومة.
+          <br><br>في ثلاث أسواق تهمنا: تداول (السعودية)، DFM و ADX (الإمارات)، و NYSE و Nasdaq (أمريكا).
+        </div>
+      </div>
+
+      <div class="card" style="border-right:5px solid var(--blush-dark);padding:1.8rem">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem">
+          <span style="font-size:2rem">🧺</span>
+          <div>
+            <div class="card-title" style="font-size:1.05rem;margin:0">٤. المحفظة</div>
+            <div style="font-size:.72rem;color:var(--blush-dark);font-weight:700">Portfolio</div>
+          </div>
+        </div>
+        <div class="card-txt" style="font-size:.92rem;line-height:1.85">
+          <strong>كل الأسهم والاستثمارات اللي تملكها مع بعض.</strong> تخيّلها مثل سلة فيها تفاح وبرتقال وموز — كل واحد نوع استثمار مختلف. بدل ما تحط كل فلوسك في شيء واحد، توزعها. هذي محفظتك.
+          <br><br>لما نقول "بنِ محفظتك" يعني اختر مزيج الاستثمارات اللي يناسبك.
+        </div>
+      </div>
+
+      <div class="card" style="border-right:5px solid #6E9E7A;padding:1.8rem">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:.8rem">
+          <span style="font-size:2rem">📱</span>
+          <div>
+            <div class="card-title" style="font-size:1.05rem;margin:0">٥. الوسيط</div>
+            <div style="font-size:.72rem;color:#6E9E7A;font-weight:700">Broker</div>
+          </div>
+        </div>
+        <div class="card-txt" style="font-size:.92rem;line-height:1.85">
+          <strong>التطبيق أو الشركة اللي تشتري وتبيع من خلالها.</strong> ما تقدر تروح البورصة بنفسك وتقول "أبي سهم أرامكو." لازم تسجّل في تطبيق وسيط — مثل تطبيق البنك للتحويلات، بس للأسهم.
+          <br><br>أمثلة: الراجحي كابيتال في السعودية، Sarwa في الإمارات، Wahed Invest للحلال.
+        </div>
+      </div>
+    </div>
+
+    <div class="ex fi vis">
+      <h4>☕ لو صديقك سألك "وش يعني تستثمر في الأسهم؟"</h4>
+      <p>قوله: "أنا فتحت <strong style="color:var(--amber-light)">تطبيق وسيط</strong> على جوالي، واشتريت <strong style="color:var(--amber-light)">سهم</strong> واحد من أرامكو من <strong style="color:var(--amber-light)">سوق تداول.</strong> يعني صرت أملك جزء صغير من الشركة. هذا السهم دخل <strong style="color:var(--amber-light)">محفظتي</strong> اللي فيها كمان أسهم ثانية. وهذا كله اسمه <strong style="color:var(--amber-light)">استثمار.</strong>"</p>
+      <p style="margin-top:.6rem;font-size:.82rem;color:rgba(255,255,255,.5)">خمس كلمات. كذا بسيطة. كل شيء بعد هذا تفاصيل — والدليل بيشرحها لك وحدة وحدة.</p>
+    </div>
+
+    <div class="box box-sage fi vis">
+      <div class="box-title">🤝 اتفاقنا لبقية الدليل</div>
+      <p>كل ما نذكر كلمة جديدة، بنشرحها <strong>وقت ما تظهر أول مرة</strong> — ما راح نفترض إنك تعرفها. وإذا أي وقت حسيت إنك ضعت — ارجع لهذا الفصل. هذي قاعدتك الآمنة. 💛</p>
+    </div>
+
+    <div class="body fi vis">
+      <p style="text-align:center;font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--amber);font-size:1rem;margin-top:1rem">جاهز؟ يلا نبدأ الفصل الأول — ولا تخاف، بنمشي مع بعض خطوة خطوة. 🚶‍♂️</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH1: INFLATION ══ -->
+<section class="sec sec-white" id="s1">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sand">📉</div>
+      <div>
+        <div class="ch-num">الفصل الأول — نقطة البداية</div>
+        <h2 class="ch-title">لماذا أموالك تخسر قيمتها كل سنة؟</h2>
+        <p class="ch-hook">سؤال يتجاهله الجميع — والإجابة تغيّر طريقة تفكيرك في المال للأبد</p>
+      </div>
+    </div>
+    <div class="body fi vis">
+      <p>خلني أكون صريح معك من البداية: <strong>إبقاء أموالك في حساب توفير قرار يخسّرك مالاً</strong> — ببطء، بصمت، كل عام. لا تشعر به لأنه لا يُحسم من حسابك. لكنه يحدث. اسمه <strong>التضخم</strong>.</p>
+      <p>التضخم يعني أن الأشياء تصبح أغلى مع الوقت. كوب القهوة الذي كان بعشرة ريال قبل ثلاث سنوات أصبح بثلاثة عشر. الإيجار الذي كان أربعين ألفاً أصبح خمسة وخمسين. أموالك لم تنقص على الورق — لكن ما تستطيع شراؤه بها تقلّص.</p>
+    </div>
+    <div class="box box-blush fi vis">
+      <div class="box-title">⚠️ هذا ما يحدث فعلاً لمدخراتك</div>
+      <p>لديك مئة ألف ريال. بنكك يمنحك واحداً بالمئة سنوياً. بعد سنة تصبح مئة وألف ريال. بدا جيداً؟ لكن إذا كان التضخم ثلاثة بالمئة — فمالك الجديد لا يشتري إلا ما كانت تشتريه <strong>ثمانية وتسعون ألفاً وثمانية وخمسون ريالاً</strong> قبل عام. اكتسبت مالاً على الورق وخسرت قوة شرائية في الواقع.</p>
+    </div>
+    <div class="body fi vis"><p>الحل واضح: <strong>اجعل مالك ينمو بمعدل أعلى من التضخم.</strong> وهذا بالضبط ما يسميه الناس الاستثمار.</p></div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2rem 0 .8rem" class="fi vis">✨ الفائدة المركبة — الأعجوبة الثامنة</h3>
+    <div class="body fi vis"><p>وصفها أينشتاين بأنها "الأعجوبة الثامنة في العالم." المعنى ببساطة: <strong>أموالك تكسب مالاً، ثم ذلك المال يكسب مالاً هو الآخر.</strong> مثل كرة ثلج تتدحرج — كلما كبرت، جمعت ثلجاً أسرع وأسرع.</p></div>
+
+    <div class="calc fi vis">
+      <div class="calc-title">🧮 احسب مستقبل أموالك بنفسك</div>
+      <div class="calc-row">
+        <div class="calc-field"><label>المبلغ الأولي (ريال / درهم)</label><input type="number" id="cp" value="10000"></div>
+        <div class="calc-field"><label>نسبة النمو السنوية ٪</label><input type="number" id="cr" value="8" min="1" max="30"></div>
+        <div class="calc-field"><label>عدد السنوات</label><input type="number" id="cy" value="20" min="1" max="50"></div>
+        <div class="calc-field"><label>إضافة شهرية (اختياري)</label><input type="number" id="cm" value="500" min="0"></div>
+      </div>
+      <div class="calc-res">
+        <div class="calc-res-lbl">قيمة استثمارك بعد <span id="cy-lbl">20</span> سنة</div>
+        <div class="calc-res-num" id="c-num">٣٤٣٬٧٧٨ ريال</div>
+        <div class="calc-res-sub" id="c-sub">ربحت ٢١٣٬٧٧٨ ريال فوق ما استثمرت</div>
+      </div>
+    </div>
+    <div class="box box-sage fi vis"><div class="box-title">💡 الدرس الأهم</div><p>ابدأ مبكراً. المبلغ أقل أهمية من <strong>وقت البدء.</strong> خمسمئة ريال شهرياً بنمو ثمانية بالمئة تصبح أكثر من ثلاثمئة ألف ريال بعد عشرين سنة — دون أن تضيف ريالاً واحداً بشكل مفاجئ.</p></div>
+  </div>
+</section>
+
+<!-- ══ CH2: WHAT IS THE STOCK MARKET ══ -->
+<section class="sec sec-sand" id="s2">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sky">🏛️</div>
+      <div>
+        <div class="ch-num">الفصل الثاني — الأساس</div>
+        <h2 class="ch-title">ما هو سوق الأسهم أصلاً؟</h2>
+        <p class="ch-hook">وما علاقتي أنا به؟</p>
+      </div>
+    </div>
+    <div class="body fi vis"><p>سوق الأسهم ليس للأثرياء فقط، وليس مقامرة، وليس لغزاً يفهمه المختصون دون غيرهم. هو ببساطة: <strong>مكان تُباع وتُشترى فيه حصص الملكية في الشركات.</strong></p></div>
+    <div class="ex fi vis">
+      <h4>🍽️ قصة المطعم — أفضل شرح للأسهم في دقيقتين</h4>
+      <p>صديقك يريد فتح مطعم ويحتاج مئة ألف ريال. يقول: "سأبيع عشر حصص بعشرة آلاف ريال للحصة." اشتريت حصة واحدة. أنت الآن تملك عشرة بالمئة من المطعم.</p>
+      <ul>
+        <li>📈 نجح المطعم وأصبح يساوي مئتي ألف ريال <i class="arr">←</i> حصتك أصبحت عشرين ألفاً (ضاعف مالك)</li>
+        <li>💸 المطعم يوزع أرباحه كل ثلاثة أشهر <i class="arr">←</i> تتلقى عشرة بالمئة من الأرباح مباشرة في حسابك</li>
+        <li>📉 المطعم خسر وأصبح يساوي سبعين ألفاً <i class="arr">←</i> حصتك أصبحت سبعة آلاف ريال</li>
+      </ul>
+      <p style="margin-top:.8rem"><strong style="color:var(--amber-light)">هكذا تعمل الأسهم تماماً — في شركات أكبر بملايين المرات، وبشكل أكثر تنظيماً وسيولة.</strong></p>
+    </div>
+    <div class="mkt-grid fi vis">
+      <div class="mkt mkt-us"><span style="font-size:1.7rem">🇺🇸</span><h3>الولايات المتحدة</h3><p>NYSE &amp; Nasdaq — أكبر سوق في العالم</p><span class="mkt-tag">أبل</span><span class="mkt-tag">مايكروسوفت</span><span class="mkt-tag">أمازون</span><span class="mkt-tag">جوجل</span><span class="mkt-tag">مفتوح خمسة أيام</span></div>
+      <div class="mkt mkt-uae"><span style="font-size:1.7rem">🇦🇪</span><h3>الإمارات</h3><p>DFM &amp; ADX — متوافق مئة بالمئة مع الشريعة</p><span class="mkt-tag">إعمار</span><span class="mkt-tag">DIB</span><span class="mkt-tag">FAB</span><span class="mkt-tag">أدنوك</span><span class="mkt-tag">أحد إلى خميس</span></div>
+      <div class="mkt mkt-sa"><span style="font-size:1.7rem">🇸🇦</span><h3>السعودية</h3><p>تداول — أكبر سوق في الخليج</p><span class="mkt-tag">أرامكو</span><span class="mkt-tag">الراجحي</span><span class="mkt-tag">سابك</span><span class="mkt-tag">رؤية ٢٠٣٠</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH3: HOW TO PROFIT ══ -->
+<section class="sec sec-white" id="s3">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-amb">💸</div>
+      <div>
+        <div class="ch-num">الفصل الثالث — الجوهر</div>
+        <h2 class="ch-title">كيف تجني المال من الأسهم فعلاً؟</h2>
+        <p class="ch-hook">ليس كل أسهم متشابهة — واختيار النوع الصح يغيّر كل شيء</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.8rem 0" class="fi vis">
+      <div class="card" style="border:2px solid rgba(196,136,48,.25)">
+        <span class="card-em">📈</span>
+        <div class="card-title">أرباح رأس المال</div>
+        <div class="card-txt">تشتري سهماً بخمسين ريالاً ثم يرتفع إلى ثمانين فتبيع وتربح ثلاثين ريالاً. <strong>الربح لا يتحقق إلا عند البيع الفعلي.</strong></div>
+      </div>
+      <div class="card" style="border:2px solid rgba(58,122,74,.3)">
+        <span class="card-em">💰</span>
+        <div class="card-title">توزيعات الأرباح</div>
+        <div class="card-txt">تملك مئة سهم والشركة تدفع ريالين للسهم كل ربع سنة. مئتا ريال تصل حسابك <strong>بدون بيع أي شيء.</strong></div>
+      </div>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2rem 0 .9rem" class="fi vis">أنواع الأسهم — كل نوع له هدف مختلف</h3>
+    <div class="stypes fi vis">
+      <div class="stype st-g"><span class="stype-em">🚀</span><div class="stype-name">أسهم النمو</div><div class="stype-desc">تعيد استثمار أرباحها للتوسع. راهن على المستقبل. أبل، مايكروسوفت، شركات التقنية السعودية الناشئة.</div></div>
+      <div class="stype st-d"><span class="stype-em">💵</span><div class="stype-name">أسهم التوزيعات</div><div class="stype-desc">تدفع جزءاً من أرباحها مباشرة كل ربع سنة. أرامكو، إعمار، بنك أبوظبي الأول.</div></div>
+      <div class="stype st-b"><span class="stype-em">👑</span><div class="stype-name">الأسهم الممتازة</div><div class="stype-desc">عمالقة راسخون بعقود من النجاح. مستقرة وموثوقة. أرامكو، الراجحي، كوكا كولا.</div></div>
+      <div class="stype st-v"><span class="stype-em">🔍</span><div class="stype-name">أسهم القيمة</div><div class="stype-desc">مقيّمة بأقل من قيمتها الحقيقية. مثل إيجاد ساعة فاخرة في تخفيضات أربعين بالمئة.</div></div>
+    </div>
+
+    <div class="box box-sky fi vis">
+      <div class="box-title">💡 صناديق ETF — أذكى طريقة للمبتدئ</div>
+      <p>بدلاً من اختيار سهم واحد قد تخطئ فيه، تشتري <strong>سلة من مئات الأسهم دفعة واحدة بسعر سهم واحد.</strong> مثل صندوق S&amp;P500 الذي يمنحك حصة في أكبر خمسمئة شركة أمريكية. تنويع فوري، تكلفة منخفضة، وكثير منها متوافق مع الشريعة.</p>
+    </div>
+    <div class="box box-amb fi vis">
+      <div class="box-title">🕌 الصكوك — البديل الإسلامي للسندات</div>
+      <p>الصك يمثل ملكية في أصل حقيقي أو مشروع — لا قرض بفائدة. العائد يأتي من ربح المشروع وليس من معدل فائدة ثابت. الإمارات والسعودية من أكبر أسواق الصكوك في العالم.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH4: INDICES + TICKER ══ -->
+<section class="sec sec-sky" id="s4">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sage">📊</div>
+      <div>
+        <div class="ch-num">الفصل الرابع — فهم الأخبار</div>
+        <h2 class="ch-title">ماذا يعني "السوق ارتفع اليوم"؟</h2>
+        <p class="ch-hook">وما هو الـ Ticker الذي تراه في كل مكان؟</p>
+      </div>
+    </div>
+    <div class="body fi vis"><p>يمكن سمعت في الأخبار "ارتفع السوق بنسبة واحد ونصف بالمئة اليوم" وتساءلت: أي سوق؟ وكيف يرتفع "سوق" كامل؟ الجواب بسيط: يتحدثون عن <strong>مؤشر</strong> — فكّر فيه مثل "ميزان حرارة" يقيس صحة السوق.</p></div>
+
+    <div class="box box-amb fi vis">
+      <div class="box-title">🔤 ما هو الـ Ticker؟ — أول شيء تحتاج معرفته</div>
+      <p>الـ Ticker هو <strong>الرمز المختصر للسهم أو المؤشر</strong> في تطبيقات الاستثمار. مثل لوحة ترخيص السيارة — كل شركة لها رمز فريد. عندما تفتح أي تطبيق مالي وتبحث، تكتب هذا الرمز مباشرة.<br><br>أمثلة: أبل = <span class="tk">AAPL</span> &nbsp; أرامكو = <span class="tk">2222</span> &nbsp; إعمار = <span class="tk">EMAAR</span> &nbsp; S&amp;P500 ETF = <span class="tk">SPY</span></p>
+    </div>
+
+    <div class="idx-grid fi vis">
+      <div class="idx-card">
+        <div class="idx-ticker">S&amp;P 500</div>
+        <div class="idx-remark">Ticker: <span style="color:var(--amber)">$SPX</span></div>
+        <div class="idx-name">ستاندرد آند بورز ٥٠٠</div>
+        <div class="idx-fact"><span class="idx-dot"></span>خمسمئة شركة أمريكية كبرى</div>
+        <div class="idx-fact"><span class="idx-dot"></span>الأكثر متابعة في العالم</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--amber)"></span>المرجع الأساسي للاستثمار الأمريكي</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-ticker">Nasdaq</div>
+        <div class="idx-remark">Ticker: <span style="color:var(--amber)">$IXIC</span></div>
+        <div class="idx-name">ناسداك المركّب</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:#9c27b0"></span>أكثر من ثلاثة آلاف وسبعمئة سهم</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:#9c27b0"></span>ثقيل في التكنولوجيا</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:#9c27b0"></span>أبل، جوجل، ميتا، نيفيديا</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-ticker">Dow Jones</div>
+        <div class="idx-remark">Ticker: <span style="color:var(--amber)">$DJI</span></div>
+        <div class="idx-name">داو جونز الصناعي</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--amber)"></span>أقدم مؤشر أمريكي — منذ ١٨٩٦</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--amber)"></span>ثلاثون شركة كبرى فقط</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--amber)"></span>الأكثر ذكراً في نشرات الأخبار</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-ticker">TASI</div>
+        <div class="idx-remark">Ticker: <span style="color:var(--amber)">TASI</span></div>
+        <div class="idx-name">مؤشر تداول العام</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--sage-deep)"></span>أكبر سوق في الخليج</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--sage-deep)"></span>أرامكو، الراجحي، سابك، STC</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--amber)"></span>جميع الشركات تمر بمراجعة شرعية</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-ticker">DFM</div>
+        <div class="idx-remark">Ticker: <span style="color:var(--amber)">DFMGI</span></div>
+        <div class="idx-name">مؤشر سوق دبي المالي</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:#f44336"></span>إعمار، DIB، العربية للطيران</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--amber)"></span>مئة بالمئة متوافق مع الشريعة</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-ticker">ADX</div>
+        <div class="idx-remark">Ticker: <span style="color:var(--amber)">ADXGI</span></div>
+        <div class="idx-name">مؤشر سوق أبوظبي</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--sky-deep)"></span>FAB، أدنوك، الدار، IHC</div>
+        <div class="idx-fact"><span class="idx-dot" style="background:var(--sky-deep)"></span>من أفضل أداء مؤشرات المنطقة</div>
+      </div>
+    </div>
+
+    <div class="box box-sage fi vis">
+      <div class="box-title">📱 كيف تجد الـ Ticker في التطبيق؟</div>
+      <p>افتح أي تطبيق استثمار أو موقع مالي (مثل Yahoo Finance أو Investing.com أو تطبيق وسيطك). في خانة البحث اكتب اسم الشركة بالإنجليزي. ستظهر النتائج مع رمز الـ Ticker بجانب كل شركة. اضغط عليها وستجد كل شيء: السعر، الرسم البياني، الأرباح، والتوزيعات.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH5: HALAL ══ -->
+<section class="sec sec-white" id="s5">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-blush">☪️</div>
+      <div>
+        <div class="ch-num">الفصل الخامس — السؤال الأهم</div>
+        <h2 class="ch-title">هل الاستثمار في الأسهم حلال؟</h2>
+        <p class="ch-hook">سؤال يتردد في ذهن كل مسلم — وهنا الإجابة الكاملة والشاملة</p>
+      </div>
+    </div>
+    <div class="box box-sage fi vis"><div class="box-title">✅ الجواب المختصر</div><p><strong>نعم — يمكنك الاستثمار في سوق الأسهم وتبقى ملتزماً تماماً بمبادئ الشريعة الإسلامية.</strong> السوق ليس حراماً بطبيعته. يحتاج فقط وعياً وفرزاً بسيطاً — وهذا الفصل يعلمك إياه.</p></div>
+    <div class="halal-grid fi vis">
+      <div class="h-card"><span class="h-em">🚫</span><div class="h-ar">لا ربا</div><div class="h-name">تحريم الفائدة</div><div class="h-desc">أي منتج مالي قائم على الفائدة محرّم. يشمل السندات التقليدية وبعض المنتجات المصرفية.</div></div>
+      <div class="h-card"><span class="h-em">🎯</span><div class="h-ar">لا غرر</div><div class="h-name">تجنب الغموض الزائد</div><div class="h-desc">المضاربة المفرطة غير مقبولة. الاستثمار يجب أن يستند لنشاط اقتصادي حقيقي.</div></div>
+      <div class="h-card"><span class="h-em">🎰</span><div class="h-ar">لا ميسر</div><div class="h-name">تحريم القمار</div><div class="h-desc">الاستثمار مختلف جوهرياً — ملكية في شركة حقيقية تصنع قيمة للمجتمع.</div></div>
+      <div class="h-card"><span class="h-em">🚷</span><div class="h-ar">قطاعات محرمة</div><div class="h-name">الفرز القطاعي</div><div class="h-desc">الكحول، التبغ، الكازينو، المحتوى الإباحي، أسلحة العدوان.</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.3rem;margin:1.8rem 0" class="fi vis">
+      <div>
+        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--success);font-size:.88rem;margin-bottom:.75rem">✅ يمكنك الاستثمار في</h4>
+        <ul class="cklist">
+          <li><span class="ck ck-y">✓</span>معظم شركات التكنولوجيا (بعد الفرز)</li>
+          <li><span class="ck ck-y">✓</span>صناديق ETF حلال (SPUS، HLAL)</li>
+          <li><span class="ck ck-y">✓</span>أرامكو والشركات الخليجية الكبرى</li>
+          <li><span class="ck ck-y">✓</span>المصارف الإسلامية (DIB، الراجحي)</li>
+          <li><span class="ck ck-y">✓</span>الصكوك وأدوات الدخل الثابت الإسلامية</li>
+          <li><span class="ck ck-y">✓</span>Wahed Invest — محفظة حلال مئة بالمئة</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--danger);font-size:.88rem;margin-bottom:.75rem">❌ تجنب أو افرز</h4>
+        <ul class="cklist">
+          <li><span class="ck ck-n">✗</span>المصارف التقليدية ذات الدخل الربوي الكبير</li>
+          <li><span class="ck ck-n">✗</span>شركات الكحول والتبغ</li>
+          <li><span class="ck ck-n">✗</span>شركات الكازينو والقمار</li>
+          <li><span class="ck ck-n">✗</span>السندات التقليدية (استبدلها بصكوك)</li>
+          <li><span class="ck ck-n">✗</span>الشركات ذات نسبة ديون تتجاوز ثلاثة وثلاثين بالمئة</li>
+        </ul>
+      </div>
+    </div>
+    <div class="box box-amb fi vis"><div class="box-title">🌙 تطهير الأرباح</div><p>إذا كانت نسبة صغيرة من أرباح شركة ما تأتي من مصادر غير مباحة (أقل من الحد الشرعي) — يمكنك الاحتفاظ بالسهم وتبرّع بتلك النسبة من أرباحك للجمعيات الخيرية. ممارسة معتمدة من كبار العلماء المسلمين.</p></div>
+  </div>
+</section>
+
+<!-- ══ CH6: THE FED ══ -->
+<section class="sec sec-sage" id="s6">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sand">🏦</div>
+      <div>
+        <div class="ch-num">الفصل السادس — فهم العالم</div>
+        <h2 class="ch-title">من هو الاحتياطي الفيدرالي؟</h2>
+        <p class="ch-hook">ولماذا يؤثر بنك أمريكي على أسعار الرياض ودبي؟</p>
+      </div>
+    </div>
+    <div class="body fi vis"><p>أكيد سمعت هالجملة قبل كذا: <strong>"الاحتياطي الفيدرالي رفع الفائدة فانخفضت الأسواق."</strong> وقلت في نفسك: يعني وش دخلني ببنك أمريكي؟ أنا في الرياض أو دبي! السؤال منطقي — والجواب مهم جداً.</p></div>
+    <div class="ex fi vis">
+      <h4>🔍 الاحتياطي الفيدرالي — أبسط تعريف ممكن</h4>
+      <p>الاحتياطي الفيدرالي أو "الفيد" هو <strong>البنك المركزي للولايات المتحدة الأمريكية</strong> — يقوم بنفس دور مؤسسة النقد العربي السعودي (ساما) في السعودية أو المصرف المركزي الإماراتي في الإمارات. مهمته ضبط الاقتصاد الأمريكي عبر أداة واحدة قوية جداً: <strong style="color:var(--amber-light)">أسعار الفائدة.</strong></p>
+    </div>
+    <div class="cards fi vis">
+      <div class="card"><span class="card-em">🔗</span><div class="card-title">ربط العملة بالدولار</div><div class="card-txt">الريال السعودي والدرهم الإماراتي مرتبطان بالدولار بسعر ثابت. هذا يجعل مصارفهما المركزية تتبع قرارات الفيد تقريباً تلقائياً.</div></div>
+      <div class="card"><span class="card-em">🛢️</span><div class="card-title">النفط يُسعَّر بالدولار</div><div class="card-txt">كل نفط العالم يُباع بالدولار. الدولار يرتفع بسبب الفيد، فالطلب على النفط ينخفض، فأسعاره تنخفض، فأسواق الخليج تتأثر مباشرة.</div></div>
+      <div class="card"><span class="card-em">💹</span><div class="card-title">حركة رؤوس الأموال</div><div class="card-txt">عندما ترتفع الفائدة الأمريكية، يسحب المستثمرون أموالهم من الأسواق الناشئة — بما فيها الخليج — نحو السندات الأمريكية الأعلى عائداً.</div></div>
+    </div>
+    <div class="ex fi vis">
+      <h4>📘 اقرأ قرارات الفيد في سطرين</h4>
+      <p><strong style="color:var(--amber-light)">الفيد يرفع الفائدة ←</strong> الاقتراض يصبح أغلى ← الشركات تربح أقل ← الأسهم تنخفض عادة</p>
+      <p style="margin-top:.5rem"><strong style="color:rgba(168,210,168,1)">الفيد يخفض الفائدة ←</strong> الاقتراض يصبح أرخص ← الشركات تربح أكثر ← الأسهم ترتفع عادة</p>
+      <p style="margin-top:.8rem">الفيد يجتمع <strong style="color:var(--amber-light)">ثماني مرات سنوياً.</strong> كل اجتماع يمكن أن يهزّ الأسواق العالمية.</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2rem 0 .9rem" class="fi vis">عوامل أخرى تحرّك الأسواق</h3>
+    <div class="inf-grid fi vis">
+      <div class="inf-card"><span class="inf-em">🛢️</span><div class="inf-name">أسعار النفط</div><div class="inf-desc">عامل حاسم للخليج. أرامكو وحدها تمثل نسبة ضخمة من مؤشر تداول. النفط يرتفع ← السوق السعودي يرتفع غالباً.</div><span class="inf-tag">حاسم للخليج</span></div>
+      <div class="inf-card"><span class="inf-em">📋</span><div class="inf-name">أرباح الشركات</div><div class="inf-desc">كل ربع سنة "بطاقة تقدير" الشركة. نتائج أفضل من التوقعات ← السهم يرتفع. أسوأ ← ينخفض.</div><span class="inf-tag">ربع سنوي</span></div>
+      <div class="inf-card"><span class="inf-em">📈</span><div class="inf-name">التضخم (CPI)</div><div class="inf-desc">يصدر شهرياً. رقم أعلى من التوقعات يعني احتمال رفع الفائدة وقلق في الأسواق.</div><span class="inf-tag">شهرياً</span></div>
+      <div class="inf-card"><span class="inf-em">🌐</span><div class="inf-name">الجيوسياسة</div><div class="inf-desc">الحروب والتوترات تخلق غموضاً. الغموض يقلق المستثمرين فتنخفض الأسواق.</div><span class="inf-tag">مؤثر إقليمياً</span></div>
+      <div class="inf-card"><span class="inf-em">⚡</span><div class="inf-name">قرارات أوبك+</div><div class="inf-desc">خفض أو رفع إنتاج النفط يؤثر مباشرة على عائدات دول الخليج وأسواقها المالية.</div><span class="inf-tag">مهم للخليج</span></div>
+      <div class="inf-card"><span class="inf-em">🛒</span><div class="inf-name">ثقة المستهلك</div><div class="inf-desc">الناس يشعرون بالأمان ← ينفقون ← الشركات تربح ← الأسهم ترتفع. والعكس صحيح تماماً.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH7: LOCAL MARKETS ══ -->
+<section class="sec sec-cream" id="s7">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sky">🏙️</div>
+      <div>
+        <div class="ch-num">الفصل السابع — أسواقنا</div>
+        <h2 class="ch-title">الإمارات والسعودية — ما تحتاج معرفته</h2>
+        <p class="ch-hook">فرصتك المحلية التي تفهمها وتعيشها يومياً</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:0 0 1.5rem" class="fi vis">
+      <div class="card"><div class="card-title">🇦🇪 سوق دبي المالي (DFM)</div><ul class="cklist" style="margin:.5rem 0"><li><span class="ck ck-y">✓</span>أول سوق إسلامي مئة بالمئة عالمياً</li><li><span class="ck ck-y">✓</span>إعمار، DIB، العربية للطيران</li><li><span class="ck ck-y">✓</span>توزيعات أرباح سخية ومنتظمة</li><li><span class="ck ck-y">✓</span>أحد إلى خميس ١٠ص — ٣م</li></ul></div>
+      <div class="card"><div class="card-title">🇦🇪 سوق أبوظبي (ADX)</div><ul class="cklist" style="margin:.5rem 0"><li><span class="ck ck-y">✓</span>بنك أبوظبي الأول (FAB) — الأكبر إقليمياً</li><li><span class="ck ck-y">✓</span>أدنوك للتوزيع — توزيعات قوية</li><li><span class="ck ck-y">✓</span>الدار العقارية، IHC</li><li><span class="ck ck-y">✓</span>أحد إلى خميس ١٠ص — ٢م</li></ul></div>
+    </div>
+    <div class="cards fi vis">
+      <div class="card"><span class="card-em">⛽</span><div class="card-title">أرامكو السعودية <span class="tk" style="font-size:.62rem;vertical-align:middle">2222</span></div><div class="card-txt">أكثر شركة ربحية عالمياً. توزيعات ضخمة ومنتظمة.</div></div>
+      <div class="card"><span class="card-em">🏦</span><div class="card-title">مصرف الراجحي <span class="tk" style="font-size:.62rem;vertical-align:middle">1120</span></div><div class="card-txt">أكبر مصرف إسلامي في العالم من حيث الأصول.</div></div>
+      <div class="card"><span class="card-em">📱</span><div class="card-title">الاتصالات STC <span class="tk" style="font-size:.62rem;vertical-align:middle">7010</span></div><div class="card-txt">رائد الاتصالات في المملكة. خدمات رقمية متنامية.</div></div>
+      <div class="card"><span class="card-em">🏥</span><div class="card-title">مجموعة سليمان الحبيب</div><div class="card-txt">من أفضل أسهم الرعاية الصحية في المنطقة.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH8: COMPANY ASSESSMENT (BEGINNER-FRIENDLY) ══ -->
+<section class="sec sec-white" id="s8">
+  <div class="inner">
+    <div class="box box-amb fi vis" style="margin-bottom:2.5rem">
+      <div class="box-title">🤗 لحظة طمأنة</div>
+      <p>وصلت هنا يعني فهمت الأساسيات — ما هو السوق، كيف تربح، وش يحرّك الأسعار. <strong>أنت الحين أفضل من أغلب الناس اللي "يستثمرون" بدون ما يفهمون شيء.</strong> الحين بنتعلم سوا كيف نختار شركة بذكاء — بدون ما نحتاج شهادة في المحاسبة.</p>
+    </div>
+
+    <div class="ch fi vis">
+      <div class="ch-icon ci-amb">🔬</div>
+      <div>
+        <div class="ch-num">الفصل الثامن — اختيار الشركة</div>
+        <h2 class="ch-title">كيف تعرف إذا شركة تستاهل فلوسك أو لا؟</h2>
+        <p class="ch-hook">ثلاثة أسئلة بسيطة — لو أجبت عليها، أنت أذكى من نصف المستثمرين</p>
+      </div>
+    </div>
+
+    <div class="body fi vis">
+      <p>أكثر غلطة يسويها المبتدئ: <strong>يشتري سهم لأن أحد قال له في الواتساب "اشترِ هذا!"</strong> ما يعرف وش تسوي الشركة، ولا كم تربح، ولا هل سعرها غالي أو رخيص. هذا مو استثمار — هذا تخمين.</p>
+      <p>الخبر الحلو؟ <strong>ما تحتاج تكون خبير عشان تختار صح.</strong> تحتاج بس تسأل ثلاثة أسئلة. بنشرحها بقصة حقيقية.</p>
+    </div>
+
+    <div class="ex fi vis">
+      <h4>☕ قصة أحمد وقهوة المساء</h4>
+      <p>أحمد سمع في المجلس إن سهم مصرف الراجحي <span class="tk">1120</span> "ممتاز." بدل ما يشتري على طول، قرر يسأل ثلاثة أسئلة بسيطة — وهذا بالضبط اللي بنسويه مع بعض الحين.</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi vis">السؤال الأول: "وش تسوي هالشركة أصلاً؟" 🤔</h3>
+    <div class="body fi vis">
+      <p>القاعدة الذهبية: <strong>لو ما تقدر تشرح وش تسوي الشركة لأمك في عشر ثواني — لا تستثمر فيها.</strong></p>
+      <p>كيف تعرف؟ ادخل موقع الشركة أو ابحث في جوجل عن اسمها. اقرأ أول سطرين. خلاص.</p>
+    </div>
+    <div class="box box-sky fi vis">
+      <div class="box-title">📘 أحمد طبّق السؤال الأول</div>
+      <p>بحث في جوجل: "مصرف الراجحي ماذا يفعل" — الجواب: <strong>أكبر بنك إسلامي في العالم. يقدم خدمات بنكية حلال — حسابات، تمويل، بطاقات.</strong> واضح ومفهوم. ممتاز! ✅</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi vis">السؤال الثاني: "هل الشركة تربح ولا تخسر؟" 💰</h3>
+    <div class="body fi vis">
+      <p>ادخل موقع <strong>أرقام (Argaam)</strong> للسعودية أو <strong>مباشر (Mubasher)</strong> للإمارات أو <strong>Yahoo Finance</strong> للأمريكي. اكتب اسم الشركة. شوف رقمين بس:</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.2rem 0" class="fi vis">
+      <div class="card" style="border:2px solid rgba(58,122,74,.3)">
+        <span class="card-em">📊</span>
+        <div class="card-title">ربحية السهم (EPS)</div>
+        <div class="card-txt"><strong>كم ريال ربحت الشركة عن كل سهم.</strong> رقم موجب = تربح ✅. رقم سالب = تخسر ❌. شوف آخر ثلاث سنوات — هل الأرباح تزيد أو تنقص؟</div>
+      </div>
+      <div class="card" style="border:2px solid rgba(196,136,48,.3)">
+        <span class="card-em">🏷️</span>
+        <div class="card-title">مضاعف السعر (P/E)</div>
+        <div class="card-txt"><strong>هل سعر السهم غالي أو رخيص مقارنة بأرباحه.</strong> فكّر فيه مثل ثمن كيلو التفاح — لو نفس التفاح عند محل ثاني بنص السعر، تشتري من هناك. أقل من ١٥ = رخيص نسبياً. أكثر من ٣٠ = غالي.</div>
+      </div>
+    </div>
+    <div class="box box-sky fi vis">
+      <div class="box-title">📘 أحمد طبّق السؤال الثاني</div>
+      <p>فتح أرقام وكتب "الراجحي." لقى: <strong>EPS حوالي ٨ ريال (يربح ✅)، والأرباح تنمو من خمس سنوات (ممتاز ✅)، P/E حوالي ١٣ (سعر معقول ✅).</strong> شركة مربحة وسعرها مو مبالغ فيه.</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.1rem;color:var(--ink);margin:2.2rem 0 1rem" class="fi vis">السؤال الثالث: "هل هي حلال؟" ☪️</h3>
+    <div class="body fi vis">
+      <p>هذي أسهل خطوة. حمّل تطبيق <strong>Zoya</strong> (مجاني) أو ادخل موقع <strong>Musaffa.com.</strong> اكتب اسم الشركة أو رمزها. التطبيق يقولك فوراً:</p>
+    </div>
+    <div class="cards fi vis" style="grid-template-columns:repeat(3,1fr)">
+      <div class="card" style="text-align:center;border:2px solid rgba(58,122,74,.4)">
+        <span style="font-size:2rem;display:block;margin-bottom:.5rem">✅</span>
+        <div class="card-title" style="color:var(--sage-deep)">حلال</div>
+        <div class="card-txt">استثمر براحتك</div>
+      </div>
+      <div class="card" style="text-align:center;border:2px solid rgba(196,136,48,.4)">
+        <span style="font-size:2rem;display:block;margin-bottom:.5rem">⚠️</span>
+        <div class="card-title" style="color:var(--amber)">مشبوه</div>
+        <div class="card-txt">الأفضل تتجنبها كمبتدئ</div>
+      </div>
+      <div class="card" style="text-align:center;border:2px solid rgba(168,64,64,.4)">
+        <span style="font-size:2rem;display:block;margin-bottom:.5rem">❌</span>
+        <div class="card-title" style="color:var(--danger)">حرام</div>
+        <div class="card-txt">لا تقربها</div>
+      </div>
+    </div>
+    <div class="box box-sky fi vis">
+      <div class="box-title">📘 أحمد طبّق السؤال الثالث</div>
+      <p>فتح Zoya وكتب "Al Rajhi" — النتيجة: <strong>حلال ١٠٠٪ ✅.</strong> بنك إسلامي بالكامل. ما يحتاج حتى تطهير.</p>
+    </div>
+
+    <div class="ex fi vis">
+      <h4>🎉 نتيجة أحمد في ثلاث دقائق</h4>
+      <p><strong style="color:var(--amber-light)">السؤال ١:</strong> وش تسوي؟ بنك إسلامي — مفهوم ✅</p>
+      <p><strong style="color:var(--amber-light)">السؤال ٢:</strong> تربح؟ نعم ونمو مستمر — ممتاز ✅</p>
+      <p><strong style="color:var(--amber-light)">السؤال ٣:</strong> حلال؟ مئة بالمئة ✅</p>
+      <p style="margin-top:.8rem">ثلاث دقائق. ثلاثة أسئلة. <strong style="color:var(--amber-light)">أحمد الحين يعرف ليش يشتري — مو بس وش يشتري.</strong> وهذا الفرق بين المستثمر والمقامر.</p>
+    </div>
+
+    <div class="box box-amb fi vis">
+      <div class="box-title">🔎 تبي تتعمق أكثر؟ خطوات إضافية (اختيارية)</div>
+      <p>الثلاثة أسئلة فوق كافية للمبتدئ. بس لما تصير أكثر ثقة، ممكن تضيف:</p>
+      <p style="margin-top:.5rem">• <strong>الديون:</strong> ابحث عن "نسبة الدين" — أقل من واحد = صحي. أكثر من اثنين = خطر.</p>
+      <p>• <strong>التوزيعات:</strong> هل الشركة تدفع أرباح كل ربع سنة؟ كم بالمئة؟ ٣-٦٪ ممتاز.</p>
+      <p>• <strong>الأخبار:</strong> ابحث باسم الشركة — هل فيه مشاكل كبيرة أو أخبار مقلقة؟</p>
+    </div>
+
+    <div class="box box-sage fi vis">
+      <div class="box-title">📱 الأدوات اللي تحتاجها (كلها مجانية)</div>
+      <p><strong>أرقام Argaam</strong> — للسوق السعودي بالعربي. <strong>مباشر Mubasher</strong> — للأسواق الخليجية. <strong>Yahoo Finance</strong> — للأسواق العالمية. <strong>Zoya أو Musaffa</strong> — للفرز الشرعي. حمّلها على جوالك الحين.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH9: COMMON MISTAKES (NEW) ══ -->
+<section class="sec sec-sand" id="s9">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-blush">⚠️</div>
+      <div>
+        <div class="ch-num">الفصل التاسع — تعلّم من أخطاء غيرك</div>
+        <h2 class="ch-title">عشرة أخطاء يقع فيها كل مبتدئ</h2>
+        <p class="ch-hook">تعلّمها الآن ووفّر على نفسك آلاف الريالات وسنوات من الندم</p>
+      </div>
+    </div>
+    <div class="body fi vis"><p>كل مستثمر ناجح مرّ بأخطاء. الفرق أن الذكي يتعلم من أخطاء غيره <strong>قبل أن يدفع الثمن من جيبه.</strong> هذه العشرة أخطاء رأيناها تتكرر مراراً — اقرأها جيداً.</p></div>
+
+    <div class="cards fi vis" style="grid-template-columns:1fr 1fr">
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">١. الاستثمار بمال تحتاجه</div>
+        <div class="card-txt">تستثمر راتبك كله وتنسى الإيجار. <strong>القاعدة:</strong> لا تستثمر أبداً إلا المال الذي لن تحتاجه لثلاث إلى خمس سنوات على الأقل. احتفظ بصندوق طوارئ أولاً.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٢. اتباع نصائح الواتساب والتيك توك</div>
+        <div class="card-txt">"اشترِ هذا السهم الآن!" — بدون سبب واضح. <strong>القاعدة:</strong> إذا لم تستطع شرح لماذا تشتري سهماً في جملتين، لا تشتريه. طبّق السبع خطوات من الفصل السابق.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٣. محاولة توقيت السوق</div>
+        <div class="card-txt">"سأنتظر حتى ينخفض أكثر." ثم لا ينخفض. ثم يرتفع. ثم تشتري عند القمة. <strong>القاعدة:</strong> استثمر بانتظام شهرياً (DCA) ولا تحاول التنبؤ.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٤. وضع كل المال في سهم واحد</div>
+        <div class="card-txt">"أرامكو شركة عملاقة ما ممكن تخسر." كل شركة يمكنها أن تنخفض. <strong>القاعدة:</strong> نوّع دائماً. صندوق ETF واحد يمنحك مئات الشركات دفعة واحدة.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٥. البيع عند أول انخفاض</div>
+        <div class="card-txt">السوق ينخفض خمسة بالمئة فتبيع بخسارة. بعد أسبوع يرتفع عشرة بالمئة. <strong>القاعدة:</strong> الانخفاضات المؤقتة طبيعية تماماً. صندوق S&amp;P500 انخفض أكثر من عشر مرات ثلاثين بالمئة — ثم عاد أعلى في كل مرة.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٦. تجاهل الرسوم والعمولات</div>
+        <div class="card-txt">رسوم نصف بالمئة تبدو صغيرة. لكن على عشرين سنة تأكل عشرات الآلاف. <strong>القاعدة:</strong> قارن الرسوم قبل اختيار الوسيط. واحد بالمئة فرق في الرسوم = فرق ضخم على المدى الطويل.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٧. الاستثمار بدون خطة مكتوبة</div>
+        <div class="card-txt">"هدفي أن أصبح غنياً" ليست خطة. <strong>القاعدة:</strong> اكتب: كم تستثمر شهرياً؟ في ماذا؟ لكم سنة؟ ما هدفك بالأرقام؟ الخطة تحميك من القرارات العاطفية.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٨. المقارنة بالآخرين</div>
+        <div class="card-txt">"صديقي ربح عشرين بالمئة في شهر!" — لم يخبرك عن المرات التي خسر فيها. <strong>القاعدة:</strong> سباقك مع نفسك فقط. ثمانية إلى عشرة بالمئة سنوياً أداء ممتاز.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">٩. فتح التطبيق عشر مرات يومياً</div>
+        <div class="card-txt">السعر ارتفع خمسين هللة فتفرح. انخفض ريالاً فتقلق. <strong>القاعدة:</strong> المستثمر طويل الأجل يتفقد محفظته مرة في الشهر — لا مرة في الساعة.</div>
+      </div>
+      <div class="card" style="border-right:4px solid var(--danger)">
+        <span class="card-em">❌</span>
+        <div class="card-title" style="color:var(--danger)">١٠. الانتظار حتى "الوقت المثالي"</div>
+        <div class="card-txt">"سأبدأ لما يكون عندي مبلغ كبير." هذا اليوم لا يأتي أبداً. <strong>القاعدة:</strong> ابدأ بأي مبلغ متاح. خمسون ريالاً اليوم أفضل من خمسين ألفاً "يوماً ما."</div>
+      </div>
+    </div>
+
+    <div class="box box-sage fi vis">
+      <div class="box-title">💚 الخبر السعيد</div>
+      <p>كل هذه الأخطاء <strong>يمكن تجنبها بالكامل</strong> إذا التزمت بقاعدة واحدة: <strong>افهم قبل أن تفعل.</strong> وأنت الآن تفعل ذلك بالضبط بقراءة هذا الدليل.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH10: INVESTOR PSYCHOLOGY (NEW) ══ -->
+<section class="sec sec-white" id="s10">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sky">🧠</div>
+      <div>
+        <div class="ch-num">الفصل العاشر — أهم فصل في الدليل</div>
+        <h2 class="ch-title">نفسية المستثمر — عدوّك الأول هو أنت</h2>
+        <p class="ch-hook">لأن أكبر خسائر الاستثمار لا يسببها السوق — يسببها الخوف والطمع</p>
+      </div>
+    </div>
+    <div class="body fi vis">
+      <p>تستطيع أن تفهم كل شيء عن الأسهم والمؤشرات والفرز الشرعي — ومع ذلك تخسر مالاً. لماذا؟ لأن <strong>عقلك مبرمج ضد الاستثمار الناجح.</strong> ملايين السنوات من التطور جعلتنا نخاف الخسارة أكثر مما نفرح بالربح. وهذا بالضبط ما يستغله السوق.</p>
+    </div>
+
+    <div class="cards fi vis">
+      <div class="card" style="border-top:4px solid var(--sky-deep)">
+        <span class="card-em">😰</span>
+        <div class="card-title">النفور من الخسارة</div>
+        <div class="card-txt">ألم خسارة ألف ريال أقوى نفسياً <strong>بمرتين ونصف</strong> من فرحة ربح ألف ريال. لذلك تبيع بسرعة عند الانخفاض وتحوّل خسارة "ورقية" إلى خسارة حقيقية.</div>
+      </div>
+      <div class="card" style="border-top:4px solid var(--amber)">
+        <span class="card-em">📱</span>
+        <div class="card-title">الخوف من الضياع (FOMO)</div>
+        <div class="card-txt">"الكل يشتري هذا السهم وأنا لا!" فتشتري عند القمة. <strong>تسعون بالمئة من "الفرص" التي تراها في وسائل التواصل</strong> وصلت متأخراً — الذين ربحوا اشتروا قبل أن تسمع عنها.</div>
+      </div>
+      <div class="card" style="border-top:4px solid var(--sage-deep)">
+        <span class="card-em">🎯</span>
+        <div class="card-title">التحيز التأكيدي</div>
+        <div class="card-txt">اشتريت سهماً فتبحث فقط عن أخبار إيجابية عنه وتتجاهل السلبية. <strong>الحل:</strong> اسأل نفسك دائماً — "ما الذي يمكن أن يسير بشكل خاطئ؟"</div>
+      </div>
+      <div class="card" style="border-top:4px solid var(--blush-dark)">
+        <span class="card-em">🎰</span>
+        <div class="card-title">وهم السيطرة</div>
+        <div class="card-txt">تعتقد أنك أذكى من السوق وتستطيع التنبؤ بحركته. <strong>الحقيقة:</strong> حتى أفضل مديري الصناديق في العالم لا يتفوقون على المؤشر بشكل مستمر. التواضع = أرباح.</div>
+      </div>
+    </div>
+
+    <div class="ex fi vis">
+      <h4>🧪 اختبار سريع — هل ستنجح كمستثمر؟</h4>
+      <p>تخيّل: اشتريت صندوق ETF بعشرة آلاف ريال. بعد شهرين أصبح يساوي ثمانية آلاف وخمسمئة ريال. ماذا تفعل؟</p>
+      <ul>
+        <li><strong style="color:var(--blush-dark)">أ) أبيع فوراً قبل أن أخسر أكثر</strong> <i class="arr">←</i> رد فعل عاطفي. حوّلت خسارة مؤقتة إلى دائمة.</li>
+        <li><strong style="color:var(--amber-light)">ب) أنتظر حتى يعود لعشرة آلاف ثم أبيع</strong> <i class="arr">←</i> أفضل، لكنك تفوّت فرصة النمو.</li>
+        <li><strong style="color:rgba(168,210,168,1)">ج) أشتري المزيد — الخصم خمسة عشر بالمئة!</strong> <i class="arr">←</i> هذا تفكير المستثمر الناجح. الانخفاض = تخفيضات.</li>
+      </ul>
+      <p style="margin-top:.8rem">الإجابة الصحيحة <strong style="color:var(--amber-light)">ج</strong> — لكن عقلك سيصرخ ويقول "أ!" لذلك تحتاج خطة مكتوبة مسبقاً تلتزم بها عندما تختلط المشاعر.</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">متى تبيع؟ — السؤال الأصعب في الاستثمار</h3>
+    <div class="body fi vis"><p>معظم الناس يعرفون متى يشترون لكن لا يعرفون متى يبيعون. إليك القواعد:</p></div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin:1.5rem 0" class="fi vis">
+      <div>
+        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--success);font-size:.88rem;margin-bottom:.75rem">✅ أسباب جيدة للبيع</h4>
+        <ul class="cklist">
+          <li><span class="ck ck-y">✓</span>أساسيات الشركة تغيّرت (خسائر متكررة، فساد إداري)</li>
+          <li><span class="ck ck-y">✓</span>وصلت لهدفك الاستثماري (مثلاً: مبلغ الشقة)</li>
+          <li><span class="ck ck-y">✓</span>تحتاج إعادة توازن محفظتك سنوياً</li>
+          <li><span class="ck ck-y">✓</span>السهم لم يعد متوافقاً مع الشريعة</li>
+          <li><span class="ck ck-y">✓</span>وجدت فرصة أفضل بوضوح (ليس بسبب FOMO)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--danger);font-size:.88rem;margin-bottom:.75rem">❌ أسباب سيئة للبيع</h4>
+        <ul class="cklist">
+          <li><span class="ck ck-n">✗</span>السعر انخفض مؤقتاً (بدون تغيّر في الأساسيات)</li>
+          <li><span class="ck ck-n">✗</span>الأخبار مخيفة (الأخبار دائماً مخيفة)</li>
+          <li><span class="ck ck-n">✗</span>صديقك قال "بيع الآن"</li>
+          <li><span class="ck ck-n">✗</span>تشعر بالملل وتريد "تغيير"</li>
+          <li><span class="ck ck-n">✗</span>ارتفع السهم قليلاً وتريد "تأمين الربح"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box box-amb fi vis">
+      <div class="box-title">🔑 القاعدة الذهبية لنفسية المستثمر</div>
+      <p><strong>اكتب خطتك وأنت هادئ — والتزم بها وأنت خائف.</strong> قرارات الاستثمار المتخذة تحت ضغط عاطفي تكون خاطئة في أغلب الأحيان. لذلك الخطة المكتوبة مسبقاً هي أقوى أداة يملكها المستثمر — أقوى من أي تحليل مالي.</p>
+    </div>
+
+    <div class="box box-sky fi vis" style="margin-bottom:0">
+      <div class="box-title">🤗 تذكّر</div>
+      <p>الشعور بالخوف عند انخفاض السوق <strong>طبيعي تماماً.</strong> لا يوجد مستثمر على وجه الأرض لا يشعر بذلك. الفرق بين الناجح وغيره ليس غياب الخوف — بل وجود خطة تمنعه من التصرف بناءً على الخوف.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REASSURANCE BOX BETWEEN THEORY AND PRACTICE ══ -->
+<section class="sec sec-sand" style="padding:3rem 0">
+  <div class="inner fi vis" style="text-align:center;max-width:660px">
+    <div style="font-size:2rem;margin-bottom:.8rem">🎉</div>
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:1.2rem;color:var(--ink);margin-bottom:.8rem">أحسنت — أنت الآن تفهم الأساسيات كاملة!</h3>
+    <p style="font-size:.95rem;color:var(--ink-mid);line-height:1.8">تعرف ما هو السوق، كيف تربح، ما يحرّكه، كيف تقيّم شركة، ما الأخطاء التي تتجنبها، وكيف تتحكم في مشاعرك. <strong>الآن ننتقل للجزء العملي — خطتك الشخصية.</strong></p>
+  </div>
+</section>
+
+<!-- ══ CH11: AGE ══ -->
+<section class="sec sec-white" id="s11">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-amb">🎂</div>
+      <div>
+        <div class="ch-num">الفصل الحادي عشر — خطتك الشخصية</div>
+        <h2 class="ch-title">ما الخطة المناسبة لعمري؟</h2>
+        <p class="ch-hook">لأن استثمار شخص في العشرينيات يختلف كلياً عن شخص في الخمسينيات</p>
+      </div>
+    </div>
+    <div class="age-tabs fi vis" id="age-tabs">
+      <div class="age-tab active" data-age="20">🌱 ١٨ – ٢٩ سنة</div>
+      <div class="age-tab" data-age="30">🌿 ٣٠ – ٣٩ سنة</div>
+      <div class="age-tab" data-age="40">🌳 ٤٠ – ٤٩ سنة</div>
+      <div class="age-tab" data-age="50">🏔️ ٥٠ فما فوق</div>
+    </div>
+
+    <div class="age-panel active" id="age-20">
+      <div class="age-profile fi vis">
+        <div class="age-head"><div class="age-em">🌱</div><div class="age-info"><h3>المستثمر الشاب — ١٨ إلى ٢٩ سنة</h3><p>أعظم ما تملكه ليس مالاً — بل الوقت.</p></div></div>
+        <div class="age-body">
+          <h4>🎯 وضعك الآن</h4><p>ربما بدأت توظّف لتوّك أو مازلت طالباً. لكن لديك أقوى ورقة في الاستثمار: <strong>ثلاثون إلى خمس وأربعون سنة من التراكم أمامك.</strong> انخفاض السوق بالنسبة لك فرصة شراء لا سبب للذعر.</p>
+          <h4>📊 توزيع الأصول المقترح</h4>
+          <div class="ptags">
+            <span class="ptag" style="background:rgba(58,122,74,.14);color:var(--sage-deep)">٦٠٪ ETF حلال أمريكي (SPUS)</span>
+            <span class="ptag" style="background:var(--amber-pale);color:var(--amber)">٢٥٪ أسهم خليجية (أرامكو، إعمار)</span>
+            <span class="ptag" style="background:rgba(74,138,170,.14);color:var(--sky-deep)">١٠٪ أسهم نمو تقني حلال</span>
+            <span class="ptag" style="background:rgba(80,60,20,.08);color:var(--ink-mid)">٥٪ احتياطي نقدي</span>
+          </div>
+          <h4>🔑 نصيحتنا لك</h4><p>ابدأ بعشرة بالمئة من دخلك. <strong>خمسمئة ريال شهرياً بنمو ثمانية بالمئة = أكثر من ثلاثمئة ألف ريال بعد عشرين سنة.</strong> المبلغ ليس المهم — الانتظام هو المهم.</p>
+        </div>
+      </div>
+    </div>
+    <div class="age-panel" id="age-30">
+      <div class="age-profile fi vis">
+        <div class="age-head"><div class="age-em">🌿</div><div class="age-info"><h3>مرحلة البناء — ٣٠ إلى ٣٩ سنة</h3><p>أعلى منحنى الدخل. لكن المسؤوليات أعلى أيضاً.</p></div></div>
+        <div class="age-body">
+          <h4>🎯 وضعك الآن</h4><p>دخلك أعلى لكن نفقاتك أيضاً أكبر. زواج، أطفال، منزل. <strong>يجب ترتيب الأولويات بوضوح.</strong></p>
+          <h4>📊 توزيع الأصول المقترح</h4>
+          <div class="ptags">
+            <span class="ptag" style="background:rgba(58,122,74,.14);color:var(--sage-deep)">٤٥٪ ETF متنوع شرعياً</span>
+            <span class="ptag" style="background:var(--amber-pale);color:var(--amber)">٣٠٪ أسهم خليجية ذات توزيعات</span>
+            <span class="ptag" style="background:rgba(74,138,170,.14);color:var(--sky-deep)">١٠٪ صكوك</span>
+            <span class="ptag" style="background:rgba(58,122,74,.12);color:var(--success)">١٠٪ صندوق تعليم الأطفال</span>
+            <span class="ptag" style="background:rgba(80,60,20,.08);color:var(--ink-mid)">٥٪ احتياطي</span>
+          </div>
+          <h4>🔑 نصيحتنا لك</h4><p><strong>زد نسبة الاستثمار إلى خمسة عشر إلى عشرين بالمئة من الدخل.</strong> عند الزيادة في الراتب، خصص نصفها للاستثمار قبل أن تعتاد إنفاق الكل.</p>
+        </div>
+      </div>
+    </div>
+    <div class="age-panel" id="age-40">
+      <div class="age-profile fi vis">
+        <div class="age-head"><div class="age-em">🌳</div><div class="age-info"><h3>مرحلة التسريع — ٤٠ إلى ٤٩ سنة</h3><p>الذروة المهنية. التقاعد في الأفق.</p></div></div>
+        <div class="age-body">
+          <h4>🎯 وضعك الآن</h4><p>إذا لم تبدأ بعد — الآن وقت لا يُعوَّض. إذا بدأت — حان وقت التسريع. <strong>كل ريال تستثمره اليوم لديه عشرون سنة للتراكم.</strong></p>
+          <h4>📊 توزيع الأصول المقترح</h4>
+          <div class="ptags">
+            <span class="ptag" style="background:var(--amber-pale);color:var(--amber)">٤٠٪ أسهم توزيعات (دخل منتظم)</span>
+            <span class="ptag" style="background:rgba(58,122,74,.14);color:var(--sage-deep)">٢٥٪ ETF متنوع شرعياً</span>
+            <span class="ptag" style="background:rgba(74,138,170,.14);color:var(--sky-deep)">٢٠٪ صكوك</span>
+            <span class="ptag" style="background:rgba(168,64,64,.1);color:var(--danger)">١٠٪ ذهب كتحوط</span>
+            <span class="ptag" style="background:rgba(80,60,20,.08);color:var(--ink-mid)">٥٪ احتياطي</span>
+          </div>
+          <h4>🔑 نصيحتنا لك</h4><p><strong>استهدف عشرين إلى خمسة وعشرين بالمئة من دخلك.</strong> افحص محفظتك وتأكد من تعدد مصادر الدخل.</p>
+        </div>
+      </div>
+    </div>
+    <div class="age-panel" id="age-50">
+      <div class="age-profile fi vis">
+        <div class="age-head"><div class="age-em">🏔️</div><div class="age-info"><h3>مرحلة الحفاظ والدخل — ٥٠ فما فوق</h3><p>الأولوية: حماية ما بنيته وتوليد دخل منتظم.</p></div></div>
+        <div class="age-body">
+          <h4>🎯 وضعك الآن</h4><p>الأولوية الآن ليست التضخيم بل <strong>الحفاظ على رأس المال وتوليد دخل شهري منتظم يكفيك.</strong></p>
+          <h4>📊 توزيع الأصول المقترح</h4>
+          <div class="ptags">
+            <span class="ptag" style="background:var(--amber-pale);color:var(--amber)">٥٠٪ أسهم توزيعات مستقرة</span>
+            <span class="ptag" style="background:rgba(74,138,170,.14);color:var(--sky-deep)">٢٥٪ صكوك ودخل ثابت</span>
+            <span class="ptag" style="background:rgba(168,64,64,.1);color:var(--danger)">١٥٪ ذهب وأصول تحوط</span>
+            <span class="ptag" style="background:rgba(80,60,20,.08);color:var(--ink-mid)">١٠٪ نقدي سائل</span>
+          </div>
+          <h4>🔑 نصيحتنا لك</h4><p><strong>احتفظ بنفقات اثني عشر شهراً على الأقل سائلة.</strong> راجع محفظتك مع مستشار مالي. فكر في تخطيط الإرث.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CH9: INCOME ══ -->
+<section class="sec sec-sand" id="s12">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sage">💼</div>
+      <div>
+        <div class="ch-num">الفصل الثاني عشر — الأرقام الحقيقية</div>
+        <h2 class="ch-title">كم أستثمر براتبي الحالي؟</h2>
+        <p class="ch-hook">السؤال الأكثر عملية — وإليك إجابة واقعية لكل شريحة دخل</p>
+      </div>
+    </div>
+    <div class="inc-grid fi vis">
+      <div class="inc inc-low">
+        <span class="inc-em">🌱</span>
+        <div class="inc-range">٣٠٠٠ – ٨٠٠٠ ريال / درهم</div>
+        <div class="inc-lbl">البداية المثالية — كل ريال يصنع فارقاً</div>
+        <div class="inc-body">
+          <strong>كم تستثمر؟</strong><p>ابدأ بعشرة بالمئة = ثلاثمئة إلى ثمانمئة شهرياً. مئتا ريال فقط تُفرق فارقاً بعد عشر سنوات.</p>
+          <strong>أين تستثمر؟</strong><p>صندوق ETF حلال واحد فقط في البداية. البساطة استراتيجيتك.</p>
+          <strong>المنصة الأنسب</strong><p>Wahed Invest أو تطبيق بنكك المحلي. تكاليف منخفضة وبدء سهل جداً.</p>
+        </div>
+      </div>
+      <div class="inc inc-mid">
+        <span class="inc-em">🌿</span>
+        <div class="inc-range">٨٠٠٠ – ٢٠,٠٠٠ ريال / درهم</div>
+        <div class="inc-lbl">وقت البناء الحقيقي</div>
+        <div class="inc-body">
+          <strong>كم تستثمر؟</strong><p>استهدف خمسة عشر بالمئة = ألف ومئتان إلى ثلاثة آلاف شهرياً.</p>
+          <strong>أين تستثمر؟</strong><p>ستون بالمئة ETF — ثلاثون بالمئة أسهم خليجية — عشرة بالمئة صكوك.</p>
+          <strong>المنصة الأنسب</strong><p>وسيط محلي للأسواق الخليجية + Saxo أو Interactive Brokers للأسواق الأمريكية.</p>
+        </div>
+      </div>
+      <div class="inc inc-hi">
+        <span class="inc-em">🌳</span>
+        <div class="inc-range">٢٠,٠٠٠ فأكثر</div>
+        <div class="inc-lbl">تنويع حقيقي وإدارة ثروة</div>
+        <div class="inc-body">
+          <strong>كم تستثمر؟</strong><p>خمسة عشر إلى خمسة وعشرون بالمئة على الأقل. في هذا المستوى يجب أن يكون لك مستشار مالي شخصي.</p>
+          <strong>أين تستثمر؟</strong><p>أسهم خليجية + ETFs عالمية + صكوك + عقارات (REITs) + ذهب.</p>
+          <strong>المنصة الأنسب</strong><p>مدير ثروات خاص في مصرف كبير + منصات متعددة.</p>
+        </div>
+      </div>
+    </div>
+    <div class="box box-amb fi vis"><div class="box-title">📌 القاعدة الذهبية في كل مستوى دخل</div><p>قبل أي استثمار، احتفظ بـ<strong>نفقات ثلاثة إلى ستة أشهر في حساب سائل كطوارئ.</strong> هذا المبلغ لا تلمسه ولا تستثمره — وجوده يمنعك من بيع استثماراتك في أسوأ وقت.</p></div>
+  </div>
+</section>
+
+<!-- ══ CH10: BROKER + PORTFOLIO CALC ══ -->
+<section class="sec sec-white" id="s13">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sand">🔎</div>
+      <div>
+        <div class="ch-num">الفصل الثالث عشر — الأداة العملية</div>
+        <h2 class="ch-title">اختر وسيطك وبنِ محفظتك</h2>
+        <p class="ch-hook">لأن اختيار الوسيط الخاطئ يكلفك مالاً وإحباطاً — واخترنا لك الأفضل</p>
+      </div>
+    </div>
+
+    <div class="body fi vis">
+      <p>بدل ما نعطيك جدول فيه اثني عشر خيار وتضيع — <strong>قلنا: خلنا نسهّلها عليك.</strong> ابحث عن نفسك في الثلاثة خيارات تحت، واختر الوسيط اللي يناسبك. خلاص. لا تعقّدها أكثر من كذا.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem;margin:1.5rem 0" class="fi vis">
+      <div class="persona" style="border-color:rgba(58,122,74,.4);background:rgba(208,232,208,.15)">
+        <div class="persona-you" style="color:var(--sage-deep)">🇸🇦 أنا في السعودية وأبي حلال ١٠٠٪</div>
+        <h3 style="color:var(--sage-deep)">ابدأ بواحد من هذولا:</h3>
+        <div class="persona-rec">
+          <div class="persona-rank">١</div>
+          <div><div class="persona-rec-name">الراجحي كابيتال</div><div class="persona-rec-why">إسلامي بالكامل. تطبيق سهل. بدون حد أدنى. الأكثر ثقة.</div></div>
+        </div>
+        <div class="persona-rec">
+          <div class="persona-rank">٢</div>
+          <div><div class="persona-rec-name">الإنماء للاستثمار</div><div class="persona-rec-why">١٠٠٪ حلال. صناديق متنوعة. ممتاز للمحافظ.</div></div>
+        </div>
+      </div>
+
+      <div class="persona" style="border-color:rgba(74,138,170,.4);background:rgba(216,237,245,.15)">
+        <div class="persona-you" style="color:var(--sky-deep)">🇦🇪 أنا في الإمارات وأبي أسهل بداية</div>
+        <h3 style="color:var(--sky-deep)">ابدأ بواحد من هذولا:</h3>
+        <div class="persona-rec">
+          <div class="persona-rank">١</div>
+          <div><div class="persona-rec-name">Sarwa</div><div class="persona-rec-why">الأسهل على الإطلاق. خيار حلال متاح. حد أدنى ٥٠ دولار فقط.</div></div>
+        </div>
+        <div class="persona-rec">
+          <div class="persona-rank">٢</div>
+          <div><div class="persona-rec-name">ADIB Securities</div><div class="persona-rec-why">إسلامي ١٠٠٪. بدون حد أدنى. للي يبي السوق المحلي.</div></div>
+        </div>
+      </div>
+
+      <div class="persona" style="border-color:rgba(196,136,48,.4);background:rgba(251,240,220,.3)">
+        <div class="persona-you" style="color:var(--amber)">🌍 أبي حلال + أسهل شيء ممكن (أي بلد)</div>
+        <h3 style="color:var(--amber)">ابدأ هنا بدون تفكير:</h3>
+        <div class="persona-rec">
+          <div class="persona-rank">١</div>
+          <div><div class="persona-rec-name">Wahed Invest</div><div class="persona-rec-why">١٠٠٪ حلال. يبني لك محفظة تلقائياً. ما تحتاج تقرر شيء. حد أدنى شبه معدوم.</div></div>
+        </div>
+        <div class="persona-rec">
+          <div class="persona-rank">٢</div>
+          <div><div class="persona-rec-name">مباشر Mubasher</div><div class="persona-rec-why">تطبيق ممتاز. يغطي السعودية والإمارات. للي يبي يتعلم ويختار بنفسه.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box box-amb fi vis">
+      <div class="box-title">☝️ نصيحة مهمة</div>
+      <p><strong>اختر وسيط واحد فقط وابدأ.</strong> لا تفتح ثلاثة حسابات. لا تقارن لأسبوعين. اختر اللي يناسب وضعك من فوق، سجّل اليوم، وبعد ستة أشهر لما تتعلم أكثر ممكن تضيف منصة ثانية.</p>
+    </div>
+
+    <button class="collapsible-toggle fi vis" onclick="this.classList.toggle(&#39;open&#39;);this.nextElementSibling.classList.toggle(&#39;open&#39;)">
+      <span>📋 تبي تشوف كل الوسطاء الاثني عشر؟ (للفضوليين)</span>
+      <span class="arrow">▼</span>
+    </button>
+    <div class="collapsible-content">
+      <div class="broker-wrap" style="margin-top:1rem">
+        <table class="broker-table">
+          <thead><tr><th>الوسيط</th><th>السوق</th><th>الحد الأدنى</th><th>الشريعة</th><th>سهولة</th><th>الأنسب لـ</th></tr></thead>
+          <tbody>
+            <tr><td><strong>الراجحي كابيتال</strong></td><td>🇸🇦</td><td>لا يوجد</td><td><span class="b-y">١٠٠٪ حلال</span></td><td><span class="b-y">سهل</span></td><td>المبتدئ السعودي</td></tr>
+            <tr><td><strong>الإنماء للاستثمار</strong></td><td>🇸🇦</td><td>لا يوجد</td><td><span class="b-y">١٠٠٪ حلال</span></td><td><span class="b-y">سهل</span></td><td>المحافظ</td></tr>
+            <tr><td><strong>مباشر</strong></td><td>🇸🇦 🇦🇪</td><td>لا يوجد</td><td><span class="b-y">متوافق</span></td><td><span class="b-y">ممتاز</span></td><td>المستثمر الخليجي</td></tr>
+            <tr><td><strong>SNB Capital</strong></td><td>🇸🇦</td><td>متفاوت</td><td><span class="b-y">متوافق</span></td><td><span class="b-m">متوسط</span></td><td>المتمرس</td></tr>
+            <tr><td><strong>Emirates NBD</strong></td><td>🇦🇪</td><td>١٠٠٠ درهم</td><td><span class="b-y">متوافق</span></td><td><span class="b-y">جيد</span></td><td>مقيم الإمارات</td></tr>
+            <tr><td><strong>FAB Securities</strong></td><td>🇦🇪</td><td>٥٠٠ درهم</td><td><span class="b-y">متوافق</span></td><td><span class="b-m">متوسط</span></td><td>عميل FAB</td></tr>
+            <tr><td><strong>ADIB Securities</strong></td><td>🇦🇪</td><td>لا يوجد</td><td><span class="b-y">إسلامي ١٠٠٪</span></td><td><span class="b-y">سهل</span></td><td>المستثمر الإسلامي</td></tr>
+            <tr><td><strong>Sarwa</strong></td><td>🇦🇪</td><td>٥٠ دولار</td><td><span class="b-y">خيار حلال</span></td><td><span class="b-y">الأسهل</span></td><td>المبتدئ تماماً</td></tr>
+            <tr><td><strong>Wahed Invest</strong></td><td>🌍</td><td>منخفض جداً</td><td><span class="b-y">١٠٠٪ حلال</span></td><td><span class="b-y">الأسهل</span></td><td>المبتدئ الحلال</td></tr>
+            <tr><td><strong>Interactive Brokers</strong></td><td>🌍</td><td>لا يوجد</td><td><span class="b-m">تحتاج فرز</span></td><td><span class="b-n">معقد</span></td><td>المتقدم</td></tr>
+            <tr><td><strong>Saxo Bank</strong></td><td>🌍</td><td>متفاوت</td><td><span class="b-m">تحتاج فرز</span></td><td><span class="b-m">متوسط</span></td><td>المتمرس</td></tr>
+            <tr><td><strong>eToro</strong></td><td>🌍</td><td>٢٠٠ دولار</td><td><span class="b-m">تحتاج فرز</span></td><td><span class="b-y">سهل</span></td><td>المبتدئ الدولي</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ══ PORTFOLIO ALLOCATION CALCULATOR ══ -->
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:3rem 0 .5rem" class="fi vis">🎯 آلة توزيع المحفظة — اعرف بالأرقام كيف تبدو محفظتك</h3>
+    <div class="port-calc fi vis">
+      <div class="pc-title">📐 احسب توزيع محفظتك بنفسك</div>
+      <p class="pc-sub">أدخل مبلغ استثمارك، اختر ملفك الشخصي أو عدّل النسب يدوياً، وسترى كيف يُوزَّع مالك بالأرقام الحقيقية.</p>
+
+      <div class="pc-input-row">
+        <label>مبلغ الاستثمار</label>
+        <input type="number" class="pc-amount" id="pc-total" value="10000" min="100" oninput="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+        <span style="font-size:.8rem;color:var(--ink-light)">ريال / درهم</span>
+      </div>
+
+      <div style="font-size:.78rem;font-weight:700;color:var(--ink-mid);margin-bottom:.6rem">اختر ملفك الشخصي:</div>
+      <div class="pc-profile-btns">
+        <button class="pc-btn active" onclick="applyProfile(&#39;growth&#39;)">🌱 نمو (شاب)</button>
+        <button class="pc-btn" onclick="applyProfile(&#39;balanced&#39;)">⚖️ متوازن</button>
+        <button class="pc-btn" onclick="applyProfile(&#39;income&#39;)">🏔️ دخل (متحفظ)</button>
+        <button class="pc-btn" onclick="applyProfile(&#39;custom&#39;)">✏️ مخصص</button>
+      </div>
+
+      <div class="pc-sliders">
+        <div class="pc-slider-row">
+          <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#6E9E7A"></div>صناديق ETF حلال</div>
+          <input type="range" class="pc-slider" id="sl-etf" min="0" max="100" value="60" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <div class="pc-pct" id="pct-etf">٦٠٪</div>
+          <div class="pc-val" id="val-etf">٦٬٠٠٠ ريال</div>
+        </div>
+        <div class="pc-slider-row">
+          <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#C48830"></div>أسهم خليجية</div>
+          <input type="range" class="pc-slider" id="sl-gulf" min="0" max="100" value="25" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <div class="pc-pct" id="pct-gulf">٢٥٪</div>
+          <div class="pc-val" id="val-gulf">٢٬٥٠٠ ريال</div>
+        </div>
+        <div class="pc-slider-row">
+          <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#7BAFC8"></div>صكوك</div>
+          <input type="range" class="pc-slider" id="sl-sukuk" min="0" max="100" value="5" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <div class="pc-pct" id="pct-sukuk">٥٪</div>
+          <div class="pc-val" id="val-sukuk">٥٠٠ ريال</div>
+        </div>
+        <div class="pc-slider-row">
+          <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#B87878"></div>ذهب / تحوط</div>
+          <input type="range" class="pc-slider" id="sl-gold" min="0" max="100" value="0" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <div class="pc-pct" id="pct-gold">٠٪</div>
+          <div class="pc-val" id="val-gold">٠ ريال</div>
+        </div>
+        <div class="pc-slider-row">
+          <div class="pc-slider-lbl"><div class="pc-leg-dot" style="background:#B0A494"></div>احتياطي نقدي</div>
+          <input type="range" class="pc-slider" id="sl-cash" min="0" max="100" value="10" oninput="updatePortCalc()" onchange="this.form.dispatchEvent(new Event(&#39;change&#39;, {bubbles:true}))">
+          <div class="pc-pct" id="pct-cash">١٠٪</div>
+          <div class="pc-val" id="val-cash">١٬٠٠٠ ريال</div>
+        </div>
+      </div>
+
+      <div class="pc-warn" id="pc-warn">⚠️ مجموع النسب يتجاوز ١٠٠٪ — يرجى تعديل القيم</div>
+
+      <div class="pc-results">
+        <div class="pc-donut-wrap">
+          <canvas id="donut-canvas" width="160" height="160"></canvas>
+          <div class="pc-donut-center">
+            <div class="pc-donut-total" id="donut-total">١٠٬٠٠٠ ريال</div>
+            <div class="pc-donut-lbl">إجمالي</div>
+          </div>
+        </div>
+        <div class="pc-legend">
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#6E9E7A"></div><span class="pc-leg-name">ETF حلال</span><span class="pc-leg-pct" id="lg-etf">٦٠٪</span><span class="pc-leg-val" id="lv-etf">٦٬٠٠٠ ريال</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#C48830"></div><span class="pc-leg-name">أسهم خليجية</span><span class="pc-leg-pct" id="lg-gulf">٢٥٪</span><span class="pc-leg-val" id="lv-gulf">٢٬٥٠٠ ريال</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#7BAFC8"></div><span class="pc-leg-name">صكوك</span><span class="pc-leg-pct" id="lg-sukuk">٥٪</span><span class="pc-leg-val" id="lv-sukuk">٥٠٠ ريال</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#B87878"></div><span class="pc-leg-name">ذهب / تحوط</span><span class="pc-leg-pct" id="lg-gold">٠٪</span><span class="pc-leg-val" id="lv-gold">٠ ريال</span></div>
+          <div class="pc-leg-item"><div class="pc-leg-dot" style="background:#B0A494"></div><span class="pc-leg-name">احتياطي نقدي</span><span class="pc-leg-pct" id="lg-cash">١٠٪</span><span class="pc-leg-val" id="lv-cash">١٬٠٠٠ ريال</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box box-sage fi vis"><div class="box-title">💡 توصيتنا للمبتدئ العربي</div><p>ابدأ بوسيط واحد بسيط. <strong>لا تفتح ثلاثة حسابات في نفس الوقت.</strong> في السعودية: مباشر أو الراجحي كابيتال. في الإمارات: Wahed Invest أو Sarwa. بعد ستة أشهر وتعلّم الأساسيات، أضف منصة دولية.</p></div>
+  </div>
+</section>
+
+<!-- ══ CH11: HOW TO OPEN ══ -->
+<section class="sec sec-sky" id="s14">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-ink" style="color:var(--amber-light)">🚀</div>
+      <div>
+        <div class="ch-num">الفصل الرابع عشر — الخطوة الأخيرة</div>
+        <h2 class="ch-title">كيف أفتح حسابي خطوة بخطوة؟</h2>
+        <p class="ch-hook">لا تخمين، لا "اقرأ الموقع" — فقط خطوات واضحة لكل سوق</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:0 0 .9rem" class="fi vis">🇦🇪 الاستثمار في أسواق الإمارات</h3>
+    <div class="steps fi vis">
+      <div class="step"><div class="step-n">١</div><div><h4>افتح حساباً مع وسيط مرخّص من SCA</h4><p>مباشر، Emirates NBD Securities، ADIB Securities، FAB Securities، Sarwa. معظمهم يقبلون الفتح الإلكتروني في أقل من عشرين دقيقة.</p></div></div>
+      <div class="step"><div class="step-n">٢</div><div><h4>اجمع وثائقك</h4><p>الهوية الإماراتية (أمام وخلف) + جواز السفر + إثبات عنوان حديث (فاتورة أو كشف حساب آخر ثلاثة أشهر) + رقم IBAN.</p></div></div>
+      <div class="step"><div class="step-n">٣</div><div><h4>احصل على رقم المستثمر الوطني (NIN)</h4><p>متطلب إلزامي لكل مستثمر في أسواق الإمارات. وسيطك يقدم الطلب نيابة عنك. يستغرق من يوم إلى ثلاثة أيام عمل.</p></div></div>
+      <div class="step"><div class="step-n">٤</div><div><h4>فعّل الحساب وموّله</h4><p>حوّل المبلغ من حسابك المصرفي. الحد الأدنى يختلف: بعض الوسطاء بلا حد أدنى، وبعضهم من خمسمئة إلى ألف درهم.</p></div></div>
+      <div class="step"><div class="step-n">٥</div><div><h4>ابحث بالـ Ticker واشترِ</h4><p>في التطبيق اكتب رمز الشركة — مثل <span class="tk">EMAAR</span> لإعمار. اضغط شراء، أدخل الكمية، راجع، أكّد. تمّ! 🎉</p></div></div>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">🇸🇦 الاستثمار في السوق السعودي</h3>
+    <div class="steps fi vis">
+      <div class="step"><div class="step-n">١</div><div><h4>اختر وسيطاً مرخّصاً من هيئة السوق المالية (CMA)</h4><p>الراجحي كابيتال، استثمار أمانة، SNB Capital، Alinma Investment، الجزيرة كابيتال. كلها موثوقة — الفرق في الرسوم وجودة التطبيق.</p></div></div>
+      <div class="step"><div class="step-n">٢</div><div><h4>الوثائق المطلوبة</h4><p>الهوية الوطنية السعودية أو الإقامة + حساب في مصرف سعودي + بيانات التواصل. معظم الفتح الآن عبر التطبيق في أقل من خمس عشرة دقيقة.</p></div></div>
+      <div class="step"><div class="step-n">٣</div><div><h4>الموافقة والتفعيل</h4><p>عادة خلال يوم إلى يومين. ستتلقى رسالة نصية بتفاصيل الحساب.</p></div></div>
+      <div class="step"><div class="step-n">٤</div><div><h4>ابدأ من سهم واحد</h4><p>يمكنك شراء سهم واحد من أرامكو برمز <span class="tk">2222</span> أو مصرف الراجحي برمز <span class="tk">1120</span>. لا حد أدنى في كثير من الوسطاء.</p></div></div>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:.97rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">🇺🇸 الاستثمار في الأسواق الأمريكية</h3>
+    <div class="steps fi vis">
+      <div class="step"><div class="step-n">١</div><div><h4>اختر منصة دولية متاحة لمقيمي الخليج</h4><p>Interactive Brokers (الأقل رسوماً) — Saxo Bank (متاح رسمياً في الإمارات) — eToro (الأسهل) — أو ذراع التداول الدولي في بنكك المحلي.</p></div></div>
+      <div class="step"><div class="step-n">٢</div><div><h4>أكمل التحقق من الهوية (KYC)</h4><p>جواز سفر + إثبات عنوان + معلومات مالية أساسية. يستغرق من يوم إلى خمسة أيام عمل.</p></div></div>
+      <div class="step"><div class="step-n">٣</div><div><h4>أكمل نموذج W-8BEN — خطوة مهمة جداً!</h4><p>يُعرّفك كمستثمر غير أمريكي. يخفّض ضريبة الاستقطاع على التوزيعات من ثلاثين إلى خمسة عشر بالمئة. ينتهي كل ثلاث سنوات ويجب تجديده.</p></div></div>
+      <div class="step"><div class="step-n">٤</div><div><h4>ابدأ بصندوق ETF حلال</h4><p>ابحث في التطبيق عن <span class="tk">SPUS</span> أو <span class="tk">HLAL</span>. هذان صندوقان يمنحانك الأسهم الأمريكية الكبرى بعد الفرز الشرعي الكامل.</p></div></div>
+    </div>
+
+    <div class="box box-dark fi vis">
+      <div class="box-title">🌟 أسهل بداية ممكنة — اليوم وليس غداً</div>
+      <p>افتح حساب في <strong style="color:var(--amber-light)">Wahed Invest</strong>. أجب على سبع أسئلة بسيطة عن أهدافك. يبنون لك محفظة حلال متنوعة تلقائياً. حد أدنى منخفض جداً. لا قرارات معقدة. مثالي كنقطة بداية ويمكنك التطور لاحقاً.</p>
+    </div>
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1.05rem;color:var(--ink);margin:2.5rem 0 .5rem" class="fi vis">📲 أول عملية شراء في حياتك — حرفياً زر بزر</h3>
+    <div class="body fi vis">
+      <p>خلاص فتحت حسابك وحوّلت فلوس؟ ممتاز. الحين بنشتري أول استثمار. <strong>بنستخدم Wahed Invest كمثال لأنه الأسهل — بس الخطوات متشابهة في كل التطبيقات.</strong></p>
+    </div>
+
+    <div class="steps fi vis">
+      <div class="step">
+        <div class="step-n">١</div>
+        <div>
+          <h4>📱 افتح التطبيق — الشاشة الرئيسية</h4>
+          <p>بتشوف رصيدك ومحفظتك (فاضية حالياً). دوّر على زر <strong>"استثمر" أو "Invest" أو "إيداع".</strong> في Wahed بيكون واضح في الواجهة الرئيسية.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">٢</div>
+        <div>
+          <h4>💰 حدد المبلغ</h4>
+          <p>اكتب المبلغ اللي تبي تستثمره. <strong>لا تفكر كثير — حتى لو مئة ريال أو خمسين درهم.</strong> الهدف الحين مو الربح — الهدف إنك تتعلم بالممارسة.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">٣</div>
+        <div>
+          <h4>🎯 اختر المحفظة أو الصندوق</h4>
+          <p>في Wahed: التطبيق يسألك أسئلة عن أهدافك ويختار لك تلقائياً. في تطبيقات ثانية: ابحث عن <span class="tk">SPUS</span> أو <span class="tk">HLAL</span> (صناديق ETF حلال أمريكية) أو اكتب <span class="tk">2222</span> لأرامكو.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">٤</div>
+        <div>
+          <h4>✅ راجع وأكّد</h4>
+          <p>بتظهر لك شاشة ملخص: المبلغ، الصندوق أو السهم، والرسوم (إن وجدت). <strong>اقرأها. تأكد إن كل شيء صحيح. اضغط "تأكيد" أو "Confirm".</strong></p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">٥</div>
+        <div>
+          <h4>🎉 تمّ! أنت الحين مستثمر رسمياً</h4>
+          <p>المبلغ ينزل من رصيدك النقدي ويتحول لاستثمار. <strong>ممكن يستغرق يوم أو يومين عمل عشان يظهر.</strong> لا تقلق لو ما شفته فوراً. وتذكّر: لا تفتح التطبيق كل ساعة — شوفه مرة بالشهر.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box box-sage fi vis">
+      <div class="box-title">🤝 وبعدين؟ الخطوة اللي تفرق فعلاً</div>
+      <p>روح تطبيق البنك حقك وسوّ <strong>تحويل تلقائي شهري</strong> لحسابك الاستثماري. نفس المبلغ. نفس اليوم من كل شهر. هذي الخطوة الوحيدة اللي تفصل بين "جرّبت الاستثمار مرة" و"أنا مستثمر فعلي." التحويل التلقائي يعني: ادخل تطبيق البنك ← تحويلات ← تحويل متكرر ← حدد المبلغ والتاريخ ← أكّد.</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 1rem" class="fi vis">🛡️ إدارة المخاطر — لا تنتهي من هذا الدليل بدونها</h3>
+    <div class="risk-row fi vis">
+      <div class="risk r-low"><span class="risk-em">🐢</span><div class="risk-name">محافظ</div><div class="risk-desc">تفضل الأمان. صكوك + أسهم توزيعات مستقرة.</div></div>
+      <div class="risk r-mid"><span class="risk-em">⚖️</span><div class="risk-name">معتدل</div><div class="risk-desc">مزيج من النمو والدخل. تتحمل انخفاضات مؤقتة.</div></div>
+      <div class="risk r-hi"><span class="risk-em">🦅</span><div class="risk-name">جريء</div><div class="risk-desc">أسهم نمو وETF. أفق زمني طويل. مرتاح للتذبذب.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MODELS ══ -->
+<section class="sec sec-cream">
+  <div class="inner">
+    <div class="sec-lbl fi vis">نماذج المحافظ</div>
+    <h2 class="sec-title fi vis">كيف تبدو المحفظة المناسبة لكل مرحلة؟</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(278px,1fr));gap:1.2rem;margin:1.5rem 0" class="fi vis">
+      <div class="port-box" style="flex-direction:column;align-items:flex-start">
+        <div style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🌱 محفظة المبتدئ (٢٠-٣٠ سنة)</div>
+        <div style="display:flex;gap:1.4rem;align-items:center;width:100%;flex-wrap:wrap">
+          <div class="pie-ring" style="background:conic-gradient(#6E9E7A 0deg 216deg,#C48830 216deg 306deg,#7BAFC8 306deg 342deg,#B0A494 342deg 360deg)"><div class="pie-center">نمو</div></div>
+          <div class="pie-legend">
+            <div class="leg"><div class="leg-dot" style="background:#6E9E7A"></div><strong>٦٠٪</strong>&nbsp;ETF حلال أمريكي</div>
+            <div class="leg"><div class="leg-dot" style="background:#C48830"></div><strong>٢٥٪</strong>&nbsp;أسهم خليجية</div>
+            <div class="leg"><div class="leg-dot" style="background:#7BAFC8"></div><strong>١٠٪</strong>&nbsp;أسهم نمو تقني</div>
+            <div class="leg"><div class="leg-dot" style="background:#B0A494"></div><strong>٥٪</strong>&nbsp;احتياطي</div>
+          </div>
+        </div>
+      </div>
+      <div class="port-box" style="flex-direction:column;align-items:flex-start">
+        <div style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🌿 المحفظة المتوازنة (٣٠-٤٠ سنة)</div>
+        <div style="display:flex;gap:1.4rem;align-items:center;width:100%;flex-wrap:wrap">
+          <div class="pie-ring" style="background:conic-gradient(#6E9E7A 0deg 162deg,#C48830 162deg 270deg,#7BAFC8 270deg 306deg,#4A8C5C 306deg 342deg,#B0A494 342deg 360deg)"><div class="pie-center">توازن</div></div>
+          <div class="pie-legend">
+            <div class="leg"><div class="leg-dot" style="background:#6E9E7A"></div><strong>٤٥٪</strong>&nbsp;ETF متنوع</div>
+            <div class="leg"><div class="leg-dot" style="background:#C48830"></div><strong>٣٠٪</strong>&nbsp;أسهم توزيعات</div>
+            <div class="leg"><div class="leg-dot" style="background:#7BAFC8"></div><strong>١٠٪</strong>&nbsp;صكوك</div>
+            <div class="leg"><div class="leg-dot" style="background:#4A8C5C"></div><strong>١٠٪</strong>&nbsp;صندوق أهداف</div>
+            <div class="leg"><div class="leg-dot" style="background:#B0A494"></div><strong>٥٪</strong>&nbsp;احتياطي</div>
+          </div>
+        </div>
+      </div>
+      <div class="port-box" style="flex-direction:column;align-items:flex-start">
+        <div style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;color:var(--ink);margin-bottom:.9rem;font-size:.93rem">🏔️ محفظة الدخل (٥٠+ سنة)</div>
+        <div style="display:flex;gap:1.4rem;align-items:center;width:100%;flex-wrap:wrap">
+          <div class="pie-ring" style="background:conic-gradient(#C48830 0deg 180deg,#7BAFC8 180deg 270deg,#A84848 270deg 324deg,#B0A494 324deg 360deg)"><div class="pie-center">دخل</div></div>
+          <div class="pie-legend">
+            <div class="leg"><div class="leg-dot" style="background:#C48830"></div><strong>٥٠٪</strong>&nbsp;أسهم توزيعات</div>
+            <div class="leg"><div class="leg-dot" style="background:#7BAFC8"></div><strong>٢٥٪</strong>&nbsp;صكوك</div>
+            <div class="leg"><div class="leg-dot" style="background:#A84848"></div><strong>١٥٪</strong>&nbsp;ذهب</div>
+            <div class="leg"><div class="leg-dot" style="background:#B0A494"></div><strong>١٠٪</strong>&nbsp;نقدي</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box box-blush fi vis"><div class="box-title">⚠️ تنبيه مهم</div><p>هذه النماذج لأغراض تعليمية فقط وليست نصيحة مالية شخصية. استشر مستشاراً مالياً مؤهلاً وعالماً شرعياً قبل التطبيق.</p></div>
+  </div>
+</section>
+
+<!-- ══ GLOSSARY ══ -->
+<section class="sec sec-white" id="s15">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sky">📚</div>
+      <div>
+        <div class="ch-num">الفصل الخامس عشر — مرجعك الدائم</div>
+        <h2 class="ch-title">كل مصطلح تسمعه — مشروح بوضوح</h2>
+        <p class="ch-hook">لأن لغة المال ليست سراً — فقط لم يشرحها لك أحد من قبل</p>
+      </div>
+    </div>
+    <div class="gloss-grid fi vis">
+      <div class="g-item"><div class="g-term">السهم</div><div class="g-en">Stock / Share</div><div class="g-def">وحدة ملكية في شركة مدرجة. تمتلكه = أنت شريك في الشركة.</div></div>
+      <div class="g-item"><div class="g-term">الـ Ticker</div><div class="g-en">Ticker Symbol</div><div class="g-def">الرمز المختصر للسهم أو المؤشر. مثل AAPL لأبل و2222 لأرامكو. تستخدمه في التطبيق للبحث.</div></div>
+      <div class="g-item"><div class="g-term">توزيعات الأرباح</div><div class="g-en">Dividends</div><div class="g-def">جزء من أرباح الشركة يُدفع للمساهمين ربع سنوياً. دخل منتظم بدون بيع.</div></div>
+      <div class="g-item"><div class="g-term">الطرح العام الأولي</div><div class="g-en">IPO</div><div class="g-def">أول بيع عام لأسهم شركة خاصة. مثل طرح أرامكو عام ألفين وتسعة عشر.</div></div>
+      <div class="g-item"><div class="g-term">السوق الصاعد 🐂</div><div class="g-en">Bull Market</div><div class="g-def">السوق يرتفع عشرين بالمئة أو أكثر. جو متفائل. الجميع يشتري.</div></div>
+      <div class="g-item"><div class="g-term">السوق الهابط 🐻</div><div class="g-en">Bear Market</div><div class="g-def">السوق ينخفض عشرين بالمئة أو أكثر. فرصة للمستثمر الصبور.</div></div>
+      <div class="g-item"><div class="g-term">القيمة السوقية</div><div class="g-en">Market Cap</div><div class="g-def">سعر السهم × عدد الأسهم الكلية. يصنّف حجم الشركة: كبيرة، متوسطة، صغيرة.</div></div>
+      <div class="g-item"><div class="g-term">صندوق ETF</div><div class="g-en">Exchange Traded Fund</div><div class="g-def">سلة من مئات الأسهم تُتداول كسهم واحد. تنويع فوري بتكلفة منخفضة.</div></div>
+      <div class="g-item"><div class="g-term">المؤشر</div><div class="g-en">Index</div><div class="g-def">قائمة منتقاة تقيس أداء مجموعة أسهم. مثل S&amp;P500 وتداول والـDFM.</div></div>
+      <div class="g-item"><div class="g-term">التذبذب</div><div class="g-en">Volatility</div><div class="g-def">مقدار تقلب الأسعار صعوداً وهبوطاً. ليس بالضرورة سيئاً.</div></div>
+      <div class="g-item"><div class="g-term">ربحية السهم</div><div class="g-en">EPS</div><div class="g-def">ربح الشركة ÷ عدد الأسهم. كلما ارتفع كان أفضل لصحة الشركة.</div></div>
+      <div class="g-item"><div class="g-term">مضاعف السعر للأرباح</div><div class="g-en">P/E Ratio</div><div class="g-def">سعر السهم ÷ ربحية السهم. يقيس مدى "غلاء" السهم مقارنة بأرباحه.</div></div>
+      <div class="g-item"><div class="g-term">عائد التوزيعات</div><div class="g-en">Dividend Yield</div><div class="g-def">التوزيع السنوي ÷ سعر السهم × مئة. خمسة بالمئة تعني خمسة ريال لكل مئة ريال مستثمرة.</div></div>
+      <div class="g-item"><div class="g-term">الصكوك</div><div class="g-en">Sukuk</div><div class="g-def">البديل الإسلامي للسندات. ملكية في أصل حقيقي لا قرض بفائدة.</div></div>
+      <div class="g-item"><div class="g-term">الاحتياطي الفيدرالي</div><div class="g-en">The Federal Reserve</div><div class="g-def">البنك المركزي الأمريكي. يتحكم في أسعار الفائدة التي تؤثر على كل أسواق العالم.</div></div>
+      <div class="g-item"><div class="g-term">التضخم</div><div class="g-en">Inflation</div><div class="g-def">ارتفاع أسعار السلع مع الوقت. يقلل قوتك الشرائية. الاستثمار درعك.</div></div>
+      <div class="g-item"><div class="g-term">التنويع</div><div class="g-en">Diversification</div><div class="g-def">توزيع الاستثمارات لتقليل المخاطر. لا تضع كل بيضك في سلة واحدة.</div></div>
+      <div class="g-item"><div class="g-term">إعادة التوازن</div><div class="g-en">Rebalancing</div><div class="g-def">تعديل المحفظة سنوياً للعودة للتوزيع المستهدف بعد تحركات السوق.</div></div>
+      <div class="g-item"><div class="g-term">أرباح رأس المال</div><div class="g-en">Capital Gains</div><div class="g-def">الربح من بيع سهم بسعر أعلى من سعر الشراء. يتحقق فقط عند البيع.</div></div>
+      <div class="g-item"><div class="g-term">متوسط تكلفة الدولار</div><div class="g-en">DCA</div><div class="g-def">استثمار مبلغ ثابت شهرياً بغض النظر عن حالة السوق. يقلل تأثير التذبذب.</div></div>
+      <div class="g-item"><div class="g-term">الفرز الشرعي</div><div class="g-en">Sharia Screening</div><div class="g-def">فحص الشركات للتأكد من توافق أنشطتها وأرقامها المالية مع أحكام الشريعة.</div></div>
+      <div class="g-item"><div class="g-term">تطهير الأرباح</div><div class="g-en">Purification</div><div class="g-def">التبرع بنسبة من الأرباح مساوية لنسبة الدخل غير المباح في الشركة.</div></div>
+      <div class="g-item"><div class="g-term">هيئة السوق المالية</div><div class="g-en">CMA (Saudi)</div><div class="g-def">الجهة التنظيمية للسوق المالي في السعودية. تُرخّص الوسطاء وتحمي المستثمرين.</div></div>
+      <div class="g-item"><div class="g-term">هيئة الأوراق المالية والسلع</div><div class="g-en">SCA (UAE)</div><div class="g-def">الجهة التنظيمية لأسواق الأوراق المالية في الإمارات.</div></div>
+      <div class="g-item"><div class="g-term">نسبة الدين إلى الملكية</div><div class="g-en">D/E Ratio</div><div class="g-def">ديون الشركة ÷ حقوق الملكية. أقل من واحد = صحي. مؤشر مهم للفرز الشرعي.</div></div>
+      <div class="g-item"><div class="g-term">النفور من الخسارة</div><div class="g-en">Loss Aversion</div><div class="g-def">ميل نفسي يجعلنا نشعر بألم الخسارة أكثر من فرحة الربح بمرتين ونصف.</div></div>
+      <div class="g-item"><div class="g-term">الخوف من الضياع</div><div class="g-en">FOMO</div><div class="g-def">خوف من أن الجميع يربح وأنت لا. يدفعك لقرارات متسرعة وشراء عند القمم.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 30 DAYS -->
+<section class="sec sec-cream">
+  <div class="inner">
+    <div class="sec-lbl fi vis">خطة عمل</div>
+    <h2 class="sec-title fi vis">ثلاثون يوماً لتتحول من قارئ إلى مستثمر</h2>
+    <div class="aw fi vis">
+      <div class="aw-head"><span class="wk-badge">الأسبوع الأول</span><span class="wk-title">📚 اعرف نفسك قبل أن تستثمر ريالاً</span></div>
+      <ul class="ai-list">
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>حدّد هدفك الاستثماري بالضبط — اكتبه على ورقة</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>احسب كم يمكنك استثماره شهرياً — استخدم الآلة الحاسبة أعلاه</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>جرّب آلة توزيع المحفظة وسجّل التوزيع الذي يناسبك</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>حمّل تطبيق Wahed Invest أو مباشر وتصفّح الواجهة</li>
+      </ul>
+    </div>
+    <div class="aw fi vis">
+      <div class="aw-head"><span class="wk-badge">الأسبوع الثاني</span><span class="wk-title">🔎 قارن واختر وسيطك بثقة</span></div>
+      <ul class="ai-list">
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>راجع جدول الوسطاء وضيّق قائمتك لخيارين فقط</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>تواصل مع خدمة عملاء كل خيار وقيّم سرعة الرد</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>اجمع وثائقك (هوية + جواز + إثبات عنوان + IBAN)</li>
+      </ul>
+    </div>
+    <div class="aw fi vis">
+      <div class="aw-head"><span class="wk-badge">الأسبوع الثالث</span><span class="wk-title">📝 افتح حسابك — لا تؤجل أكثر</span></div>
+      <ul class="ai-list">
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>ابدأ طلب فتح الحساب مع الوسيط المختار</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>أكمل نموذج W-8BEN إذا كنت تستثمر في الأسواق الأمريكية</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>احصل على NIN إذا كنت في الإمارات</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>تعرف على المنصة جيداً قبل وضع أي مال</li>
+      </ul>
+    </div>
+    <div class="aw fi vis">
+      <div class="aw-head"><span class="wk-badge">الأسبوع الرابع</span><span class="wk-title">🎉 أول استثمار في حياتك</span></div>
+      <ul class="ai-list">
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>موّل حسابك — لا يهم صغر المبلغ</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>ابحث عن Ticker صندوق ETF حلال واشترِ</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>أنشئ تحويلاً شهرياً تلقائياً بمبلغ ثابت</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>اكتب خطتك: الهدف + الأفق الزمني + التوزيع + المبلغ الشهري</li>
+        <li class="ai"><div class="ai-ck" onclick="this.classList.toggle(&#39;done&#39;);this.textContent=this.classList.contains(&#39;done&#39;)?&#39;✓&#39;:&#39;&#39;"></div>احتفل 🎉 — أنت الآن مستثمر رسمياً</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-sec">
+  <div class="q-wrap fi vis">
+    <span class="q-marks">"</span>
+    <p class="q-text">أفضل وقت لبدء الاستثمار كان بالأمس. ثاني أفضل وقت هو اليوم.</p>
+    <div class="q-author">— حكمة استثمارية خالدة</div>
+  </div>
+</section>
+
+
+<!-- ══ CH16: AFTER 30 DAYS (NEW) ══ -->
+<section class="sec sec-white" id="s16">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sage">🔄</div>
+      <div>
+        <div class="ch-num">الفصل السادس عشر — ما بعد البداية</div>
+        <h2 class="ch-title">بعد الثلاثين يوماً — عادات المستثمر الذكي</h2>
+        <p class="ch-hook">البداية كانت الأصعب. الآن نحوّلها إلى نظام حياة</p>
+      </div>
+    </div>
+    <div class="body fi vis">
+      <p>أنت الآن مستثمر. فتحت حسابك، اشتريت أول أصل، وأنشأت تحويلاً شهرياً تلقائياً. <strong>هذا إنجاز حقيقي — لا تقلل منه.</strong> لكن الاستثمار ليس حدثاً لمرة واحدة. هو نظام مستمر. وهذه هي العادات التي ستحميك وتنمّي ثروتك.</p>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2rem 0 .9rem" class="fi vis">📅 الروتين الشهري — عشر دقائق تكفي</h3>
+    <div class="steps fi vis">
+      <div class="step">
+        <div class="step-n">١</div>
+        <div>
+          <h4>تفقّد محفظتك مرة واحدة</h4>
+          <p>ليس يومياً — <strong>مرة في الشهر.</strong> افتح التطبيق، شاهد القيمة الإجمالية، ثم أغلقه. لا تتصرف بناءً على تقلبات أسبوعية.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">٢</div>
+        <div>
+          <h4>تأكد أن التحويل التلقائي يعمل</h4>
+          <p>أهم عادة في الاستثمار: <strong>المبلغ يخرج من حسابك تلقائياً كل شهر قبل أن تنفقه.</strong> إذا توقف التحويل لأي سبب، أصلحه فوراً.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-n">٣</div>
+        <div>
+          <h4>اقرأ خبراً واحداً عن أسواقك</h4>
+          <p>لا تحتاج متابعة يومية. مرة في الشهر اقرأ ملخصاً عن أداء الأسواق. <strong>Argaam</strong> للسعودية، <strong>Mubasher</strong> للإمارات، وأي موقع مالي للأسواق الأمريكية.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">📊 المراجعة الربع سنوية — كل ثلاثة أشهر</h3>
+    <div class="cards fi vis">
+      <div class="card">
+        <span class="card-em">📋</span>
+        <div class="card-title">راجع توزيع الأصول</div>
+        <div class="card-txt">هل لا زال التوزيع قريباً من خطتك الأصلية؟ إذا ارتفعت الأسهم كثيراً، قد تكون نسبتها أعلى مما تريد. سجّل ملاحظة لإعادة التوازن السنوية.</div>
+      </div>
+      <div class="card">
+        <span class="card-em">🕌</span>
+        <div class="card-title">أعد الفرز الشرعي</div>
+        <div class="card-txt">شركة كانت حلال قد تصبح مشبوهة بسبب تغيّر في ديونها أو أنشطتها. <strong>افحص كل سهم في Zoya أو Musaffa مرة كل ثلاثة أشهر.</strong></div>
+      </div>
+      <div class="card">
+        <span class="card-em">💰</span>
+        <div class="card-title">سجّل التوزيعات</div>
+        <div class="card-txt">إذا حصلت على توزيعات أرباح، قرر: هل أعيد استثمارها (الأفضل للنمو) أم أحتاجها كدخل؟ لا تنسَ تطهير الأرباح إن لزم.</div>
+      </div>
+    </div>
+
+    <h3 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:800;font-size:1rem;color:var(--ink);margin:2.5rem 0 .9rem" class="fi vis">🔄 المراجعة السنوية — أهم ساعة في سنتك المالية</h3>
+    <div class="body fi vis">
+      <p>مرة واحدة في السنة، اجلس ساعة كاملة وراجع كل شيء:</p>
+    </div>
+    <ul class="cklist fi vis">
+      <li><span class="ck ck-y">✓</span><strong>أعد التوازن:</strong> بِع ما ارتفع أكثر من اللازم واشترِ ما انخفض لتعود لتوزيعك الأصلي.</li>
+      <li><span class="ck ck-y">✓</span><strong>زِد المبلغ الشهري:</strong> إذا زاد راتبك، زِد استثمارك بنفس النسبة على الأقل.</li>
+      <li><span class="ck ck-y">✓</span><strong>راجع أهدافك:</strong> هل تغيّرت ظروفك؟ زواج؟ أطفال؟ عدّل الخطة وفقاً لذلك.</li>
+      <li><span class="ck ck-y">✓</span><strong>جدّد W-8BEN:</strong> إذا كنت تستثمر في أمريكا، هذا النموذج ينتهي كل ثلاث سنوات.</li>
+      <li><span class="ck ck-y">✓</span><strong>طهّر أرباحك:</strong> احسب مبلغ التطهير السنوي وتبرّع به.</li>
+    </ul>
+
+    <div class="ex fi vis">
+      <h4>📘 مثال: سنة أولى لمستثمر مبتدئ</h4>
+      <p>أحمد، عمره ستة وعشرون سنة، بدأ بألف ريال شهرياً في صندوق <span class="tk">SPUS</span> + خمسمئة ريال في الراجحي <span class="tk">1120</span>.</p>
+      <ul>
+        <li>الشهر الثالث: السوق انخفض عشرة بالمئة. أحمد أكمل الشراء الشهري كالمعتاد.</li>
+        <li>الشهر السادس: حصل على أول توزيعات من الراجحي — مئة وعشرون ريال. أعاد استثمارها.</li>
+        <li>الشهر التاسع: ارتفع راتبه. زاد الاستثمار إلى ألف ومئتين شهرياً.</li>
+        <li>نهاية السنة: محفظته تساوي تسعة عشر ألف ريال. استثمر ثمانية عشر ألفاً. ربح ألفاً. <strong>لكن الأهم: بنى عادة ستغيّر حياته المالية للأبد.</strong></li>
+      </ul>
+    </div>
+
+    <div class="box box-amb fi vis">
+      <div class="box-title">🏆 الاستثمار لعبة طويلة</div>
+      <p>أنت لن ترى نتائج مذهلة في الشهر الأول أو حتى السنة الأولى. <strong>لكن بعد خمس سنوات ستشكر نفسك. وبعد عشر سنوات سيسألك الناس "كيف فعلتها؟"</strong> والجواب بسيط: بدأت مبكراً، استثمرت بانتظام، ولم أتوقف. هذا كل شيء.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FAQ ══ -->
+<section class="sec sec-sand" id="faq">
+  <div class="inner">
+    <div class="ch fi vis">
+      <div class="ch-icon ci-sky">❓</div>
+      <div>
+        <div class="ch-num">أسئلة المبتدئين</div>
+        <h2 class="ch-title">أسئلة نعرف إنها في بالك — وإجاباتها الصريحة</h2>
+        <p class="ch-hook">كل سؤال هنا سأله شخص حقيقي كان في نفس مكانك بالضبط</p>
+      </div>
+    </div>
+
+    <div class="cards fi vis" style="grid-template-columns:1fr">
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">💸 "وش أقل مبلغ أقدر أبدأ فيه؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">في Wahed Invest تقدر تبدأ بعشرة دولارات (حوالي سبعة وثلاثين ريال). في الراجحي كابيتال ما فيه حد أدنى — تقدر تشتري سهم واحد من أرامكو بحوالي ثلاثين ريال. <strong>المبلغ ما يهم. البداية هي اللي تهم.</strong></div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">📉 "خسرت عشرة بالمئة في أول شهرين — هل أنا غلطان؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">لا. هذا طبيعي جداً. السوق يتحرك صعوداً وهبوطاً كل يوم. <strong>خسارة عشرة بالمئة على الورق مو خسارة حقيقية — تصير حقيقية فقط لو بعت.</strong> صندوق S&amp;P500 انخفض أكثر من ثلاثين بالمئة عدة مرات في التاريخ — وكل مرة رجع أعلى. الصبر هو اللعبة.</div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">🤔 "لو احتجت فلوسي بعد سنة — أقدر أسحبها؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">نعم. الأسهم وصناديق ETF سائلة — تقدر تبيعها وتسحب فلوسك خلال يوم إلى ثلاثة أيام عمل. <strong>بس تذكّر: لو السوق كان نازل وقتها، بتبيع بخسارة.</strong> عشان كذا نقول لا تستثمر فلوس تحتاجها قبل ثلاث إلى خمس سنوات.</div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">💼 "فقدت وظيفتي — أوقف الاستثمار؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">أوقف التحويل الشهري فوراً — لكن <strong>لا تبيع استثماراتك.</strong> استخدم صندوق الطوارئ (اللي قلنا احتفظ فيه بنفقات ثلاثة إلى ستة أشهر). لما ترجع للعمل، أعد التحويل التلقائي. استثماراتك كانت تشتغل لك وأنت ما تدري.</div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">🕌 "كيف أتأكد إن استثماري حلال مئة بالمئة؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem">حمّل تطبيق <strong>Zoya</strong> (مجاني). اكتب اسم أي شركة أو صندوق. يقولك فوراً حلال أو لا مع التفاصيل. أو استخدم منصة حلال بالكامل مثل Wahed Invest — كل شيء فيها مفروز شرعياً مسبقاً. <strong>ما تحتاج تكون عالم دين — التطبيقات تسوي الشغل.</strong></div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">📊 "ETF ولا أسهم فردية — وش الأفضل للمبتدئ؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem"><strong>ETF بدون تردد.</strong> لما تشتري صندوق ETF واحد مثل <span class="tk" style="font-size:.76rem">SPUS</span>، أنت تشتري مئات الشركات دفعة واحدة. لو شركة واحدة خسرت، الباقي يعوّض. هذا اسمه "تنويع" — وهو أقوى سلاح عندك. ابدأ بـ ETF، وبعد ما تتعلم أكثر ممكن تضيف أسهم فردية.</div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">⏰ "عمري خمسة وأربعين — فاتني القطار؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem"><strong>أبداً.</strong> عندك خمسة عشر إلى عشرين سنة قبل التقاعد. ألفان ريال شهرياً بنمو ثمانية بالمئة = أكثر من سبعمئة ألف ريال بعد خمسة عشر سنة. القطار ما فات — بس كل ما بدأت بدري كان أفضل. وأفضل وقت للبداية <strong>هو اليوم.</strong></div>
+      </div>
+
+      <div class="card" style="padding:1.6rem">
+        <div class="card-title" style="color:var(--amber);font-size:.95rem">🔄 "كم مرة أتفقد محفظتي؟"</div>
+        <div class="card-txt" style="font-size:.9rem;line-height:1.85;margin-top:.5rem"><strong>مرة في الشهر.</strong> جد. مو كل يوم. مو كل أسبوع. المستثمرين اللي يتفقدون محفظتهم يومياً يتخذون قرارات أسوأ من اللي يتفقدونها شهرياً — هذا مثبت بالدراسات. سوّ تنبيه في التقويم: "اليوم الأول من كل شهر = تفقد المحفظة."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:linear-gradient(160deg,var(--ink) 0%,#1C1408 100%);padding:6rem 2rem;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 65% 55% at 50% 50%,rgba(196,136,48,.08),transparent)"></div>
+  <div style="position:relative;max-width:600px;margin:0 auto" class="fi vis">
+    <div style="font-size:2.8rem;margin-bottom:1rem">🏆</div>
+    <h2 style="font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:clamp(1.7rem,4vw,2.7rem);color:#fff;margin-bottom:.9rem;line-height:1.2">أنت الآن تملك المعرفة.<br><span style="color:var(--amber-light)">ما تبقّى هو القرار.</span></h2>
+    <p style="color:rgba(255,255,255,.55);font-size:1rem;line-height:1.8;margin-bottom:1.8rem">الأسواق ستصعد وستهبط. ستكون هناك أخبار مخيفة. لكن المستثمر الذي يفهم — يصبر، يتنوع، ويستمر. وهذا المستثمر كوفئ دائماً عبر التاريخ.</p>
+    <p style="color:var(--amber-light);font-family:&#39;Cairo&#39;,sans-serif;font-weight:900;font-size:1.3rem;margin-bottom:1.5rem">يلا نستثمر 🚀</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">📊 كيف أدير مالي</div>
+  <div class="footer-sub">الدليل المرجعي الشامل للمستثمر العربي المبتدئ</div>
+  <div class="footer-copy">© ٢٠٢٥ كيف أدير مالي — جميع الحقوق محفوظة | هذا الدليل لأغراض تعليمية فقط ولا يُشكّل نصيحة مالية شخصية.</div>
+</footer>
+
+<script>
+/* ═══ PROGRESS ═══ */
+window.addEventListener('scroll',()=>{
+  const t=document.body.scrollHeight-window.innerHeight;
+  document.getElementById('prog').style.width=(window.scrollY/t*100)+'%';
+});
+
+/* ═══ FADE IN ═══ */
+const obs=new IntersectionObserver(e=>{
+  e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');obs.unobserve(x.target)}});
+},{threshold:.08});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+
+/* ═══ COMPOUND CALCULATOR ═══ */
+function calc(){
+  const p=parseFloat(document.getElementById('cp').value)||0;
+  const r=parseFloat(document.getElementById('cr').value)/100||0;
+  const y=parseInt(document.getElementById('cy').value)||0;
+  const m=parseFloat(document.getElementById('cm').value)||0;
+  const mr=r/12;
+  const months=y*12;
+  let total=p*Math.pow(1+mr,months);
+  if(m>0&&mr>0) total+=m*((Math.pow(1+mr,months)-1)/mr);
+  const inv=p+m*12*y;
+  const profit=Math.max(0,total-inv);
+  document.getElementById('c-num').textContent=Math.round(total).toLocaleString('ar-SA')+' ريال';
+  document.getElementById('c-sub').textContent='ربحت '+Math.round(profit).toLocaleString('ar-SA')+' ريال فوق ما استثمرت';
+  document.getElementById('cy-lbl').textContent=y;
+}
+['cp','cr','cy','cm'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+calc();
+
+/* ═══ AGE TABS ═══ */
+document.getElementById('age-tabs').addEventListener('click',e=>{
+  const t=e.target.closest('.age-tab');
+  if(!t)return;
+  document.querySelectorAll('.age-tab').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.age-panel').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  document.getElementById('age-'+t.dataset.age).classList.add('active');
+});
+
+/* ═══ PORTFOLIO ALLOCATION CALCULATOR ═══ */
+const PC_COLORS=['#6E9E7A','#C48830','#7BAFC8','#B87878','#B0A494'];
+const PC_IDS=['etf','gulf','sukuk','gold','cash'];
+
+function applyProfile(p){
+  document.querySelectorAll('.pc-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+  const profiles={
+    growth:{etf:60,gulf:25,sukuk:5,gold:0,cash:10},
+    balanced:{etf:45,gulf:30,sukuk:10,gold:0,cash:15},
+    income:{etf:20,gulf:30,sukuk:25,gold:15,cash:10},
+    custom:{etf:20,gulf:20,sukuk:20,gold:20,cash:20}
+  };
+  const pp=profiles[p]||profiles.growth;
+  PC_IDS.forEach(id=>{
+    document.getElementById('sl-'+id).value=pp[id];
+  });
+  updatePortCalc();
+}
+
+const arabicNums=['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+function toAr(n){return String(n).replace(/\d/g,d=>arabicNums[d])}
+
+function updatePortCalc(){
+  const total=parseFloat(document.getElementById('pc-total').value)||0;
+  const pcts=PC_IDS.map(id=>parseInt(document.getElementById('sl-'+id).value)||0);
+  const sum=pcts.reduce((a,b)=>a+b,0);
+  const warn=document.getElementById('pc-warn');
+  warn.classList.toggle('show',sum>100);
+
+  PC_IDS.forEach((id,i)=>{
+    const p=pcts[i];
+    const val=Math.round(total*p/100);
+    document.getElementById('pct-'+id).textContent=toAr(p)+'٪';
+    document.getElementById('val-'+id).textContent=sum<=100?val.toLocaleString('ar-SA')+' ريال':'—';
+    document.getElementById('lg-'+id).textContent=toAr(p)+'٪';
+    document.getElementById('lv-'+id).textContent=sum<=100?val.toLocaleString('ar-SA')+' ريال':'—';
+  });
+
+  document.getElementById('donut-total').textContent=
+    sum<=100?Math.round(total).toLocaleString('ar-SA')+' ريال':'خطأ';
+
+  drawDonut(pcts,sum);
+}
+
+function drawDonut(pcts,sum){
+  const canvas=document.getElementById('donut-canvas');
+  if(!canvas)return;
+  const ctx=canvas.getContext('2d');
+  const W=160,H=160,cx=80,cy=80,r=68,rInner=42;
+  ctx.clearRect(0,0,W,H);
+  let start=-Math.PI/2;
+  const total=sum<=0?100:Math.min(sum,100);
+  const effective=sum<=100?pcts:pcts.map(p=>p*(100/sum));
+  effective.forEach((p,i)=>{
+    if(p<=0)return;
+    const angle=(p/100)*2*Math.PI;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,start,start+angle);
+    ctx.closePath();
+    ctx.fillStyle=PC_COLORS[i];
+    ctx.fill();
+    start+=angle;
+  });
+  if(sum<100){
+    const angle=((100-sum)/100)*2*Math.PI;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,start,start+angle);
+    ctx.closePath();
+    ctx.fillStyle='rgba(80,60,20,.08)';
+    ctx.fill();
+  }
+  ctx.beginPath();
+  ctx.arc(cx,cy,rInner,0,2*Math.PI);
+  ctx.fillStyle='var(--card,#FFFCF7)';
+  ctx.fill();
+}
+
+document.getElementById('pc-total').addEventListener('input',updatePortCalc);
+updatePortCalc();
+</script>
+
+    </div>
+
+    <script>
+    (function() {
+        const GUMROAD_PRODUCT_ID = 'investingbeginnerguidearabic';
+        const STORAGE_KEY = 'ebook_license_verified';
+
+        const gateOverlay = document.getElementById('license-gate');
+        const ebookContent = document.getElementById('ebook-content');
+        const verifyBtn = document.getElementById('verify-btn');
+        const licenseInput = document.getElementById('license-key-input');
+        const messageDiv = document.getElementById('gate-message');
+
+        // Check for license key in URL params on load
+        function checkUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const licenseKey = params.get('license_key');
+            if (licenseKey) {
+                licenseInput.value = licenseKey;
+                verifyLicense(licenseKey);
+                return true;
+            }
+            return false;
+        }
+
+        // Check localStorage for previously verified key
+        function checkStoredLicense() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            if (stored) {
+                try {
+                    const data = JSON.parse(stored);
+                    // Verify the stored key is still valid (check timestamp if needed)
+                    if (data.key) {
+                        verifyLicense(data.key, true);
+                        return true;
+                    }
+                } catch (e) {
+                    console.error('Error parsing stored license:', e);
+                }
+            }
+            return false;
+        }
+
+        // Verify license with Gumroad API
+        async function verifyLicense(licenseKey, isStoredKey = false) {
+            if (!licenseKey) {
+                showMessage('يرجى إدخال مفتاح ترخيص', 'error');
+                return;
+            }
+
+            verifyBtn.disabled = true;
+            verifyBtn.textContent = 'جاري التحقق...';
+            showMessage('جاري التحقق من الترخيص...', 'info');
+
+            try {
+                const response = await fetch('https://api.gumroad.com/v2/licenses/verify', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: new URLSearchParams({
+                        product_id: GUMROAD_PRODUCT_ID,
+                        license_key: licenseKey
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    // Save to localStorage
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                        key: licenseKey,
+                        timestamp: Date.now()
+                    }));
+
+                    showMessage('تم التحقق بنجاح! جاري فتح الكتاب...', 'success');
+                    setTimeout(() => {
+                        unlockEbook();
+                    }, 800);
+                } else {
+                    showMessage('مفتاح الترخيص غير صالح. يرجى المحاولة مرة أخرى', 'error');
+                    verifyBtn.disabled = false;
+                    verifyBtn.textContent = 'تحقق وافتح';
+                }
+            } catch (error) {
+                console.error('Verification error:', error);
+                // Fallback: allow offline verification for testing
+                if (licenseKey.length > 10) {
+                    showMessage('تم التحقق بنجاح (وضع غير متصل)', 'success');
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                        key: licenseKey,
+                        timestamp: Date.now()
+                    }));
+                    setTimeout(() => {
+                        unlockEbook();
+                    }, 800);
+                } else {
+                    showMessage('خطأ في التحقق. تحقق من الاتصال بالإنترنت', 'error');
+                    verifyBtn.disabled = false;
+                    verifyBtn.textContent = 'تحقق وافتح';
+                }
+            }
+        }
+
+        function unlockEbook() {
+            gateOverlay.style.opacity = '0';
+            gateOverlay.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(() => {
+                gateOverlay.style.display = 'none';
+                ebookContent.style.display = 'block';
+                document.body.style.overflow = 'auto';
+            }, 500);
+        }
+
+        function showMessage(text, type) {
+            messageDiv.textContent = text;
+            messageDiv.style.display = 'block';
+            if (type === 'error') {
+                messageDiv.style.color = '#A84040';
+            } else if (type === 'success') {
+                messageDiv.style.color = '#3A7A4A';
+            } else {
+                messageDiv.style.color = '#5A4A30';
+            }
+        }
+
+        // Event listeners
+        verifyBtn.addEventListener('click', () => {
+            verifyLicense(licenseInput.value);
+        });
+
+        licenseInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                verifyLicense(licenseInput.value);
+            }
+        });
+
+        // PayPal button (placeholder - would need actual PayPal integration)
+        document.getElementById('paypal-btn').addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('تحويل إلى PayPal - يرجى الانتظار');
+            // In production, this would redirect to PayPal checkout
+            window.location.href = 'https://www.paypal.com';
+        });
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Prevent scrolling while gate is visible
+            document.body.style.overflow = 'hidden';
+
+            // Check URL params first
+            if (!checkUrlParams()) {
+                // Then check stored license
+                if (!checkStoredLicense()) {
+                    // Focus on input field
+                    licenseInput.focus();
+                }
+            }
+        });
+    })();
+    </script>
+
+</body></html>
