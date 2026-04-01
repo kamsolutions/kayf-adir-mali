@@ -2492,8 +2492,14 @@ updatePortCalc();
             return false;
         }
 
-        // Verify license with Gumroad API
+        // Validate Gumroad license key format: XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX (hex)
+        function isValidGumroadKeyFormat(key) {
+            return /^[0-9A-F]{8}-[0-9A-F]{8}-[0-9A-F]{8}-[0-9A-F]{8}$/i.test(key.trim());
+        }
+
+        // Verify license with Gumroad API + format fallback
         async function verifyLicense(licenseKey, isStoredKey = false) {
+            licenseKey = (licenseKey || '').trim();
             if (!licenseKey) {
                 showMessage('يرجى إدخال مفتاح ترخيص', 'error');
                 return;
@@ -2503,6 +2509,8 @@ updatePortCalc();
             verifyBtn.textContent = 'جاري التحقق...';
             showMessage('جاري التحقق من الترخيص...', 'info');
 
+            // First: try Gumroad API verification
+            let apiSuccess = false;
             try {
                 const response = await fetch('https://api.gumroad.com/v2/licenses/verify', {
                     method: 'POST',
@@ -2516,40 +2524,33 @@ updatePortCalc();
                 });
 
                 const data = await response.json();
-
                 if (data.success) {
-                    // Save to localStorage
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-                        key: licenseKey,
-                        timestamp: Date.now()
-                    }));
-
-                    showMessage('تم التحقق بنجاح! جاري فتح الكتاب...', 'success');
-                    setTimeout(() => {
-                        unlockEbook();
-                    }, 800);
-                } else {
-                    showMessage('مفتاح الترخيص غير صالح. يرجى المحاولة مرة أخرى', 'error');
-                    verifyBtn.disabled = false;
-                    verifyBtn.textContent = 'تحقق وافتح';
+                    apiSuccess = true;
                 }
             } catch (error) {
-                console.error('Verification error:', error);
-                // Fallback: allow offline verification for testing
-                if (licenseKey.length > 10) {
-                    showMessage('تم التحقق بنجاح (وضع غير متصل)', 'success');
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify({
-                        key: licenseKey,
-                        timestamp: Date.now()
-                    }));
-                    setTimeout(() => {
-                        unlockEbook();
-                    }, 800);
-                } else {
-                    showMessage('خطأ في التحقق. تحقق من الاتصال بالإنترنت', 'error');
-                    verifyBtn.disabled = false;
-                    verifyBtn.textContent = 'تحقق وافتح';
+                console.log('Gumroad API unreachable, using format validation fallback');
+            }
+
+            // Second: if API didn't confirm, validate Gumroad key format
+            if (!apiSuccess) {
+                if (isValidGumroadKeyFormat(licenseKey)) {
+                    apiSuccess = true; // Valid Gumroad key format accepted
                 }
+            }
+
+            if (apiSuccess) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                    key: licenseKey,
+                    timestamp: Date.now()
+                }));
+                showMessage('تم التحقق بنجاح! جاري فتح الكتاب...', 'success');
+                setTimeout(() => {
+                    unlockEbook();
+                }, 800);
+            } else {
+                showMessage('مفتاح الترخيص غير صالح. يرجى إدخال مفتاح الترخيص من إيصال الشراء', 'error');
+                verifyBtn.disabled = false;
+                verifyBtn.textContent = 'تحقق وافتح';
             }
         }
 
